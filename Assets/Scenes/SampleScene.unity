@@ -256,6 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothSpeed: 0.125
+  rotateSpeed: 0.5
   targetOffset: {x: 0, y: 2.1, z: 1}
   cameraOffset: {x: 0, y: 3, z: -6}
   minZoom: -10

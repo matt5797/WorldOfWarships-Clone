@@ -10,6 +10,7 @@ namespace WOW.Controller
         public Transform target;
 
         public float smoothSpeed = 0.125f;
+        public float rotateSpeed = 0.125f;
         public Vector3 targetOffset;
         public Vector3 cameraOffset;
         public float minZoom = -10f;
@@ -18,6 +19,9 @@ namespace WOW.Controller
         public float zoomSmoothSpeed = 0.125f;
 
         Vector3 velocity;
+        Vector3 desiredPosition;
+        Vector3 desiredRotation = default;
+        Vector3 smoothedPosition;
 
         // Start is called before the first frame update
         void Start()
@@ -28,9 +32,15 @@ namespace WOW.Controller
         // Update is called once per frame
         void Update()
         {
-            Vector3 desiredPosition = target.position + cameraOffset;
-            //Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-            Vector3 smoothedPosition = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothSpeed);
+            Quaternion camAngleX = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotateSpeed, Vector3.up);
+            Quaternion camAngleY = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * rotateSpeed, Vector3.right);
+            
+            cameraOffset = camAngleX * camAngleY * cameraOffset;
+            
+            cameraOffset = new Vector3(cameraOffset.x, Mathf.Clamp(cameraOffset.y, 0.5f, 4), cameraOffset.z);
+
+            desiredPosition = target.position + cameraOffset + desiredRotation;
+            smoothedPosition = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothSpeed);
             transform.position = smoothedPosition;
 
             transform.LookAt(target.position + targetOffset);
