@@ -18,13 +18,21 @@ namespace WOW.Controller
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.W))
+            {
                 ship.GearUp();
+            }
             if (Input.GetKeyDown(KeyCode.S))
+            {
                 ship.GearDown();
+            }
             if (Input.GetKey(KeyCode.A))
+            {
                 ship.SteerDown();
+            }
             if (Input.GetKey(KeyCode.D))
+            {
                 ship.SteerUp();
+            }
         }
     }
 }

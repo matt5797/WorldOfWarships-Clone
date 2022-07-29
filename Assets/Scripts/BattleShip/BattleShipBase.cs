@@ -14,6 +14,7 @@ namespace WOW.BattleShip
         [SerializeField] protected float movePower = 5f;
         [SerializeField] protected float maxSteer = 5f;
         [SerializeField] protected float steerPower = 5f;
+        [SerializeField] protected float steerAccel = 0.1f;
         [SerializeField] protected float steerResetSpeed = 0.1f;
         [SerializeField] protected int _gear = 0;
         [SerializeField] protected float _steer = 0;
@@ -24,6 +25,21 @@ namespace WOW.BattleShip
         // For Debugging
         public Vector3 velocity;
         public Vector3 angularVelocity;
+
+        public int Gear
+        {
+            get { return _gear; }
+            set { _gear = value; }
+        }
+        public float Steer
+        {
+            get { return _steer; }
+            set { _steer = value; }
+        }
+        public float Velocity
+        {
+            get { return m_Rigidbody.velocity.magnitude; }
+        }
 
         // Start is called before the first frame update
         protected virtual void Start()
@@ -58,45 +74,45 @@ namespace WOW.BattleShip
 
         public void GearUp()
         {
-            _gear = Mathf.Clamp(_gear + 1, 0, 3);
+            Gear = Mathf.Clamp(Gear + 1, -1, 4);
         }
         public void GearDown()
         {
-            _gear = Mathf.Clamp(_gear - 1, 0, 3);
+            Gear = Mathf.Clamp(Gear - 1, -1, 4);
         }
 
         public void SteerUp()
         {
-            _steer = Mathf.Clamp(_steer + 0.1f * Time.deltaTime, -1, 1);
+            Steer = Mathf.Clamp(Steer + steerAccel * Time.deltaTime, -1, 1);
         }
         public void SteerDown()
         {
-            _steer = Mathf.Clamp(_steer - 0.1f * Time.deltaTime, -1, 1);
+            Steer = Mathf.Clamp(Steer - steerAccel * Time.deltaTime, -1, 1);
         }
 
         private void Propeller()
         {
-            m_Rigidbody.AddForceAtPosition(transform.forward * movePower / 4 * _gear * Time.deltaTime, propeller.position, ForceMode.Force);
+            m_Rigidbody.AddForceAtPosition(transform.forward * movePower / 4 * Gear * Time.deltaTime, propeller.position, ForceMode.Force);
         }
 
         private void Steering()
         {
-            m_Rigidbody.AddForceAtPosition(transform.right * steerPower * _steer * Time.deltaTime, propeller.position, ForceMode.Force);
+            m_Rigidbody.AddForceAtPosition(transform.right * steerPower * Steer * Time.deltaTime, propeller.position, ForceMode.Force);
         }
 
         private void ResetSteer()
         {
-            if (Mathf.Abs(_steer) < steerResetSpeed * Time.deltaTime)
+            if (Mathf.Abs(Steer) < steerResetSpeed * Time.deltaTime)
             {
-                _steer = 0;
+                Steer = 0;
             }
-            else if (_steer < 0)
+            else if (Steer < 0)
             {
-                _steer += steerResetSpeed * Time.deltaTime;
+                Steer += steerResetSpeed * Time.deltaTime;
             }
-            else if (_steer > 0)
+            else if (Steer > 0)
             {
-                _steer -= steerResetSpeed * Time.deltaTime;
+                Steer -= steerResetSpeed * Time.deltaTime;
             }
         }
     }
