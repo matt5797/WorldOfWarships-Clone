@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerFire : MonoBehaviour
@@ -7,7 +5,7 @@ public class PlayerFire : MonoBehaviour
     public GameObject firePosition;
     public GameObject HE_Factory;
     public float throwPower = 0;
-   // public ParticleSystem bulletImpact;
+    // public ParticleSystem bulletImpact;
 
     private void Update()
     {
@@ -18,7 +16,7 @@ public class PlayerFire : MonoBehaviour
             RaycastHit hitInfo;
             if (Physics.Raycast(ray, out hitInfo))
             {
-                
+
                 GameObject highExplosive = Instantiate(HE_Factory);
                 highExplosive.transform.position = firePosition.transform.position;
 
@@ -26,7 +24,7 @@ public class PlayerFire : MonoBehaviour
                 rb.AddForce(Camera.main.transform.forward * throwPower, ForceMode.Impulse);
 
             }
-           
+
 
         }
     }

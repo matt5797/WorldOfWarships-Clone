@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace WOW.BattleShip
@@ -48,7 +45,7 @@ namespace WOW.BattleShip
         }
 
         protected virtual void Update()
-        {            
+        {
             velocity = m_Rigidbody.velocity;
             angularVelocity = m_Rigidbody.angularVelocity;
         }

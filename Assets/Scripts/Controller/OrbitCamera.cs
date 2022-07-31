@@ -33,12 +33,6 @@ public class OrbitCamera : MonoBehaviour
         Vector3 angles = transform.eulerAngles;
         m_X = angles.y;
         m_Y = angles.x;
-
-        Ellipse ellipse = new Ellipse(2, 4);
-        for (int i=0;i<12;i++)
-        {
-            print(ellipse.Evaluate((float)i/360f*30f));
-        }
     }
 
     void LateUpdate()
@@ -81,7 +75,7 @@ public class OrbitCamera : MonoBehaviour
             angle -= 360F;
         return Mathf.Clamp(angle, min, max);
     }
-    
+
     public float ClampAngleDirection(float angle, float min, float max)
     {
         return Mathf.Clamp(angle, min, max);
@@ -91,25 +85,5 @@ public class OrbitCamera : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(m_Target.position + targetOffset, 1f);
-    }
-}
-
-public class Ellipse
-{
-    public float xAxis;
-    public float yAxis;
-
-    public Ellipse(float xAxis, float yAxis)
-    {
-        this.xAxis = xAxis;
-        this.yAxis = yAxis;
-    }
-
-    public Vector2 Evaluate(float t)
-    {
-        float angle = Mathf.Deg2Rad * 360f * t;
-        float x = xAxis * Mathf.Sin(angle);
-        float y = yAxis * Mathf.Cos(angle);
-        return new Vector2(x, y);
     }
 }

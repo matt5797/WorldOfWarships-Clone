@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using TMPro;
 using UnityEngine;
 using WOW.Controller;
-using TMPro;
-using System;
 
 namespace WOW.UI
 {

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -13,12 +11,12 @@ public class ExampleScript : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.LeftShift) && !isClicked)
+        if (Input.GetKey(KeyCode.LeftShift) && !isClicked)
         {
             isClicked = true;
             firstCamControl();
         }
-        if(isClicked)
+        if (isClicked)
         {
             ClickedTime();
         }
@@ -30,7 +28,7 @@ public class ExampleScript : MonoBehaviour
 
         if (isfirstCam)
         {
-           
+
             firstCam.enabled = false;
             thirdCam.enabled = true;
 
@@ -38,17 +36,17 @@ public class ExampleScript : MonoBehaviour
         }
         else
         {
-           
+
             firstCam.enabled = true;
             thirdCam.enabled = false;
-           
+
         }
     }
 
     void ClickedTime()
     {
         curClickTime += Time.deltaTime;
-        if(curClickTime >= clicktimeMax)
+        if (curClickTime >= clicktimeMax)
         {
             isClicked = false;
             curClickTime = 0.0f;

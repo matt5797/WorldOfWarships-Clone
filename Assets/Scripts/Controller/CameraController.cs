@@ -1,72 +1,81 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using WOW.Controller;
 
 namespace WOW.Controller
 {
     public class CameraController : MonoBehaviour
     {
-        public Transform target;
+        public State<CameraController> cameraState;
+        public Transform m_Target;
 
-        public float smoothSpeed = 0.125f;
-        public float rotateSpeed = 0.125f;
+        public float m_Distance = 5.0f;
+        public float m_XSpeed = 120.0f;
+        public float m_YSpeed = 120.0f;
+
+        public float m_YMinLimit = -20f;
+        public float m_YMaxLimit = 80f;
+        
+        public float m_DistanceMin = .5f;
+        public float m_DistanceMax = 15f;
+
         public Vector3 targetOffset;
+        public Vector3 targetOffset2;
         public Vector3 cameraOffset;
-        public Vector3 targetOffsetStart;
-        public Vector3 cameraOffsetStart;
-        public float zoomLevel = default;
-        public float minZoom = -1f;
-        public float maxZoom = 2f;
-        public float zoomSpeed = 1f;
-        public float zoomSmoothSpeed = 0.125f;
-        float zoomPosition = default;
+        public Vector3 cameraOffset2;
 
-        Vector3 velocity;
-        Vector3 desiredPosition;
-        Vector3 desiredRotation = default;
-        Vector3 smoothedPosition;
+        public float targetOffsetYSpeed = 5;
+        public float targetOffsetYMin = 0;
+        public float targetOffsetYMax = 10;
+        
+        public float targetOffsetZSpeed = 5;
+        public float targetOffsetZMin = 0;
+        public float targetOffsetZMax = 10;
+
+        public float targetEllipseXAxis = 1;
+        public float targetEllipseYAxis = 10;
+        public float targetEllipseZAxis = 5;
+
+        public float stateChangeY = 5;
+
+        public bool isChangingState = false;
 
         // Start is called before the first frame update
         void Start()
         {
-            target = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<PlayerController>().ship.transform;
-            targetOffsetStart = targetOffset;
-            cameraOffsetStart = cameraOffset;
+            m_Target = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<PlayerController>().ship.transform;
+            cameraState = new OrbitState();
         }
 
         // Update is called once per frame
         void Update()
         {
-            float wheelAxis = Input.GetAxis("Mouse ScrollWheel");
-            zoomLevel = zoomLevel + (wheelAxis * zoomSpeed * Time.deltaTime);
-            zoomLevel = Mathf.Clamp(zoomLevel, minZoom, maxZoom);
+            State<CameraController> nowState = cameraState.InputHandle(this);
+            cameraState.action(this);
 
-            Quaternion camAngleX = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotateSpeed, Vector3.up);
-            Quaternion camAngleY = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * rotateSpeed, Vector3.right);
+            if (!nowState.Equals(cameraState))
+            {
+                print(cameraState + " to " + nowState);
+                cameraState.Exit(this);
+                cameraState = nowState;
+            }
+        }
 
-            //print(camAngleY);
-            cameraOffset = cameraOffset + (transform.forward * zoomLevel);
-            cameraOffset = camAngleX * camAngleY * cameraOffset;
-            print(camAngleX * camAngleY * cameraOffset);
-            //cameraOffset = camAngleX * cameraOffset;
-            cameraOffset = new Vector3(cameraOffset.x, Mathf.Clamp(cameraOffset.y, 0.5f, 4), cameraOffset.z);
+        private void FixedUpdate()
+        {
+            cameraState.FixedUpdate(this);
+        }
 
-            //targetOffset.y = Mathf.Clamp(targetOffset.y + (Input.GetAxis("Mouse Y") * rotateSpeed), 2, 4);
-            //cameraOffset.y = Mathf.Clamp(cameraOffset.y + (Input.GetAxis("Mouse Y") * rotateSpeed), 4, 6);
-            //print((targetOffset.y - targetOffsetStart.y));
-
-            desiredPosition = target.position + cameraOffset + desiredRotation;
-            smoothedPosition = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothSpeed);
-            transform.position = smoothedPosition;
-
-            transform.LookAt(target.position + targetOffset);
+        private void LateUpdate()
+        {
+            cameraState.LateUpdate(this);
         }
 
         private void OnDrawGizmos()
         {
-            //Gizmos.color = Color.red;
-            //Gizmos.DrawSphere(transform.position, 0.1f);
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(m_Target.position + targetOffset, 1f);
+
+            Gizmos.color = Color.blue;
+            Gizmos.DrawSphere(transform.position, 1f);
         }
     }
 }

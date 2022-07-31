@@ -259,6 +259,9 @@ GameObject:
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
+  - component: {fileID: 330585550}
+  - component: {fileID: 330585551}
+  - component: {fileID: 330585552}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -377,18 +380,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79192eb5d44a33a4082197da494ac201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  smoothSpeed: 0.125
-  rotateSpeed: 2
-  targetOffset: {x: 0, y: 2.1, z: 0}
-  cameraOffset: {x: 0, y: 4, z: -12}
-  targetOffsetStart: {x: 0, y: 0, z: 0}
-  cameraOffsetStart: {x: 0, y: 0, z: 0}
-  zoomLevel: 0
-  minZoom: -0.01
-  maxZoom: 0.01
-  zoomSpeed: 1
-  zoomSmoothSpeed: 0.125
+  m_Target: {fileID: 343975674}
+  m_Distance: 15
+  m_XSpeed: 50
+  m_YSpeed: 30
+  m_YMinLimit: -30
+  m_YMaxLimit: 30
+  m_DistanceMin: 15
+  m_DistanceMax: 30
+  targetOffset: {x: 0, y: 0, z: 0}
+  targetOffset2: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: 0, y: 0, z: 0}
+  cameraOffset2: {x: 0, y: 5, z: 0}
+  targetOffsetYSpeed: 5
+  targetOffsetYMin: 0
+  targetOffsetYMax: 10
+  targetOffsetZSpeed: 0.01
+  targetOffsetZMin: 0
+  targetOffsetZMax: 10
+  targetEllipseXAxis: 1
+  targetEllipseYAxis: 10
+  targetEllipseZAxis: 10
+  stateChangeY: 5
+  isChangingState: 0
 --- !u!114 &330585549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,6 +420,124 @@ MonoBehaviour:
   sensitivity: 1
   speed: 30
   maxZoom: 30
+--- !u!114 &330585550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b747599b78d074091b06e5f514963a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 343975674}
+  m_Distance: 5
+  m_XSpeed: 120
+  m_YSpeed: 120
+  m_YMinLimit: -20
+  m_YMaxLimit: 80
+  m_DistanceMin: 0.5
+  m_DistanceMax: 15
+  targetOffset: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: 0, y: 2, z: 0}
+  targetOffsetYSpeed: 5
+  targetOffsetYMin: 0
+  targetOffsetYMax: 10
+  targetOffsetZSpeed: 0.05
+  targetOffsetZMin: 0
+  targetOffsetZMax: 10
+  targetEllipseXAxis: 1
+  targetEllipseYAxis: 5
+  targetEllipseZAxis: 10
+  cameraConeXAxis: 20
+  cameraConeYAxis: 10
+  cameraConeZAxis: 50
+  cameraConeYOffset: 1
+  rotateSpeed: 0.1
+  zoomLevel: 0
+--- !u!114 &330585551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab927a11fabd10d4bae7bd3421bee13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 343975674}
+  m_Distance: 5
+  m_XSpeed: 25
+  m_YSpeed: 150
+  m_YMinLimit: -20
+  m_YMaxLimit: 80
+  m_DistanceMin: 0.5
+  m_DistanceMax: 15
+  targetOffset: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: 0, y: 2, z: 0}
+  targetOffsetYSpeed: 5
+  targetOffsetYMin: 0
+  targetOffsetYMax: 10
+  targetOffsetZSpeed: 0.02
+  targetOffsetZMin: 0
+  targetOffsetZMax: 10
+  targetEllipseXAxis: 1
+  targetEllipseYAxis: 5
+  targetEllipseZAxis: 10
+  cameraConeXAxis: 20
+  cameraConeYAxis: 10
+  cameraConeZAxis: 50
+  cameraConeYOffset: 1
+  rotateSpeed: 0.125
+  zoomLevel: 0
+--- !u!114 &330585552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549bfaf07cc02ab4b89996a88574c482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 343975674}
+  m_Distance: 15
+  m_XSpeed: 5
+  m_YSpeed: 30
+  m_YMinLimit: -30
+  m_YMaxLimit: 30
+  m_DistanceMin: 15
+  m_DistanceMax: 50
+  targetOffset: {x: 0, y: 0, z: 0}
+  targetOffsetMin: {x: -20, y: -20, z: -20}
+  targetOffsetMax: {x: 20, y: 10, z: 20}
+  targetOffset2: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: 0, y: 0, z: 0}
+  cameraOffset2: {x: 0, y: 2, z: 0}
+  cameraOffsetMin: {x: -50, y: -50, z: -50}
+  cameraOffsetMax: {x: 50, y: 50, z: 50}
+  targetOffsetYSpeed: 5
+  targetOffsetYMin: 0
+  targetOffsetYMax: 10
+  targetOffsetZSpeed: 0.01
+  targetOffsetZMin: 0
+  targetOffsetZMax: 10
+  targetEllipseXAxis: 1
+  targetEllipseYAxis: 10
+  targetEllipseZAxis: 10
+  cameraConeXAxis: 20
+  cameraConeYAxis: 10
+  cameraConeZAxis: 25
+  cameraConeYOffset: 1
+  rotateSpeed: 0.125
+  zoomLevel: 0
+  zoomSpeed: 1
 --- !u!1 &343975669
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +656,7 @@ Transform:
   m_GameObject: {fileID: 343975669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 3}
+  m_LocalScale: {x: 2, y: 0.7, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1222670626}

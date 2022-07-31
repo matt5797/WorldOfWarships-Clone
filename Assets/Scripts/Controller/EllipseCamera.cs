@@ -3,7 +3,7 @@
 namespace WOW.Controller
 {
     [RequireComponent(typeof(Camera))]
-    public class EllipseCamera: MonoBehaviour
+    public class EllipseCamera : MonoBehaviour
     {
         public Transform m_Target;
         public float m_Distance = 5.0f;
@@ -30,16 +30,23 @@ namespace WOW.Controller
         public float targetOffsetZMin = 0;
         public float targetOffsetZMax = 10;
 
-        Ellipse cameraEllipse;
-        Ellipse targetEllipse;
+        //Ellipse cameraEllipse;
+        //Ellipse targetEllipse;
+        Cone cameraCone;
+        Ellipsoid targetEllipsoid;
+
         public float targetEllipseXAxis = 1;
         public float targetEllipseYAxis = 10;
+        public float targetEllipseZAxis = 5;
 
-        public float cameraEllipseXAxis = 1;
-        public float cameraEllipseYAxis = 10;
+        public float cameraConeXAxis = 1;
+        public float cameraConeYAxis = 10;
+        public float cameraConeZAxis = 5;
+        public float cameraConeYOffset = 1;
 
         float t;
-        
+        float u;
+
         public float rotateSpeed = 0.125f;
         public float zoomLevel = default;
 
@@ -49,8 +56,11 @@ namespace WOW.Controller
             m_X = angles.y;
             m_Y = angles.x;
 
-            targetEllipse = new Ellipse(targetEllipseXAxis, targetEllipseYAxis);
-            cameraEllipse = new Ellipse(cameraEllipseXAxis, cameraEllipseYAxis);
+            //targetEllipse = new Ellipse(targetEllipseXAxis, targetEllipseYAxis);
+            //cameraEllipse = new Ellipse(cameraEllipseXAxis, cameraEllipseYAxis);
+
+            targetEllipsoid = new Ellipsoid(targetEllipseXAxis, targetEllipseYAxis, targetEllipseZAxis);
+            cameraCone = new Cone(cameraConeXAxis, cameraConeYAxis, cameraConeZAxis, cameraConeYOffset);
         }
 
         void LateUpdate()
@@ -63,7 +73,7 @@ namespace WOW.Controller
 
                 //targetOffset.z = Mathf.Clamp(targetOffset.z - (Input.GetAxis("Mouse X") * targetOffsetZSpeed), targetOffsetZMin, targetOffsetZMax);
                 //targetOffset.z = ClampAngleDirection(targetOffset.z - (Input.GetAxis("Mouse X") * targetOffsetZSpeed), targetOffsetZMin, targetOffsetZMax);
-                
+
                 //Quaternion camAngleX = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotateSpeed, Vector3.up);
                 Quaternion camAngleY = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * rotateSpeed, Vector3.right);
 
@@ -73,9 +83,11 @@ namespace WOW.Controller
                 cameraOffset = camAngleY * cameraOffset;
 
                 t += (Input.GetAxis("Mouse X") * targetOffsetZSpeed);
-                targetOffset = GetTargetOffset(t, targetOffset.y);
+                u = Mathf.Clamp(u - (Input.GetAxis("Mouse ScrollWheel") * targetOffsetYSpeed), 0, targetEllipseYAxis);
 
-                cameraOffset = GetCameraOffset(t, cameraOffset.y);
+                targetOffset = GetTargetOffset(t, u);
+
+                cameraOffset = GetCameraOffset(t, u);
 
                 Vector3 negDistance = new Vector3(0.0f, 0.0f, -m_Distance);
                 //Vector3 position = negDistance + m_Target.position + targetOffset;
@@ -129,7 +141,17 @@ namespace WOW.Controller
             Gizmos.DrawSphere(transform.position, 1f);
         }
 
-        Vector3 GetTargetOffset(float t, float y)
+        Vector3 GetTargetOffset(float t, float u)
+        {
+            return targetEllipsoid.Evaluate(t, u);
+        }
+
+        Vector3 GetCameraOffset(float t, float u)
+        {
+            return cameraCone.Evaluate(t, u);
+        }
+
+        /*Vector3 GetTargetOffset(float t, float y)
         {
             var res = targetEllipse.Evaluate(t);
             return new Vector3(res.x, y, res.y);
@@ -139,27 +161,6 @@ namespace WOW.Controller
         {
             var res = cameraEllipse.Evaluate(t);
             return new Vector3(res.x, y, res.y);
-        }
+        }*/
     }
-
-    public class Ellipse
-    {
-        public float xAxis;
-        public float yAxis;
-
-        public Ellipse(float xAxis, float yAxis)
-        {
-            this.xAxis = xAxis;
-            this.yAxis = yAxis;
-        }
-
-        public Vector2 Evaluate(float t)
-        {
-            float angle = Mathf.Deg2Rad * 360f * t;
-            float x = xAxis * Mathf.Sin(angle);
-            float y = yAxis * Mathf.Cos(angle);
-            return new Vector2(x, y);
-        }
-    }
-
 }
