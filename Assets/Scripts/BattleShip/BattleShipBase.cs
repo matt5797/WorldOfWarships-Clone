@@ -1,11 +1,34 @@
 using UnityEngine;
+using System.Collections.Generic;
+using WOW.Armament;
 
 namespace WOW.BattleShip
 {
+    public enum BattleShipType
+    {
+        None,
+        Destroyer,
+        Cruiser,
+        Battleship,
+        AircraftCarrier,
+    }
+
+    public enum ArmamentType
+    {
+        None,
+        MainBatteryHE,
+        MainBatteryAP,
+        TorpedoTube,
+    }
+    
     public abstract class BattleShipBase : MonoBehaviour
     {
         private Rigidbody m_Rigidbody;
         [SerializeField] private Transform propeller;
+        private ArmamentBase m_ArmamentList;
+        private Dictionary<ArmamentType, List<ArmamentBase>> m_ArmamentDict = new Dictionary<ArmamentType, List<ArmamentBase>>();
+        private ArmamentType currentArmamentType;
+        private Dictionary<int, ArmamentType> m_ArmamentTypeDict = new Dictionary<int, ArmamentType>();
 
         [SerializeField] protected float maxSpeed = 10f;
         [SerializeField] protected float movePower = 5f;
@@ -42,6 +65,13 @@ namespace WOW.BattleShip
         protected virtual void Start()
         {
             m_Rigidbody = GetComponent<Rigidbody>();
+            ResetArmamentDict();
+
+            //추후 스킬창 구현시 삭제
+            currentArmamentType = ArmamentType.MainBatteryHE;
+            m_ArmamentTypeDict.Add(1, ArmamentType.MainBatteryHE);
+            m_ArmamentTypeDict.Add(2, ArmamentType.MainBatteryAP);
+            m_ArmamentTypeDict.Add(3, ArmamentType.TorpedoTube);
         }
 
         protected virtual void Update()
@@ -110,6 +140,57 @@ namespace WOW.BattleShip
             else if (Steer > 0)
             {
                 Steer -= steerResetSpeed * Time.deltaTime;
+            }
+        }
+
+        public void OnShot()
+        {
+            if (!m_ArmamentDict.ContainsKey(currentArmamentType) || m_ArmamentDict[currentArmamentType].Count <= 0)
+                return;
+
+            m_ArmamentDict[currentArmamentType][0].TryFire();
+        }
+
+        public void OnBurstShot()
+        {
+            if (!m_ArmamentDict.ContainsKey(currentArmamentType) || m_ArmamentDict[currentArmamentType].Count <= 0)
+                return;
+
+            m_ArmamentDict[currentArmamentType].ForEach(armament => armament.TryFire());
+        }
+
+        public void ChangeArmament(int index)
+        {
+            if (m_ArmamentTypeDict.ContainsKey(index))
+            {
+                currentArmamentType = m_ArmamentTypeDict[index];
+            }
+        }
+        
+        void ResetArmamentDict()
+        {
+            m_ArmamentDict.Clear();
+            
+            MainBattery[] batterys = GetComponentsInChildren<MainBattery>();
+            TorpedoTube[] tubes = GetComponentsInChildren<TorpedoTube>();
+
+            if (batterys.Length > 0)
+            {
+                m_ArmamentDict.Add(ArmamentType.MainBatteryHE, new List<ArmamentBase>());
+                m_ArmamentDict.Add(ArmamentType.MainBatteryAP, new List<ArmamentBase>());
+                foreach (MainBattery battery in batterys)
+                {
+                    m_ArmamentDict[ArmamentType.MainBatteryHE].Add(battery);
+                    m_ArmamentDict[ArmamentType.MainBatteryAP].Add(battery);
+                }
+            }
+            if (tubes.Length > 0)
+            {
+                m_ArmamentDict.Add(ArmamentType.TorpedoTube, new List<ArmamentBase>());
+                foreach (TorpedoTube tube in tubes)
+                {
+                    m_ArmamentDict[ArmamentType.TorpedoTube].Add(tube);
+                }
             }
         }
     }
