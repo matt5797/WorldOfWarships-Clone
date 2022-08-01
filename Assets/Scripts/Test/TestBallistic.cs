@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WOW.Data;
 
 using System;
-using System.Collections.Generic;
 
 public class TestBallistic: MonoBehaviour
 {
