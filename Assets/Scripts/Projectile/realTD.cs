@@ -2,12 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TopedoFire : MonoBehaviour
+public class realTD : MonoBehaviour
 {
-    public Transform FirePos;
-
-    public GameObject topedobullet;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +13,6 @@ public class TopedoFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-       Instantiate(topedobullet, FirePos.position, FirePos.rotation);
-        
+        transform.Translate(Vector3.forward * 0.5f);
     }
 }

@@ -27,6 +27,11 @@ namespace WOW.Controller
         void Start()
         {
             target = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<PlayerController>().ship.transform;
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+
         }
 
         // Update is called once per frame
