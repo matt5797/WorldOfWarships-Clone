@@ -16,9 +16,6 @@ namespace WOW.Projectile
             }
         }
 
-        protected virtual void OnImpact()
-        {
-            
-        }
+        protected abstract void OnImpact();
     }
 }

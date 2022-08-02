@@ -23,7 +23,7 @@ namespace WOW.Projectile
 
         protected override void OnImpact()
         {
-            base.OnImpact();
+            //base.OnImpact();
             // 피격 시 이벤트
         }
     }
