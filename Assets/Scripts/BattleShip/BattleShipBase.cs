@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using WOW.Armament;
+using WOW.Ability;
 
 namespace WOW.BattleShip
 {
@@ -13,22 +14,13 @@ namespace WOW.BattleShip
         AircraftCarrier,
     }
 
-    public enum ArmamentType
-    {
-        None,
-        MainBatteryHE,
-        MainBatteryAP,
-        TorpedoTube,
-    }
-    
+    [RequireComponent(typeof(Rigidbody))]
     public abstract class BattleShipBase : MonoBehaviour
     {
         private Rigidbody m_Rigidbody;
         [SerializeField] private Transform propeller;
-        private ArmamentBase m_ArmamentList;
-        private Dictionary<ArmamentType, List<ArmamentBase>> m_ArmamentDict = new Dictionary<ArmamentType, List<ArmamentBase>>();
-        private ArmamentType currentArmamentType;
-        private Dictionary<int, ArmamentType> m_ArmamentTypeDict = new Dictionary<int, ArmamentType>();
+        private AbilityBase[] abilities;
+        private Dictionary<int, AbilityBase> m_AbilityDict = new Dictionary<int, AbilityBase>();
 
         [SerializeField] protected float maxSpeed = 10f;
         [SerializeField] protected float movePower = 5f;
@@ -38,6 +30,8 @@ namespace WOW.BattleShip
         [SerializeField] protected float steerResetSpeed = 0.1f;
         [SerializeField] protected int _gear = 0;
         [SerializeField] protected float _steer = 0;
+
+        private int currentAbilityIndex;
 
         public bool isDetected = false;
         public bool isMovable = true;
@@ -58,20 +52,21 @@ namespace WOW.BattleShip
         }
         public float Velocity
         {
-            get { return m_Rigidbody.velocity.magnitude; }
+            get
+            { return m_Rigidbody.velocity.magnitude; }
         }
 
+        private void Awake()
+        {
+            m_Rigidbody = GetComponent<Rigidbody>();
+
+            ResetAbilityDict();
+        }
+        
         // Start is called before the first frame update
         protected virtual void Start()
         {
-            m_Rigidbody = GetComponent<Rigidbody>();
-            ResetArmamentDict();
-
-            //추후 스킬창 구현시 삭제
-            currentArmamentType = ArmamentType.MainBatteryHE;
-            m_ArmamentTypeDict.Add(1, ArmamentType.MainBatteryHE);
-            m_ArmamentTypeDict.Add(2, ArmamentType.MainBatteryAP);
-            m_ArmamentTypeDict.Add(3, ArmamentType.TorpedoTube);
+            
         }
 
         protected virtual void Update()
@@ -143,55 +138,28 @@ namespace WOW.BattleShip
             }
         }
 
-        public void OnShot()
+        public void TriggerAbility()
         {
-            if (!m_ArmamentDict.ContainsKey(currentArmamentType) || m_ArmamentDict[currentArmamentType].Count <= 0)
-                return;
-
-            m_ArmamentDict[currentArmamentType][0].TryFire();
-        }
-
-        public void OnBurstShot()
-        {
-            if (!m_ArmamentDict.ContainsKey(currentArmamentType) || m_ArmamentDict[currentArmamentType].Count <= 0)
-                return;
-
-            m_ArmamentDict[currentArmamentType].ForEach(armament => armament.TryFire());
+            m_AbilityDict[currentAbilityIndex].TriggerAbility();
         }
 
         public void ChangeArmament(int index)
         {
-            if (m_ArmamentTypeDict.ContainsKey(index))
+            if (m_AbilityDict.ContainsKey(currentAbilityIndex))
             {
-                currentArmamentType = m_ArmamentTypeDict[index];
+                currentAbilityIndex = index;
+                // 고폭탄에서 철갑탄의 경우 탄환 변경에 대한 코드 추가
             }
         }
-        
-        void ResetArmamentDict()
-        {
-            m_ArmamentDict.Clear();
-            
-            MainBattery[] batterys = GetComponentsInChildren<MainBattery>();
-            TorpedoTube[] tubes = GetComponentsInChildren<TorpedoTube>();
 
-            if (batterys.Length > 0)
+        void ResetAbilityDict()
+        {
+            abilities = GetComponentsInChildren<AbilityBase>();
+            for (int i = 0; i < abilities.Length; i++)
             {
-                m_ArmamentDict.Add(ArmamentType.MainBatteryHE, new List<ArmamentBase>());
-                m_ArmamentDict.Add(ArmamentType.MainBatteryAP, new List<ArmamentBase>());
-                foreach (MainBattery battery in batterys)
-                {
-                    m_ArmamentDict[ArmamentType.MainBatteryHE].Add(battery);
-                    m_ArmamentDict[ArmamentType.MainBatteryAP].Add(battery);
-                }
+                m_AbilityDict.Add(i, abilities[i]);
             }
-            if (tubes.Length > 0)
-            {
-                m_ArmamentDict.Add(ArmamentType.TorpedoTube, new List<ArmamentBase>());
-                foreach (TorpedoTube tube in tubes)
-                {
-                    m_ArmamentDict[ArmamentType.TorpedoTube].Add(tube);
-                }
-            }
+            currentAbilityIndex = 1;
         }
     }
 }

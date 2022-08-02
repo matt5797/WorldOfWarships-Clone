@@ -4,6 +4,14 @@ using UnityEngine;
 
 namespace WOW.Armament
 {
+    public enum ArmamentType
+    {
+        None,
+        MainBatteryHE,
+        MainBatteryAP,
+        TorpedoTube,
+    }
+    
     public abstract class ArmamentBase : MonoBehaviour
     {
         public float cooldownTime = 1;
@@ -22,7 +30,7 @@ namespace WOW.Armament
 
         protected virtual bool CanFire()
         {
-            return true;
+            return canUse;
         }
 
         protected abstract void Fire();

@@ -6,21 +6,34 @@ namespace WOW.Controller
     public class PlayerController : MonoBehaviour
     {
         public BattleShipBase ship;
+        public Vector3 targetPoint;
 
-        //for double click
-        public float m_DoubleClickSecond = 0.25f;
-        private bool m_IsOneClick = false;
-        private double m_Timer = 0;
-        
-        // Start is called before the first frame update
-        void Start()
+        Ray cameraCenterRay;
+        RaycastHit cameraCenterHit;
+        public float rayMaxDistance = 1000;
+        public LayerMask targetLayerMask;
+
+        public Vector3 TargetPoint
         {
-
+            get { return targetPoint; }
+            private set { targetPoint = value; }
         }
-
+        
         // Update is called once per frame
         void Update()
         {
+            // Set Target from Camera Point
+            cameraCenterRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+            
+            if (Physics.Raycast(cameraCenterRay, out cameraCenterHit, rayMaxDistance, targetLayerMask))
+            {
+                TargetPoint = cameraCenterHit.point;
+            }
+            else
+            {
+                TargetPoint = Camera.main.transform.position + Camera.main.transform.forward * rayMaxDistance;
+            }
+
             // Ship Movement
             if (Input.GetKeyDown(KeyCode.W))
             {
@@ -42,22 +55,7 @@ namespace WOW.Controller
             // Ship Attack
             if (Input.GetMouseButtonDown(0))
             {
-                if (!m_IsOneClick)
-                {
-                    m_Timer = Time.time;
-                    m_IsOneClick = true;
-                }
-                else if (m_IsOneClick && ((Time.time - m_Timer) < m_DoubleClickSecond))
-                {
-                    m_IsOneClick = false;
-                    ship.OnBurstShot();
-                }
-            }
-
-            if (m_IsOneClick && ((Time.time - m_Timer) > m_DoubleClickSecond))
-            {
-                ship.OnShot();
-                m_IsOneClick = false;
+                ship.TriggerAbility();
             }
 
             // Skill Change
