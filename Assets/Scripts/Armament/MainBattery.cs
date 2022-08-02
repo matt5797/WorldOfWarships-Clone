@@ -7,6 +7,7 @@ namespace WOW.Armament
 {
     public class MainBattery : ArmamentBase
     {
+        public Transform rootPosition;
         Vector3 ScreenCenter;
         public Vector3 target;
         public float Speed = 1;
@@ -26,20 +27,16 @@ namespace WOW.Armament
 
             // 목적지 = 조준점
             // 타겟과 나의 거리
-            Vector3 targetDirection = target - transform.position;
+            Vector3 targetDirection = target - rootPosition.position;
 
             float singleStep = Speed * Time.deltaTime;
 
-            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
+            Vector3 newDirection = Vector3.RotateTowards(rootPosition.forward, targetDirection, singleStep, 0.0f);
 
             //타겟을 바라보며 회전해라
-            transform.rotation = Quaternion.LookRotation(newDirection);
+            rootPosition.rotation = Quaternion.LookRotation(newDirection);
 
-            Angle = Mathf.Repeat(Angle + 180, 360) - 180;
-
-            transform.eulerAngles = new Vector3(0, Mathf.Clamp(Mathf.Repeat(transform.eulerAngles.y + 180, 360) - 180, -90, 90), 0);
-
-            print(transform.eulerAngles);
+            rootPosition.eulerAngles = new Vector3(0, Mathf.Clamp(Mathf.Repeat(rootPosition.eulerAngles.y + 180, 360) - 180, -90, 90), 0);
 
         }
 
@@ -52,10 +49,10 @@ namespace WOW.Armament
         // 발사합니다.
         protected override void Fire()
         {
-            
-
+            // 총구의 개수만큼 반복
+            // 총구 앞에 탄환 생성
+            // 탄환의 스크립트에 접근하여, 총구의 각도를 전해주고, 발사하도록 명령한다.
+            // 탄환.GetComponent<Ballistic>().OnShoot(현재 총구 각도)
         }
-
-
     }
 }

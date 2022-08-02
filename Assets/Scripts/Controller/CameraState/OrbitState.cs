@@ -56,7 +56,8 @@ namespace WOW.Controller
                 Vector3 position = rotation * negDistance + t.m_Target.position + t.targetOffset;
 
                 t.transform.rotation = rotation;
-                t.transform.position = position + t.cameraOffset;
+                t.transform.position = position + t.cameraOffset
+                    + (t.transform.forward * t.cameraOffset2.z);
             }
         }
 

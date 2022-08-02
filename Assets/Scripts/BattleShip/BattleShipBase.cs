@@ -157,7 +157,7 @@ namespace WOW.BattleShip
             abilities = GetComponentsInChildren<AbilityBase>();
             for (int i = 0; i < abilities.Length; i++)
             {
-                m_AbilityDict.Add(i, abilities[i]);
+                m_AbilityDict.Add(i+1, abilities[i]);
             }
             currentAbilityIndex = 1;
         }

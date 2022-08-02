@@ -5,7 +5,7 @@ using UnityEngine;
 public class TestFire : MonoBehaviour
 {
     public TestBallistic[] ballistics;
-    public double shootAngle = 0.5236;
+    public double shootAngle = 45;
     
     // Start is called before the first frame update
     void Start()
@@ -18,9 +18,20 @@ public class TestFire : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            TestBallistic bullet;
             foreach (TestBallistic ballistic in ballistics)
             {
-                ballistic.OnShoot(shootAngle);
+                bullet = Instantiate<TestBallistic>(ballistic);
+                bullet.transform.position = transform.position;
+                bullet.OnShoot(shootAngle * Mathf.Deg2Rad);
+/*
+                bullet = Instantiate<TestBallistic>(ballistic);
+                bullet.transform.position = transform.position;
+                bullet.OnShoot((shootAngle - 15) * Mathf.Deg2Rad);
+
+                bullet = Instantiate<TestBallistic>(ballistic);
+                bullet.transform.position = transform.position;
+                bullet.OnShoot((shootAngle + 15) * Mathf.Deg2Rad);*/
             }    
         }
     }

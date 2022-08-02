@@ -76,5 +76,11 @@ namespace WOW.Controller
                 ship.ChangeArmament(4);
             }
         }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(TargetPoint, 3f);
+        }
     }
 }
