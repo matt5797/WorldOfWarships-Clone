@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellData: {fileID: 11400000, guid: e9cd4652570305c4dabe72e2d89b9952, type: 2}
-  speedMultiple: 20
+  speedMultiple: 80
 --- !u!65 &425693165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellData: {fileID: 11400000, guid: 594ab050a78b29245a71369ae80116b2, type: 2}
-  speedMultiple: 20
+  speedMultiple: 80
 --- !u!65 &759063424
 BoxCollider:
   m_ObjectHideFlags: 0

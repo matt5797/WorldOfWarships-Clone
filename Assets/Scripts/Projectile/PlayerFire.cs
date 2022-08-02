@@ -89,7 +89,6 @@ namespace WOW.Projectile
             {
                 for (int i = 0; i < HE_shotCountEveryInterval; i++)
                 {
-
                     if (_shotCount > 0)
                     {
                         GameObject HighExplosive = Instantiate(HE_Prefab);

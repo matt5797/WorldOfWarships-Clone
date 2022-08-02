@@ -1,40 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WOW.Controller;
 
 namespace WOW.Armament
 {
     public class MainBattery : ArmamentBase
     {
         Vector3 ScreenCenter;
-        public Transform target;
+        public Vector3 target;
         public float Speed = 1;
         float Angle;
+        PlayerController PC;
 
         // Start is called before the first frame update
         void Start()
         {
-
+            PC = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<PlayerController>();
         }
 
         // Update is called once per frame
         void Update()
         {
+            target = PC.TargetPoint;
 
-        }
-
-        // 발사할 수 있는지 여부를 반환합니다.
-        protected override bool CanFire()
-        {
-            return true;
-        }
-
-        // 발사합니다.
-        protected override void Fire()
-        {
             // 목적지 = 조준점
             // 타겟과 나의 거리
-            Vector3 targetDirection = target.position - transform.position;
+            Vector3 targetDirection = target - transform.position;
 
             float singleStep = Speed * Time.deltaTime;
 
@@ -49,6 +41,18 @@ namespace WOW.Armament
 
             print(transform.eulerAngles);
 
+        }
+
+        // 발사할 수 있는지 여부를 반환합니다.
+        protected override bool CanFire()
+        {
+            return true;
+        }
+
+        // 발사합니다.
+        protected override void Fire()
+        {
+            
 
         }
 

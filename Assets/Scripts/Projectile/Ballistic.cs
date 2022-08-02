@@ -6,7 +6,7 @@ using System;
 using WOW.Data;
 
 
-public class TestBallistic: MonoBehaviour
+public class Ballistic: MonoBehaviour
 {
     // SHELL CONSTANTS //
     private static double C = 0.5561613f; //PENETRATION
