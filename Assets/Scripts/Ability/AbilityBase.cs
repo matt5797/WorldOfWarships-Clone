@@ -24,9 +24,10 @@ namespace WOW.Ability
                 Ability();
                 StartCooldown();
             }
-
         }
+        
         public abstract void Ability();
+        
         void StartCooldown()
         {
             StartCoroutine(Cooldown());

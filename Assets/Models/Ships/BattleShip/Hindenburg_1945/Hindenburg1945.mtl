@@ -1,0 +1,914 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 27.07.2017 14:59:28
+
+newmtl GSC015_Hindenburg_1945
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\GSC015_Hindenburg_1945_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GSC015_Hindenburg_1945_a.dds
+
+newmtl C002_Razlom
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\C002_Razlom_a.dds
+
+newmtl GSC015_Hindenburg_1945_DeckHouse
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\GSC015_Hindenburg_1945_DeckHouse_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GSC015_Hindenburg_1945_DeckHouse_a.dds
+
+newmtl GGA035_22mm_Flak_C35
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGA035_22mm_Flak_C35_a.dds
+
+newmtl GGM016_203mm_SK_L56_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGM016_203mm_SK_L56_a.dds
+
+newmtl GM507_Boat
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM507_Boat_a.dds
+
+newmtl GM007_LifeBuoy
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM007_LifeBuoy_a.dds
+
+newmtl GM701_AmmoBox
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM701_AmmoBox_a.dds
+
+newmtl CM096_Ladder
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\CM096_Ladder_a.dds
+
+newmtl GD008_Zeilsaule_C38_Night_Dir_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GD008_Zeilsaule_C38_Night_Dir_a.dds
+
+newmtl GD009_Target_Giver_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GD009_Target_Giver_a.dds
+
+newmtl GD007_Flak_ZAG
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GD007_Flak_ZAG_a.dds
+
+newmtl GF025_7m_Rangefinder
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GF025_7m_Rangefinder_a.dds
+
+newmtl GF015_3m_Rangefinder_covered
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GF015_3m_Rangefinder_covered_a.dds
+
+newmtl GF012_7m_Rangefinder
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GF012_7m_Rangefinder_a.dds
+
+newmtl GM043_Antenna
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM043_Antenna_a.dds
+
+newmtl C004_Grid_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\C004_Grid_1_a.dds
+	map_d G:\Models\World_of_Warships\Hindenburg_1945\C004_Grid_1_a.dds
+
+newmtl GM049_FuMO26_3x6_Dir_Mod_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM049_FuMO26_3x6_Dir_Mod_2_a.dds
+
+newmtl C010_Grid_8
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\C010_Grid_8_a.dds
+	map_d G:\Models\World_of_Warships\Hindenburg_1945\C010_Grid_8_a.dds
+
+newmtl GF005_4m_Rangefinder_Type_SL_8
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GF005_4m_Rangefinder_Type_SL_8_a.dds
+
+newmtl GGA042_20mm_Flack_38_quad
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGA042_20mm_Flack_38_quad_a.dds
+
+newmtl GGA017_20mm_Flak_M43U
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGA017_20mm_Flak_M43U_a.dds
+
+newmtl GGA036_40mm_flak_28
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGA036_40mm_flak_28_a.dds
+
+newmtl GGM032_203_56_SK_C38_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGM032_203_56_SK_C38_a.dds
+
+newmtl GGS003_105_mm_SKC_33_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGS003_105_mm_SKC_33_a.dds
+
+newmtl GGT014_533mm_Torpedo_Tubes_Quad
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGT014_533mm_Torpedo_Tubes_Quad_a.dds
+
+newmtl GPT001_Torpedo_533
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GPT001_Torpedo_533_a.dds
+
+newmtl GM702_AmmoBox
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM702_AmmoBox_a.dds
+
+newmtl CM029_Emergency_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\CM029_Emergency_Box_a.dds
+
+newmtl GM502_Captains_Gig_9m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM502_Captains_Gig_9m_a.dds
+
+newmtl GM015_Clock
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM015_Clock_a.dds
+
+newmtl GM902_Crane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM902_Crane_a.dds
+
+newmtl GM010_Binocular
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM010_Binocular_a.dds
+
+newmtl GM601_Switch_Box_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM601_Switch_Box_2_a.dds
+
+newmtl CM010_Fire_Hose_Reel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\CM010_Fire_Hose_Reel_a.dds
+
+newmtl GM003_Reels_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM003_Reels_1_a.dds
+
+newmtl GM001_Paravane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM001_Paravane_a.dds
+
+newmtl GM034_Turtles_box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM034_Turtles_box_a.dds
+
+newmtl GM500_Admiral_Gig_11m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM500_Admiral_Gig_11m_a.dds
+
+newmtl GM631_Night_Director
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM631_Night_Director_a.dds
+
+newmtl GM017_Siren
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM017_Siren_a.dds
+
+newmtl GM014_Sleeve
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM014_Sleeve_a.dds
+
+newmtl GM853_Signal_Lamp
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM853_Signal_Lamp_a.dds
+
+newmtl GM011_Pelorus
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM011_Pelorus_a.dds
+
+newmtl CM076_Fender
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\CM076_Fender_a.dds
+
+newmtl GM604_Switch_Box_5
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM604_Switch_Box_5_a.dds
+
+newmtl GM856_Masthead_light
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM856_Masthead_light_a.dds
+
+newmtl GM503_Long_Boat_8m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM503_Long_Boat_8m_a.dds
+
+newmtl GM501_Lauch_11m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM501_Lauch_11m_a.dds
+
+newmtl GM002_Fog_Horn
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM002_Fog_Horn_a.dds
+
+newmtl GC004_Catapult_4_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GC004_Catapult_4_a.dds
+
+newmtl GAS001_Ar196
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GAS001_Ar196_a.dds
+
+newmtl Planes_Propeller_3_bw
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\Planes_Propeller_3_bw_a.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\Planes_Propeller_3_bw_a.dds
+
+newmtl GAF018_Ta152_float
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GAF018_Ta152_float_a.dds
+
+newmtl German_Disk_3Blade_01
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\German_Disk_3Blade_01_a.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\German_Disk_3Blade_01_a.dds
+
+newmtl GF022_FuMO27_Dir_Mod2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GF022_FuMO27_Dir_Mod2_a.dds
+
+newmtl GGA044_55mm_Gerat_twin
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGA044_55mm_Gerat_twin_a.dds
+
+newmtl GGA040_55mm_77_Gerat
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GGA040_55mm_77_Gerat_a.dds
+
+newmtl GRS019_FuMO25_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GRS019_FuMO25_a.dds
+
+newmtl GM512_Trafficboat_11_7m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM512_Trafficboat_11_7m_a.dds
+
+newmtl GM511_ChefBoot
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM511_ChefBoot_a.dds
+
+newmtl GM850_Searchlight
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\GM850_Searchlight_a.dds
+
+newmtl AM072_Ships_bell
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\AM072_Ships_bell_a.dds
+
+newmtl CM001_Propeller
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\CM001_Propeller_a.dds
+
+newmtl CM093_Rope
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Hindenburg_1945\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Hindenburg_1945\CM093_Rope_a.dds
