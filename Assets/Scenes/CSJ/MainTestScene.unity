@@ -503,27 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Target: {fileID: 543450653498425133}
-  m_Distance: 15
-  m_XSpeed: 50
-  m_YSpeed: 30
-  m_YMinLimit: -30
-  m_YMaxLimit: 30
-  m_DistanceMin: 5
-  m_DistanceMax: 30
-  targetOffset: {x: 0, y: 0, z: 0}
-  targetOffset2: {x: 0, y: 0, z: 0}
-  cameraOffset: {x: 0, y: 0, z: 0}
-  cameraOffset2: {x: 0, y: 5, z: 0}
-  targetOffsetYSpeed: 5
-  targetOffsetYMin: 0
-  targetOffsetYMax: 10
-  targetOffsetZSpeed: 0.01
-  targetOffsetZMin: 0
-  targetOffsetZMax: 10
-  targetEllipseXAxis: 1
-  targetEllipseYAxis: 10
-  targetEllipseZAxis: 10
-  stateChangeY: 5
+  stateData: {fileID: 0}
   isChangingState: 0
 --- !u!1 &410087039
 GameObject:

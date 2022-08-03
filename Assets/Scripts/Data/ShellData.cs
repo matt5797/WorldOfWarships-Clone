@@ -4,18 +4,20 @@ using UnityEngine;
 
 namespace WOW.Data
 {
+    
     [CreateAssetMenu(fileName = "ShellData", menuName = "Scriptable Object/Shell Data", order = 0)]
     public class ShellData : ProjectileData
     {
         [Header("Shell Data")]
+        [Tooltip("Æ÷Åº ¹«°Ô")]
         public int W = 55; // SHELL WEIGHT
+        [Tooltip("Æ÷Åº ±¸°æ")]
         public float D = 0.152f; // SHELL DIAMETER
+        [Tooltip("Æ÷Åº Ç×·Â")]
         public float c_D = 0.321f;  // SHELL DRAG
+        [Tooltip("Æ÷Åº ¹ß»ç ¼Óµµ")]
         public int V_0 = 950; // SHELL MUZZLE VELOCITY
+        [Tooltip("Æ÷Åº KRUPP")]
         public int K = 2216; // SHELL KRUPP
-        public float ricochetMin = 45.0f;  // Ricochet Minimum Angle
-        public float ricochetMax = 60.0f;  // Ricochet Maximum Angle
-        public float burnProbability = 30.0f;   // Percent chance of explosion
-        public float penetratingPower = 1;  // power of penetrating bullet
     }
 }
