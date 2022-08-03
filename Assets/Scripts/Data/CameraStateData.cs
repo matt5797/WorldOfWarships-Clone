@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 namespace WOW.Data
 {
     [CreateAssetMenu(fileName = "CameraStateData", menuName = "Scriptable Object/Camera State Data", order = 0)]
-    public class CameraStateData : ScriptableObject
+    public class CameraStateData : ScriptableObject, ISerializationCallbackReceiver
     {
         [Header("Camera State Data")]
         public float m_Distance = 5.0f;
@@ -37,5 +38,24 @@ namespace WOW.Data
 
         public float stateChangeYMin = 1;
         public float stateChangeYMax = 5;
+
+        //RunTime
+        [NonSerialized] public Vector3 runtimeTargetOffset;
+        [NonSerialized] public Vector3 runtimeTargetOffset2;
+        [NonSerialized] public Vector3 runtimeCameraOffset;
+        [NonSerialized] public Vector3 runtimeCameraOffset2;
+
+        public void OnAfterDeserialize()
+        {
+            
+        }
+
+        public void OnBeforeSerialize()
+        {
+            runtimeTargetOffset = targetOffset;
+            runtimeTargetOffset2 = targetOffset2;
+            runtimeCameraOffset = cameraOffset;
+            runtimeCameraOffset2 = cameraOffset2;
+        }
     }
 }

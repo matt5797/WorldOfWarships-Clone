@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccce84e27c05fde468e4ba5c2397ed0b, type: 3}
+  m_Name: OrbitState
+  m_EditorClassIdentifier: 
+  m_Distance: 15
+  m_XSpeed: 50
+  m_YSpeed: 30
+  m_YMinLimit: -30
+  m_YMaxLimit: 30
+  m_DistanceMin: 5
+  m_DistanceMax: 30
+  targetOffset: {x: 0, y: 0, z: 0}
+  targetOffset2: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: 0, y: 0, z: 0}
+  cameraOffset2: {x: 0, y: 5, z: 0}
+  targetOffsetYSpeed: 5
+  targetOffsetYMin: 0
+  targetOffsetYMax: 10
+  targetOffsetZSpeed: 0.01
+  targetOffsetZMin: 0
+  targetOffsetZMax: 10
+  targetEllipseXAxis: 1
+  targetEllipseYAxis: 10
+  targetEllipseZAxis: 10
+  stateChangeYMin: 5
+  stateChangeYMax: 15

@@ -1,4 +1,5 @@
 using UnityEngine;
+using WOW.Data;
 
 namespace WOW.Controller
 {
@@ -7,34 +8,7 @@ namespace WOW.Controller
         public State<CameraController> cameraState;
         public Transform m_Target;
 
-        public float m_Distance = 5.0f;
-        public float m_XSpeed = 120.0f;
-        public float m_YSpeed = 120.0f;
-
-        public float m_YMinLimit = -20f;
-        public float m_YMaxLimit = 80f;
-        
-        public float m_DistanceMin = .5f;
-        public float m_DistanceMax = 15f;
-
-        public Vector3 targetOffset;
-        public Vector3 targetOffset2;
-        public Vector3 cameraOffset;
-        public Vector3 cameraOffset2;
-
-        public float targetOffsetYSpeed = 5;
-        public float targetOffsetYMin = 0;
-        public float targetOffsetYMax = 10;
-        
-        public float targetOffsetZSpeed = 5;
-        public float targetOffsetZMin = 0;
-        public float targetOffsetZMax = 10;
-
-        public float targetEllipseXAxis = 1;
-        public float targetEllipseYAxis = 10;
-        public float targetEllipseZAxis = 5;
-
-        public float stateChangeY = 5;
+        public CameraStateData stateData;
 
         public bool isChangingState = false;
 
@@ -71,8 +45,11 @@ namespace WOW.Controller
 
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawSphere(m_Target.position + targetOffset, 1f);
+            if (stateData!=null)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawSphere(m_Target.position + stateData.targetOffset, 1f);
+            }
 
             Gizmos.color = Color.blue;
             Gizmos.DrawSphere(transform.position, 1f);
