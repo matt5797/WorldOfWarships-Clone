@@ -23,8 +23,8 @@ namespace WOW.Projectile
 
         protected override void OnImpact()
         {
-            //base.OnImpact();
             // 피격 시 이벤트
+            print("Shell OnImpact");
         }
     }
 }
