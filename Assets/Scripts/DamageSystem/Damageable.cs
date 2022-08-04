@@ -4,16 +4,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using WOW.Data;
+using WOW.BattleShip;
 
 namespace WOW.DamageSystem
 {
+    public struct DamageInfo
+    {
+        public float time;
+        public int damage;
+        public int bulletID;
+        public int hitPointID;
+    }
+    
     public abstract class Damageable : MonoBehaviour
     {
         DamageableData damageableData;
-        UnityEvent onBreakdown, onRecovery, onCompleteDestroy, onFire;
+        public UnityEvent<DamageInfo> onHit, onThrough;
+        public UnityEvent onBreakdown, onRecovery, onCompleteDestroy, onFire;
         bool canDamage = true;
         float destroyTime;
-        Damageable[] neighbors;
 
         private void Start()
         {
@@ -37,11 +46,9 @@ namespace WOW.DamageSystem
             return false;
         }
 
-        public void CheckEffect(ProjectileData projectileData, float incidenceAngle)
+        public void CheckEffect(ProjectileData projectileData)
         {
             CheckFire(projectileData.burnProbability);
-            CheckSpread(projectileData.spreadProbability, projectileData.damage);
-            ApplyDamage(projectileData.damage, incidenceAngle);
         }
 
         public void CheckFire(float burnProbability)
@@ -52,15 +59,11 @@ namespace WOW.DamageSystem
             }
         }
 
-        public void CheckSpread(float spreadProbability, float damage)
+        public bool CheckOvermatch(float diameter)
         {
-            if (UnityEngine.Random.Range(0, 100+ damageableData.res_spread) > spreadProbability)
-            {
-                foreach(Damageable neighbor in neighbors)
-                {
-                    neighbor.ReceiveSpread((int)damage/10);
-                }
-            }
+            if (diameter > damageableData.armor * 14.3)
+                return true;
+            return false;
         }
 
         public void ReceiveSpread(int spreadDamage)
@@ -68,11 +71,16 @@ namespace WOW.DamageSystem
             damageableData.runtimeHP -= spreadDamage;
         }
 
-        public void ApplyDamage(float damage, float incidenceAngle)
+        public void ApplyDamage(int damage, float incidenceAngle, int bulletID)
         {
             if (canDamage)
             {
-                // (damageableData.runtimeHP, (int)(damage * damageableData.multiple));
+                DamageInfo damageInfo = new DamageInfo();
+                damageInfo.time = Time.time;
+                damageInfo.damage = damage;
+                damageInfo.bulletID = bulletID;
+                damageInfo.hitPointID = GetInstanceID();
+                onHit.Invoke(damageInfo);
             }
         }
 

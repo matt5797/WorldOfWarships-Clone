@@ -10,6 +10,8 @@ namespace WOW.Data
     {
         [Header("Damageable Data")]
         public int hp;
+        [Tooltip("Àå°© µÎ²²")]
+        public float armor;
         [Tooltip("È­¿° ÀúÇ×")]
         public float res_fire;
         [Tooltip("µµÅº ÀúÇ×")]
