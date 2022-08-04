@@ -7271,6 +7271,8 @@ MonoBehaviour:
   rootPosition: {fileID: 4237306606572981975}
   target: {x: 0, y: 0, z: 0}
   Speed: 1
+  bulletFactory: {fileID: 0}
+  Firepos: {fileID: 0}
 --- !u!1 &2297486624197514560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8976,6 +8978,8 @@ MonoBehaviour:
   rootPosition: {fileID: 5308940633809148112}
   target: {x: 0, y: 0, z: 0}
   Speed: 1
+  bulletFactory: {fileID: 0}
+  Firepos: {fileID: 0}
 --- !u!1 &2772506215020788782
 GameObject:
   m_ObjectHideFlags: 0
@@ -16142,6 +16146,7 @@ GameObject:
   - component: {fileID: 5578719475285261197}
   - component: {fileID: 5395645175466524951}
   - component: {fileID: 5395645175466524950}
+  - component: {fileID: 2595740773161395076}
   m_Layer: 0
   m_Name: Hindenburg1945 1
   m_TagString: Untagged
@@ -16166,7 +16171,6 @@ Transform:
   - {fileID: 5156970693524224859}
   - {fileID: 2246467962458948027}
   - {fileID: 5395645175797201487}
-  - {fileID: 5395645175361072405}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16211,6 +16215,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &2595740773161395076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5053117271017136439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4173a8b6d358eee48b266c42a4a099db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Main Battery HE
+  icon: {fileID: 0}
+  cooldownTime: 1
+  m_DoubleClickSecond: 0.25
 --- !u!1 &5080727197334501422
 GameObject:
   m_ObjectHideFlags: 0
@@ -17293,86 +17313,6 @@ Transform:
   - {fileID: 663516878288839212}
   m_Father: {fileID: 5477534917973831975}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5395645175154291364
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5395645175154291365}
-  - component: {fileID: 5395645175154291366}
-  m_Layer: 0
-  m_Name: Main Battery HE
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5395645175154291365
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5395645175154291364}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5395645175361072405}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5395645175154291366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5395645175154291364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4173a8b6d358eee48b266c42a4a099db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Main Battery HE
-  icon: {fileID: 0}
-  cooldownTime: 1
-  m_DoubleClickSecond: 0.25
---- !u!1 &5395645175361072404
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5395645175361072405}
-  m_Layer: 0
-  m_Name: Abilitys
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5395645175361072405
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5395645175361072404}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 0.7, z: 20}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5395645175154291365}
-  m_Father: {fileID: 5578719475285261197}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5395645175797201486
 GameObject:

@@ -12,10 +12,9 @@ namespace WOW.Armament
         public Vector3 target;
         public float Speed = 1;
         public GameObject bulletFactory;
-        public Transform Firepos;
         float Angle;
         PlayerController PC;
-        GameObject[] firePoint;
+        public GameObject[] firePoint;
 
         // Start is called before the first frame update
         void Start()
@@ -52,14 +51,17 @@ namespace WOW.Armament
         // 발사합니다.
         protected override void Fire()
         {
-                print("1111111");
+            if (firePoint == null)
+                return;
             // 총구의 개수만큼 반복
-            for(int i = 0; i < firePoint.Length; i++)
+            print(11111111111 + "" + firePoint.Length);
+            for (int i = 0; i < firePoint.Length; i++)
             {
+                print(222222222222);
                 // 총구 앞에 탄환 생성
                 GameObject bullet = Instantiate(bulletFactory);
-                bullet.transform.position = Firepos.transform.position;
-                float angle = Vector3.Angle(firePoint[i].transform.position, transform.forward);
+                bullet.transform.position = firePoint[i].transform.position;
+                float angle = Vector3.Angle(firePoint[i].transform.forward, Vector3.forward);
                 // 탄환의 스크립트에 접근하여, 총구의 각도를 전해주고, 발사하도록 명령한다.
                 // 탄환.GetComponent<Ballistic>().OnShoot(현재 총구 각도)
                 bullet.GetComponent<Ballistic>().OnShoot(angle);
