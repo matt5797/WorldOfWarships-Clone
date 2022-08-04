@@ -7,28 +7,28 @@ using System;
 
 namespace WOW.DamageSystem
 {
-    struct DamageInfo
-    {
-        public float time;
-        public int bulletID;
-        public int damage;
-    }
-
     public class HP : MonoBehaviour
     {
         public int hp = 100;
-        UnityEvent onDead;
-        UnityEvent<DamageInfo> onHit, onThrough; // bulletID,  damage
+        public UnityEvent onDead;
+        public UnityEvent<DamageInfo> onHit, onThrough; // bulletID,  damage
         public float calcInterval;
         Dictionary<int, List<DamageInfo>> damageInfoDict = new Dictionary<int, List<DamageInfo>>();
         bool isDead = false;
 
         private void Start()
         {
-            onHit = new UnityEvent<DamageInfo>();
+            //onHit = new UnityEvent<DamageInfo>();
             onThrough = new UnityEvent<DamageInfo>();
-            onHit.AddListener(OnHit);
+            //onHit.AddListener(OnHit);
             onThrough.AddListener(OnThrough);
+
+            Damageable[] damageables = GetComponentsInParent<Damageable>();
+            foreach (Damageable damageable in damageables)
+            {
+                damageable.onHit.AddListener(OnHit);
+                damageable.onThrough.AddListener(OnThrough);
+            }
         }
 
         private void OnThrough(DamageInfo damageInfo)
