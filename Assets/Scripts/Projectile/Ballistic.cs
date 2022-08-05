@@ -37,7 +37,6 @@ public class Ballistic: MonoBehaviour
     public ShellData shellData;
     public float speedMultiple = 20;
     public float DestroyY = -10;
-    Vector3 fireVector;
     Quaternion fireRotation;
 
     private void Start()
@@ -80,7 +79,6 @@ public class Ballistic: MonoBehaviour
     public void OnShoot(double shootAngle)
     {
         isShoot = true;
-        fireVector = transform.forward;
         fireRotation = transform.rotation;
         this.shootAngle = shootAngle * Mathf.Deg2Rad;
         print("OnShoot: " + shootAngle + ", " + this.shootAngle);

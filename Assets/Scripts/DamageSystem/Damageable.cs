@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +17,7 @@ namespace WOW.DamageSystem
     
     public abstract class Damageable : MonoBehaviour
     {
-        DamageableData damageableData;
+        public DamageableData damageableData;
         public UnityEvent<DamageInfo> onHit, onThrough;
         public UnityEvent onBreakdown, onRecovery, onCompleteDestroy, onFire;
         bool canDamage = true;
@@ -32,12 +31,34 @@ namespace WOW.DamageSystem
             onFire.AddListener(OnFire);
         }
 
-        private void OnRecovery()
+        public bool CheckOvermatch(float diameter)
         {
-            
+            if (diameter > damageableData.armor * 14.3)
+            {
+                print("OverMatch: " + true);
+                return true;
+            }
+            print("OverMatch: " + false);
+            return false;
         }
 
-        // need check ricochet?
+        // check ricochet
+        public bool CheckRicochet(float angle)
+        {
+            if (angle > damageableData.ricochet_end)
+            {
+                print("¹«Á¶°Ç µµÅº: " + true);
+                return true;
+            }
+            if (angle > damageableData.ricochet_start && Random.Range(1, 100) < 50)
+            {
+                print("·£´ý µµÅº: " + true);
+                return true;
+            }
+            print("µµÅº ÆÇÁ¤ ¼º°ø: " + false);
+            return false;
+        }
+        
         public bool CheckPenetrate(ref float penetration)
         {
             penetration -= damageableData.res_penetrate;
@@ -53,18 +74,12 @@ namespace WOW.DamageSystem
 
         public void CheckFire(float burnProbability)
         {
-            if (burnProbability > damageableData.res_fire)
+            if (Random.Range(1,100) + damageableData.res_fire < burnProbability)
             {
                 onFire.Invoke();
             }
         }
 
-        public bool CheckOvermatch(float diameter)
-        {
-            if (diameter > damageableData.armor * 14.3)
-                return true;
-            return false;
-        }
 
         public void ReceiveSpread(int spreadDamage)
         {
@@ -82,6 +97,10 @@ namespace WOW.DamageSystem
                 damageInfo.hitPointID = GetInstanceID();
                 onHit.Invoke(damageInfo);
             }
+        }
+        private void OnRecovery()
+        {
+            DamageTextManager.Instance.CreateDamageText(transform, "È¸º¹", 12);
         }
 
         private void OnBreakdown()

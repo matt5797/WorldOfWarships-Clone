@@ -65,6 +65,7 @@ namespace WOW.DamageSystem
                 // 과관통
                 if (pair.Value.Count % 2 == 0)
                 {
+                    DamageTextManager.Instance.CreateDamageText(transform, "과관통", 12);
                     for (int i = 0; i < pair.Value.Count; i++)
                     {
                         damage += pair.Value[i].damage / 10;
@@ -73,6 +74,7 @@ namespace WOW.DamageSystem
                 // 과관통 안함
                 else
                 {
+                    DamageTextManager.Instance.CreateDamageText(transform, "관통", 12);
                     for (int i = 0; i < pair.Value.Count; i++)
                     {
                         damage += pair.Value[i].damage;

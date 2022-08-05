@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using WOW.Data;
+using WOW.DamageSystem;
 
 namespace WOW.Projectile
 {
@@ -21,7 +22,7 @@ namespace WOW.Projectile
 
         }
 
-        protected override void OnImpact()
+        protected override void OnImpact(Damageable damageable)
         {
             // 피격 시 이벤트
         }

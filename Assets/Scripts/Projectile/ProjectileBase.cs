@@ -12,10 +12,11 @@ namespace WOW.Projectile
             Damageable damageable = other.GetComponent<Damageable>();
             if (damageable != null)
             {
-                OnImpact();
+                OnImpact(damageable);
             }
         }
 
-        protected abstract void OnImpact();
+        protected abstract void OnImpact(Damageable damageable);
+        //protected abstract void OnShoot();
     }
 }
