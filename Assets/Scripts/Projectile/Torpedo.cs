@@ -26,5 +26,10 @@ namespace WOW.Projectile
         {
             // 피격 시 이벤트
         }
+
+        protected override void OnThrough(Damageable damageable)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

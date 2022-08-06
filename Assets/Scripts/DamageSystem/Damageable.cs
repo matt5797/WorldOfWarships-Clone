@@ -35,27 +35,24 @@ namespace WOW.DamageSystem
         {
             if (diameter > damageableData.armor * 14.3)
             {
-                print("OverMatch: " + true);
                 return true;
             }
-            print("OverMatch: " + false);
             return false;
         }
 
         // check ricochet
-        public bool CheckRicochet(float angle)
+        public bool CheckRicochet(float angle, float ricochetAt, float alwaysRicochetAt)
         {
-            if (angle > damageableData.ricochet_end)
+            if (angle > alwaysRicochetAt)
             {
-                print("¹«Á¶°Ç µµÅº: " + true);
+                //print("¹«Á¶°Ç µµÅº: ");
                 return true;
             }
-            if (angle > damageableData.ricochet_start && Random.Range(1, 100) < 50)
+            if (angle > ricochetAt && Random.Range(1, 100) < 50)
             {
-                print("·£´ý µµÅº: " + true);
+                //print("·£´ý µµÅº: ");
                 return true;
             }
-            print("µµÅº ÆÇÁ¤ ¼º°ø: " + false);
             return false;
         }
         
@@ -86,8 +83,9 @@ namespace WOW.DamageSystem
             damageableData.runtimeHP -= spreadDamage;
         }
 
-        public void ApplyDamage(int damage, float incidenceAngle, int bulletID)
+        public void CheckDamage(int damage, int bulletID)
         {
+            //print("CheckDamage");
             if (canDamage)
             {
                 DamageInfo damageInfo = new DamageInfo();
@@ -98,6 +96,13 @@ namespace WOW.DamageSystem
                 onHit.Invoke(damageInfo);
             }
         }
+
+        public void ApplyDamage(int damage)
+        {
+            print("ApplyDamage");
+        }
+
+
         private void OnRecovery()
         {
             DamageTextManager.Instance.CreateDamageText(transform, "È¸º¹", 12);

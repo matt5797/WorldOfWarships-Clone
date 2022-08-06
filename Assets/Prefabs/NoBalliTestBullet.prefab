@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2468558581306446395}
   - component: {fileID: -8613858061719748838}
   - component: {fileID: 5451222117433081887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NoBalliTestBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,12 +211,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d8f6aeb34d02d43b48ec5af5ba4011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shellData: {fileID: 11400000, guid: e9cd4652570305c4dabe72e2d89b9952, type: 2}
+  shellData: {fileID: 11400000, guid: a27aca0d6b57cc14d9ff61de51ddad5e, type: 2}
   speedMultiple: 20
   DestroyY: -10
   rayLayerMask:
     serializedVersion: 2
-    m_Bits: 126
+    m_Bits: 88
 --- !u!54 &5451222117433081887
 Rigidbody:
   m_ObjectHideFlags: 0

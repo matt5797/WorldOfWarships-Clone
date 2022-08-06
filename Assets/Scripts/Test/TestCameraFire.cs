@@ -31,5 +31,19 @@ public class TestCameraFire : MonoBehaviour
             GameObject bulletInstance = Instantiate(bullet, transform.position, transform.rotation);
             //bulletInstance.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Ray ray = new Ray(transform.position, transform.forward);
+            //RaycastHit hit;
+            
+            RaycastHit[] hit = Physics.RaycastAll(transform.position, transform.forward, 100, ~0, QueryTriggerInteraction.Ignore);
+            for (int i = 0; i < hit.Length; i++)
+            {
+                Debug.Log(hit[i].collider.name +" / "+ hit[i].point + " / " + hit[i].normal);
+            }
+
+            Physics.Linecast(transform.position, transform.forward * 100);
+        }
     }
 }

@@ -10,13 +10,13 @@ namespace WOW.Projectile
     public class Shell : ProjectileBase
     {
         // SHELL CONSTANTS //
-        private static double C = 0.5561613f; //PENETRATION
-        private static double a = 9.81f; // GRAVITY
-        private static double T_0 = 288; // TEMPERATURE AT SEA LEVEL
-        private static double L = 0.0065f; // TEMPERATURE LAPSE RATE 온도 경과률?
-        private static double p_0 = 101325f; // PRESSURE AT SEA LEVEL 바다 압력?
-        private static double R = 8.31447f; // UNIV GAS CONSTANT
-        private static double M = 0.0289644f; // MOLAR MASS OF AIR
+        private double C = 0.5561613f; //PENETRATION
+        private double a = 9.81f; // GRAVITY
+        private double T_0 = 288; // TEMPERATURE AT SEA LEVEL
+        private double L = 0.0065f; // TEMPERATURE LAPSE RATE 온도 경과률?
+        private double p_0 = 101325f; // PRESSURE AT SEA LEVEL 바다 압력?
+        private double R = 8.31447f; // UNIV GAS CONSTANT
+        private double M = 0.0289644f; // MOLAR MASS OF AIR
 
         private double cw_1; // QUADRATIC DRAG COEFFICIENT
         private double cw_2; // LINEAR DRAG COEFFICIENT
@@ -45,21 +45,30 @@ namespace WOW.Projectile
         RaycastHit raycastHit;
         public LayerMask rayLayerMask;
 
+        Vector3 lastPosition;
+        RaycastHit lastraycastHit;
+
         private void Start()
         {
             if (shellData != null)
             {
                 cw_1 = 1;
-                cw_2 = 100 + 1000 / 3 * shellData.D;
+                cw_2 = 100 + 1000 / 3 * shellData.bulletDiametr;
 
-                C = C * shellData.K / 2400; // KRUPP INCLUSION
-                k = (0.5 * shellData.c_D * Math.Pow((shellData.D / 2), 2) * Math.PI / shellData.W); // CONSTANTS TERMS OF DRAG
+                C = C * shellData.bulletKrupp / 2400; // KRUPP INCLUSION
+                k = (0.5 * shellData.bulletAirDrag * Math.Pow((shellData.bulletDiametr / 2), 2) * Math.PI / shellData.bulletMass); // CONSTANTS TERMS OF DRAG
 
                 float angle = Vector3.SignedAngle(Vector3.up, transform.up, transform.right) * -1;
                 OnShoot(angle);
 
-                forwardRay = new Ray(transform.position, transform.forward);
+                //forwardRay = new Ray(transform.position, transform.forward);
+                lastPosition = transform.position;
             }
+        }
+
+        private void Update()
+        {
+            
         }
 
         private void FixedUpdate()
@@ -86,7 +95,24 @@ namespace WOW.Projectile
                 //transform.position = new Vector3(0, (float)y / 100, (float)x / 100);
                 transform.position += fireRotation * new Vector3(0, (float)v_y / 250, (float)v_x / 250);
 
-                if (Physics.Raycast(forwardRay, out raycastHit, 10f, rayLayerMask)) ;
+                Vector3 attackVector = transform.position - lastPosition;
+
+                if (attackVector.magnitude < 0.001f)
+                {
+                    // A zero vector for the sphere cast don't yield any result, even if a collider overlap the "sphere" created by radius. 
+                    // so we set a very tiny microscopic forward cast to be sure it will catch anything overlaping that "stationary" sphere cast
+                    attackVector = Vector3.forward * 0.0001f;
+                }
+
+                forwardRay = new Ray(transform.position, attackVector.normalized);
+                if (Physics.Raycast(forwardRay, out raycastHit, attackVector.magnitude, rayLayerMask))
+                {
+                    //print(raycastHit.collider.name +" / "+ raycastHit.normal);
+                    lastraycastHit = raycastHit;
+                }
+                Debug.DrawRay(transform.position, transform.forward);
+
+                lastPosition = transform.position;
             }
         }
 
@@ -96,8 +122,8 @@ namespace WOW.Projectile
             fireRotation = transform.rotation;
             this.shootAngle = shootAngle * Mathf.Deg2Rad;
             print("OnShoot: " + shootAngle + ", " + this.shootAngle);
-            v_x = Math.Cos(this.shootAngle) * shellData.V_0;
-            v_y = Math.Sin(this.shootAngle) * shellData.V_0;
+            v_x = Math.Cos(this.shootAngle) * shellData.bulletSpeed;
+            v_y = Math.Sin(this.shootAngle) * shellData.bulletSpeed;
             y = 0;
             x = 0;
         }
@@ -105,7 +131,7 @@ namespace WOW.Projectile
         public double GetPenetration()
         {
             double v_total = Math.Pow((Math.Pow(v_y, 2) + Math.Pow(v_x, 2)), 0.5);
-            return C * Math.Pow(v_total, 1.1) * Math.Pow(shellData.W, 0.55) / Math.Pow((shellData.D * 1000), 0.65);
+            return C * Math.Pow(v_total, 1.1) * Math.Pow(shellData.bulletMass, 0.55) / Math.Pow((shellData.bulletDiametr * 1000), 0.65);
         }
 
         public double GetImpactAngle()
@@ -116,17 +142,26 @@ namespace WOW.Projectile
         protected override void OnImpact(Damageable damageable)
         {
             penetration = (float)GetPenetration();
+            print("관통력: " + penetration);
             // 피격 시 이벤트
-            print("Shell OnImpact");
+            //print("Shell OnImpact");
             // 오버매치이면 과관통, 도탄 무시
-            if (!damageable.CheckOvermatch(shellData.D))
+            if (!damageable.CheckOvermatch(shellData.bulletDiametr))
             {
-                float angle = Vector3.Angle(raycastHit.normal * -1, transform.forward);
-                print(raycastHit.normal + " / " + transform.forward);
+                float angle = Vector3.Angle(lastraycastHit.normal * -1, transform.forward);
+                if (lastraycastHit.normal.magnitude == 0)
+                {
+                    // 레이가 초기값일 가능성이 높지만, 만약을 위해 60도로 판정
+                    angle = 60;
+                    Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
+                }
+                //print(lastraycastHit.normal + " / " + transform.forward);
                 print("입사각: " + angle);
                 // 도탄 확인
-                if (damageable.CheckRicochet(angle))
+                if (damageable.CheckRicochet(angle, shellData.bulletRicochetAt, shellData.bulletAlwaysRicochetAt))
                 {
+                    print("도탄 발생");
+                    OnExplosion();
                     return;
                 }
                 // 관통 확인
@@ -137,16 +172,25 @@ namespace WOW.Projectile
                     return;
                 }
             }
-                penetration = int.MaxValue;
-
-            print("Penetration: " + penetration);
-
+            else
+            {
+                print("오버매치 발생");
+            }
+            // 부가 효과 체크
             damageable.CheckEffect(shellData);
+            damageable.CheckDamage(shellData.damage, GetInstanceID());
+        }
+
+        protected override void OnThrough(Damageable damageable)
+        {
+            print(damageable.name + " 관통");
         }
 
         void OnExplosion()
         {
+            // 추후 확산 판정 삽입?
             print("OnExplosion");
+            OnApplyDamage();
             Destroy(gameObject);
         }
     }

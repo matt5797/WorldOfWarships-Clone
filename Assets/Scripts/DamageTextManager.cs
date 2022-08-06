@@ -27,21 +27,10 @@ namespace WOW
         public GameObject damageTextFactory;
         public Canvas canvas;
 
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
         public void CreateDamageText(Transform target, string message, float fontSize=default)
         {
-            GameObject textObject = Instantiate(damageTextFactory, Camera.main.WorldToScreenPoint(target.position), Quaternion.identity, canvas.transform);
+            Vector3 randomPoint = new Vector3(Random.Range(1, 190), Random.Range(1, 120), 0);
+            GameObject textObject = Instantiate(damageTextFactory, Camera.main.WorldToScreenPoint(target.position) + randomPoint, Quaternion.identity, canvas.transform);
             TextMeshProUGUI text = textObject.GetComponent<TextMeshProUGUI>();
             if (text!=null)
                 text.SetText(message);
