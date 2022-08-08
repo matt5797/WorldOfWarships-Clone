@@ -7272,7 +7272,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   Speed: 1
   bulletFactory: {fileID: 0}
-  Firepos: {fileID: 0}
+  firePoint: []
 --- !u!1 &2297486624197514560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8889,7 +8889,6 @@ GameObject:
   - component: {fileID: 7917355658944269308}
   - component: {fileID: 3128784560811572706}
   - component: {fileID: 6403494045721501731}
-  - component: {fileID: 5395645175287720300}
   m_Layer: 0
   m_Name: TurretShape_0005
   m_TagString: Untagged
@@ -8962,24 +8961,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5395645175287720300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2772365620940324353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ff8324f95da26442a5ed5f003181519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownTime: 1
-  rootPosition: {fileID: 5308940633809148112}
-  target: {x: 0, y: 0, z: 0}
-  Speed: 1
-  bulletFactory: {fileID: 0}
-  Firepos: {fileID: 0}
 --- !u!1 &2772506215020788782
 GameObject:
   m_ObjectHideFlags: 0
