@@ -557,7 +557,6 @@ MonoBehaviour:
     type: 3}
   firePoint:
   - {fileID: 59226451}
-  parent: {fileID: 0}
 --- !u!1 &699462376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,12 +1694,12 @@ PrefabInstance:
     - target: {fileID: 8072152985916353131, guid: a292b889b0fe812448010e49a2d44b0c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9656316
+      value: 0.9914449
       objectReference: {fileID: 0}
     - target: {fileID: 8072152985916353131, guid: a292b889b0fe812448010e49a2d44b0c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.25991476
+      value: -0.13052624
       objectReference: {fileID: 0}
     - target: {fileID: 8072152985916353131, guid: a292b889b0fe812448010e49a2d44b0c,
         type: 3}
@@ -1710,7 +1709,7 @@ PrefabInstance:
     - target: {fileID: 8072152985916353131, guid: a292b889b0fe812448010e49a2d44b0c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -30.13
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 8072152985916353131, guid: a292b889b0fe812448010e49a2d44b0c,
         type: 3}

@@ -31,11 +31,11 @@ public class TestMoveFire : MonoBehaviour
             Ballistic bullet;
             foreach (Ballistic ballistic in ballistics)
             {
-                bullet = Instantiate<Ballistic>(ballistic);
-                bullet.transform.position = transform.position;
-                bullet.transform.rotation = transform.rotation;
-                float angle = Vector3.SignedAngle(Vector3.up, transform.up, transform.forward);
-                bullet.OnShoot(angle);
+                bullet = Instantiate<Ballistic>(ballistic, transform.position, transform.rotation);
+                //bullet.transform.position = transform.position;
+                //bullet.transform.rotation = transform.rotation;
+                //float angle = Vector3.SignedAngle(Vector3.up, transform.up, transform.forward);
+                //bullet.OnShoot(angle);
 /*
                 bullet = Instantiate<TestBallistic>(ballistic);
                 bullet.transform.position = transform.position;

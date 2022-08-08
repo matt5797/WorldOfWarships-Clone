@@ -42,10 +42,10 @@ public class TestBallistic: MonoBehaviour
         if (shellData != null)
         {
             cw_1 = 1; 
-            cw_2 = 100 + 1000 / 3 * shellData.D; 
+            cw_2 = 100 + 1000 / 3 * shellData.bulletDiametr; 
 
-            C = C * shellData.K / 2400; // KRUPP INCLUSION
-            k = (0.5 * shellData.c_D * Math.Pow((shellData.D / 2), 2) * Math.PI / shellData.W); // CONSTANTS TERMS OF DRAG
+            C = C * shellData.bulletKrupp / 2400; // KRUPP INCLUSION
+            k = (0.5 * shellData.bulletAirDrag * Math.Pow((shellData.bulletDiametr / 2), 2) * Math.PI / shellData.bulletMass); // CONSTANTS TERMS OF DRAG
         }
     }
 
@@ -72,8 +72,8 @@ public class TestBallistic: MonoBehaviour
     {
         isShoot = true;
         this.shootAngle = shootAngle;
-        v_x = Math.Cos(shootAngle) * shellData.V_0;
-        v_y = Math.Sin(shootAngle) * shellData.V_0;
+        v_x = Math.Cos(shootAngle) * shellData.bulletSpeed;
+        v_y = Math.Sin(shootAngle) * shellData.bulletSpeed;
         y = 0;
         x = 0;
     }
@@ -81,7 +81,7 @@ public class TestBallistic: MonoBehaviour
     public double GetPenetration()
     {
         double v_total = Math.Pow((Math.Pow(v_y, 2) + Math.Pow(v_x, 2)), 0.5);
-        return C * Math.Pow(v_total, 1.1) * Math.Pow(shellData.W, 0.55) / Math.Pow((shellData.D * 1000), 0.65);
+        return C * Math.Pow(v_total, 1.1) * Math.Pow(shellData.bulletMass, 0.55) / Math.Pow((shellData.bulletDiametr * 1000), 0.65);
     }
 
     public double GetImpactAngle()
