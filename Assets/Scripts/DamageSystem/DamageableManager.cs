@@ -79,20 +79,39 @@ namespace WOW.DamageSystem
 
         public void ApplyDamage(int bulletID)
         {
-            print("ApplyDamage");
+            //print("ApplyDamage");
             if (!damageInfoDict.ContainsKey(bulletID))
                 return;
             List<DamageInfo> damageInfos = damageInfoDict[bulletID];
+            Stack<int> stack = new Stack<int>();
 
             int damage = 0;
 
+            foreach (DamageInfo damageInfo in damageInfos)
+            {
+                //Debug.LogAssertion(damageInfo.hitPointID +" "+damageInfo.damage);
+                if (damageInfo.damage == 0)
+                {
+                    if (stack.Peek()==damageInfo.hitPointID)                    
+                        stack.Pop();
+                }
+                else
+                {
+                    stack.Push(damageInfo.hitPointID);
+                }
+            }
+
             // 과관통
-            if (damageInfos.Count % 2 == 0)
+            if (stack.Count == 0)
             {
                 DamageTextManager.Instance.CreateDamageText(transform, "과관통", 20);
                 for (int i = 0; i < damageInfos.Count; i++)
                 {
-                    damage += damageInfos[i].damage / 10;
+                    if (damageInfos[i].damage>0)
+                    {
+                        //damage += damageInfos[i].damage / 10;
+                        damage += damageInfos[i].damageable.ApplyDamage(damageInfos[i].damage / 10);
+                    }
                 }
             }
             // 과관통 안함
@@ -101,11 +120,15 @@ namespace WOW.DamageSystem
                 DamageTextManager.Instance.CreateDamageText(transform, "관통", 20);
                 for (int i = 0; i < damageInfos.Count; i++)
                 {
-                    damage += damageInfos[i].damage / 3;
+                    if (damageInfos[i].damage > 0)
+                    {
+                        //damage += damageInfos[i].damage / 3;
+                        damage += damageInfos[i].damageable.ApplyDamage(damageInfos[i].damage / 3);
+                    }
                 }
             }
 
-            print(damage);
+            //print(damage);
             HP -= damage;
             if (HP <= 0)
             {

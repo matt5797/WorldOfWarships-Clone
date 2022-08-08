@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WOW.DamageSystem;
 using WOW.Data;
 
 namespace WOW.Projectile
@@ -32,7 +33,7 @@ namespace WOW.Projectile
         }
 
       
-        protected override void OnImpact()
+        protected override void OnImpact(Damageable damageable)
         {
             // �ǰ� �� �̺�Ʈ
             // ����� y���� �����Ѵ�
@@ -58,10 +59,10 @@ namespace WOW.Projectile
                 // ���� ���Ͱ� ���� �� �׳� �ٴڿ� ��������
             }
         }
-        
+
         protected override void OnThrough(Damageable damageable)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

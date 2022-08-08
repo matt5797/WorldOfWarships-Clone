@@ -12,7 +12,7 @@ namespace WOW.UI
         public void SetHPPercent(float hpPercent)
         {
             front.fillAmount = hpPercent;
-            print(front.fillAmount);
+            //print(front.fillAmount);
         }
     }
 }
