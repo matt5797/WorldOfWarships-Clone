@@ -36,7 +36,10 @@ public class Ballistic: MonoBehaviour
     [NonSerialized] public bool isShoot;
     public ShellData shellData;
     public float speedMultiple = 20;
-    
+    public float DestroyY = -10;
+    Vector3 fireVector;
+    Quaternion fireRotation;
+
     private void Start()
     {
         if (shellData != null)
@@ -63,17 +66,26 @@ public class Ballistic: MonoBehaviour
             v_y = (v_y - dt * a - dt * k * rho * (cw_1 * Math.Pow(v_y, 2) + cw_2 * Math.Abs(v_y)) * Math.Sign(v_y));
             t += dt;
 
+            if (transform.position.y<= DestroyY)
+            {
+                Destroy(gameObject);
+            }
+
             //Move
-            transform.position = new Vector3(0, (float) y/100, (float) x/100);
+            transform.position = fireRotation * new Vector3(0, (float)y/100, (float)x/100);
+            //transform.position = new Vector3(0, (float)y / 100, (float)x / 100);
         }
     }
 
     public void OnShoot(double shootAngle)
     {
         isShoot = true;
-        this.shootAngle = shootAngle;
-        v_x = Math.Cos(shootAngle) * shellData.V_0;
-        v_y = Math.Sin(shootAngle) * shellData.V_0;
+        fireVector = transform.forward;
+        fireRotation = transform.rotation;
+        this.shootAngle = shootAngle * Mathf.Deg2Rad;
+        print("OnShoot: " + shootAngle + ", " + this.shootAngle);
+        v_x = Math.Cos(this.shootAngle) * shellData.V_0;
+        v_y = Math.Sin(this.shootAngle) * shellData.V_0;
         y = 0;
         x = 0;
     }

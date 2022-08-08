@@ -58,7 +58,8 @@ namespace WOW.Armament
                 // 총구 앞에 탄환 생성
                 GameObject bullet = Instantiate(bulletFactory);
                 bullet.transform.position = firePoint[i].transform.position;
-                float angle = Vector3.Angle(firePoint[i].transform.forward, Vector3.forward);
+                bullet.transform.rotation = firePoint[i].transform.rotation;
+                float angle = Vector3.SignedAngle(Vector3.up, transform.up, transform.right) * -1;
                 // 탄환의 스크립트에 접근하여, 총구의 각도를 전해주고, 발사하도록 명령한다.
                 // 탄환.GetComponent<Ballistic>().OnShoot(현재 총구 각도)
                 bullet.GetComponent<Ballistic>().OnShoot(angle);
