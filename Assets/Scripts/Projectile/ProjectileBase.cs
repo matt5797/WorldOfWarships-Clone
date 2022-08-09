@@ -15,6 +15,7 @@ namespace WOW.Projectile
             Damageable damageable = other.GetComponent<Damageable>();
             if (damageable != null)
             {
+                print(GetInstanceID() + " hit " + other.GetInstanceID());
                 OnImpact(damageable);
             }
 
@@ -31,13 +32,6 @@ namespace WOW.Projectile
             if (damageable != null)
             {
                 OnThrough(damageable);
-            }
-
-            DamageableManager damageableManager = other.GetComponent<DamageableManager>();
-            if (damageableManager != null)
-            {
-                // 과관통한 경우 데미지 정산
-                //OnApplyDamage();
             }
         }
 

@@ -80,7 +80,7 @@ namespace WOW.Controller
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(TargetPoint, 3f);
+            Gizmos.DrawSphere(TargetPoint, 0.3f);
         }
     }
 }

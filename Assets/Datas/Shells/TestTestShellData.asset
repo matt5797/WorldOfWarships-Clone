@@ -13,11 +13,7 @@ MonoBehaviour:
   m_Name: TestTestShellData
   m_EditorClassIdentifier: 
   damage: 1000
-  ricochetMin: 45
-  ricochetMax: 60
   burnProbability: 30
-  penetratingPower: 1
-  spreadProbability: 1
   alphaPiercingCS: 0
   alphaPiercingHE: 0
   bulletAirDrag: 0.2974
@@ -27,6 +23,6 @@ MonoBehaviour:
   bulletDetonatorThreshold: 34
   bulletDiametr: 0.203
   bulletKrupp: 2409
-  bulletMass: 122
+  bulletMass: 10
   bulletRicochetAt: 45
-  bulletSpeed: 925
+  bulletSpeed: 290
