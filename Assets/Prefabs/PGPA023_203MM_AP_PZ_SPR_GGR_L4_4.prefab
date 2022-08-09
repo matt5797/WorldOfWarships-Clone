@@ -216,9 +216,9 @@ MonoBehaviour:
   DestroyY: -0.01
   rayLayerMask:
     serializedVersion: 2
-    m_Bits: 88
+    m_Bits: 344
   explosionParticles:
-  - {fileID: 19800006, guid: 4575df893a6e3f64a8283dee38413a34, type: 3}
+  - {fileID: 19800006, guid: 76222bdf017ff094cae58d3438c91510, type: 3}
 --- !u!54 &5451222117433081887
 Rigidbody:
   m_ObjectHideFlags: 0

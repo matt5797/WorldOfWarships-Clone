@@ -96,7 +96,7 @@ namespace WOW.Projectile
                 //Move
                 //transform.position += fireRotation * new Vector3(0, (float)y / 100, (float)x / 100);
                 //transform.position = new Vector3(0, (float)y / 100, (float)x / 100);
-                transform.position += fireRotation * new Vector3(0, (float)v_y / 4000, (float)v_x / 4000);
+                transform.position += fireRotation * new Vector3(0, (float)v_y / 3000, (float)v_x / 3000);
 
                 Vector3 attackVector = transform.position - lastPosition;
 
@@ -126,7 +126,7 @@ namespace WOW.Projectile
             this.shootAngle = shootAngle * Mathf.Deg2Rad;
             print("OnShoot: " + shootAngle + ", " + this.shootAngle);
             v_x = Math.Cos(this.shootAngle) * shellData.bulletSpeed;
-            v_y = Math.Sin(this.shootAngle) * shellData.bulletSpeed;
+            v_y = Math.Sin(this.shootAngle) * shellData.bulletSpeed * UnityEngine.Random.Range(1,10) / 10;
             y = 0;
             x = 0;
         }
@@ -144,9 +144,9 @@ namespace WOW.Projectile
 
         protected override void OnImpact(Damageable damageable)
         {
-            print(GetInstanceID() + " OnImpact");
+            //print(GetInstanceID() + " OnImpact");
             penetration = (float)GetPenetration();
-            print("관통력: " + penetration);
+            //print("관통력: " + penetration);
             // 피격 시 이벤트
             //print("Shell OnImpact");
             // 오버매치이면 과관통, 도탄 무시
@@ -160,7 +160,7 @@ namespace WOW.Projectile
                     Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
                 }
                 //print(lastraycastHit.normal + " / " + transform.forward);
-                print("입사각: " + angle);
+                //print("입사각: " + angle);
                 // 도탄 확인
                 if (damageable.CheckRicochet(angle, shellData.bulletRicochetAt, shellData.bulletAlwaysRicochetAt))
                 {
@@ -224,7 +224,7 @@ namespace WOW.Projectile
         void OnExplosion()
         {
             // 추후 확산 판정 삽입?
-            print("OnExplosion");
+            //print("OnExplosion");
             foreach (ParticleSystem particleFactory in explosionParticles)
             {
                 ParticleSystem particle = Instantiate<ParticleSystem>(particleFactory);

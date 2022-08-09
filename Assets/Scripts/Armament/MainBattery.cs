@@ -36,7 +36,7 @@ namespace WOW.Armament
         // Start is called before the first frame update
         void Start()
         {
-            PC = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<PlayerController>();
+            PC = GameObject.FindGameObjectWithTag("PlayerController")?.GetComponent<PlayerController>();
             bulletFactory = HE;
             ChangeBullet("HE");
             //transform.rotation = gunSet == GunSet.front ? Quaternion.Euler(Vector3.zero) : Quaternion.Euler(0, 180, 0);
@@ -46,7 +46,14 @@ namespace WOW.Armament
         // Update is called once per frame
         void Update()
         {
-            target = PC.TargetPoint;
+            if (PC != null)
+            {
+                target = PC.TargetPoint;            
+            }
+            else
+            {
+                target = transform.forward;
+            }
 
             // 목적지 = 조준점
             // 타겟과 나의 거리
