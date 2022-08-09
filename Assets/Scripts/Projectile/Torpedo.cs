@@ -13,7 +13,7 @@ namespace WOW.Projectile
        
         public float speed = 5;
 
-        //ÁÂÇ¥°ª ¹Þ¾Æ¿À´Â º¯¼ö
+        //ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½Þ¾Æ¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         public int torpedo_pos;
         public int monster_pos;
 
@@ -34,31 +34,34 @@ namespace WOW.Projectile
       
         protected override void OnImpact()
         {
-            // ÇÇ°Ý ½Ã ÀÌº¥Æ®
-            // ¾î·ÚÀÇ y°ªÀ» ÀúÀåÇÑ´Ù
+            // ï¿½Ç°ï¿½ ï¿½ï¿½ ï¿½Ìºï¿½Æ®
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ yï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½
             torpedo_pos = (int)torpedo.transform.position.y;
 
             if (GameObject.Find("Monster"))
             {
-                // ¸ó½ºÅÍ¸¦ Ã£¾Æ y°ªÀ» ÀúÀå ÇÑ´Ù
+                // ï¿½ï¿½ï¿½Í¸ï¿½ Ã£ï¿½ï¿½ yï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½
                 monster_pos = (int)GameObject.Find("Monster").transform.position.y;
 
-                // ¸¸¾à ¾î·Ú¿Í ¸ó½ºÅÍÀÇ y °ªÀÌ °°´Ù¸é
+                // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ y ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½
                 if (torpedo == monster)
                 {
-                    // ¾î·Ú°¡ ¸ó½ºÅÍ¿ÍÀÇ y°ªÀÌ °°Àº °÷¿¡ ¸®Áöµå ¹ÙµðÀÇ y °ªÀ» °íÁ¤ÇÏ°í
+                    // ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ yï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ùµï¿½ï¿½ï¿½ y ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
                     gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
-                    // ¾î·Ú°¡ ¸ó½ºÅÍ¸¦ ÇâÇØ ´Þ·Á ³ª°£´Ù
+                    // ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                     transform.position = Vector3.MoveTowards(gameObject.transform.position, monster.transform.position, speed * Time.deltaTime);
                 }
 
             }
             else
             {
-                // ¸¸¾à ¸ó½ºÅÍ°¡ ¾øÀ» ½Ã ±×³É ¹Ù´Ú¿¡ ¶³¾îÁø´Ù
+                // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½×³ï¿½ ï¿½Ù´Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             }
         }
         
-      
+        protected override void OnThrough(Damageable damageable)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

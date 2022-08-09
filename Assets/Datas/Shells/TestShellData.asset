@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38182d5fc57466e42bb27d9a50ad35a5, type: 3}
   m_Name: TestShellData
   m_EditorClassIdentifier: 
-  Damage: 2000
+  damage: 1000
+  ricochetMin: 45
+  ricochetMax: 60
+  burnProbability: 30
+  penetratingPower: 1
+  spreadProbability: 1
   W: 55
   D: 0.152
   c_D: 0.321
   V_0: 950
   K: 2216
-  ricochetMin: 45
-  ricochetMax: 60
-  burnProbability: 30
-  penetratingPower: 1

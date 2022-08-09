@@ -20,6 +20,10 @@ namespace WOW.Data
         public float res_penetrate;
         [Tooltip("방사 저항")]
         public float res_spread;
+        [Tooltip("도탄 시작 각도")]
+        public float ricochet_start;
+        [Tooltip("무조건 도탄 각도")]
+        public float ricochet_end;
         [Tooltip("수리 시간")]
         public float recoveryTime;
         [Tooltip("데미지 배율")]
