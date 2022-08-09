@@ -86,11 +86,11 @@ namespace WOW
         
         public int GetShellID(string ShellName)
         {
-            string sql = string.Format("SELECT * from Shells where name==\"{0}\";", ShellName);
+            string sql = string.Format("SELECT ID from Shells where name==\"{0}\";", ShellName);
             var res = m_DatabaseAccess.ExecuteQuery(sql);
             if (res.Read())
             {
-                res.GetInt32(0);
+                return res.GetInt32(0);
             }
             return 1;
         }

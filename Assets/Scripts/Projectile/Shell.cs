@@ -37,7 +37,7 @@ namespace WOW.Projectile
         [NonSerialized] public bool isShoot;
         public ShellData shellData;
         public float speedMultiple = 1;
-        public float DestroyY = -10;
+        public float DestroyY = -0.01f;
         Quaternion fireRotation;
         float penetration;
 
@@ -96,7 +96,7 @@ namespace WOW.Projectile
                 //Move
                 //transform.position += fireRotation * new Vector3(0, (float)y / 100, (float)x / 100);
                 //transform.position = new Vector3(0, (float)y / 100, (float)x / 100);
-                transform.position += fireRotation * new Vector3(0, (float)v_y / 250, (float)v_x / 250);
+                transform.position += fireRotation * new Vector3(0, (float)v_y / 4000, (float)v_x / 4000);
 
                 Vector3 attackVector = transform.position - lastPosition;
 

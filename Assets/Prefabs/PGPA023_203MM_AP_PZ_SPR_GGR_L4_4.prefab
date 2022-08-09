@@ -145,7 +145,7 @@ TrailRenderer:
   m_Time: 5
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.005
+    widthMultiplier: 0.05
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -212,8 +212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellData: {fileID: 11400000, guid: c68947b2943a258448e2b9406a06667e, type: 2}
-  speedMultiple: 20
-  DestroyY: -10
+  speedMultiple: 5
+  DestroyY: -0.01
   rayLayerMask:
     serializedVersion: 2
     m_Bits: 88

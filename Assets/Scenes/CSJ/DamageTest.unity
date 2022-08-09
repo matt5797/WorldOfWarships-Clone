@@ -332,6 +332,7 @@ MonoBehaviour:
           m_StringArgument: OnFire
           m_BoolArgument: 0
         m_CallState: 2
+  canRecovery: 0
   destroyTime: 0
 --- !u!1 &76638422
 GameObject:
@@ -549,6 +550,7 @@ MonoBehaviour:
           m_StringArgument: OnFire
           m_BoolArgument: 0
         m_CallState: 2
+  canRecovery: 0
   destroyTime: 0
 --- !u!1 &956202727
 GameObject:
@@ -688,6 +690,7 @@ MonoBehaviour:
           m_StringArgument: OnFire
           m_BoolArgument: 0
         m_CallState: 2
+  canRecovery: 0
   destroyTime: 0
 --- !u!65 &956202730
 BoxCollider:
@@ -850,7 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03291441b5873d140998af0d648e48ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 2468558581306446369, guid: 8336cd6c2a5370f4f9386a549b8062dd, type: 3}
+  bullet: {fileID: 2468558581306446369, guid: ac74b1d644ae47147b765171bd713328, type: 3}
   moveSpeed: 10
 --- !u!114 &988695368
 MonoBehaviour:
@@ -1651,6 +1654,7 @@ MonoBehaviour:
           m_StringArgument: OnFire
           m_BoolArgument: 0
         m_CallState: 2
+  canRecovery: 0
   destroyTime: 0
 --- !u!23 &1714684876
 MeshRenderer:
@@ -1854,6 +1858,7 @@ MonoBehaviour:
           m_StringArgument: OnFire
           m_BoolArgument: 0
         m_CallState: 2
+  canRecovery: 0
   destroyTime: 0
 --- !u!65 &1802074528
 BoxCollider:

@@ -212,8 +212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shellData: {fileID: 11400000, guid: e33ee7a77915eb74897679459354cb01, type: 2}
-  speedMultiple: 20
-  DestroyY: -10
+  speedMultiple: 5
+  DestroyY: -0.01
   rayLayerMask:
     serializedVersion: 2
     m_Bits: 88
