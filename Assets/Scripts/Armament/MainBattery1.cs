@@ -5,7 +5,7 @@ using WOW.Controller;
 
 namespace WOW.Armament
 {
-    public class MainBattery : ArmamentBase
+    public class MainBattery1 : ArmamentBase
     {
         public Transform rootPosition;
         Vector3 ScreenCenter;

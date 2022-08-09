@@ -14,6 +14,8 @@ namespace WOW.Armament
         public GameObject bulletFactory;
         PlayerController PC;
         public GameObject[] firePoint;
+        public Transform game; 
+
 
         // Start is called before the first frame update
         void Start()
@@ -28,16 +30,17 @@ namespace WOW.Armament
 
             // 목적지 = 조준점
             // 타겟과 나의 거리
-            Vector3 targetDirection = target - rootPosition.position;
+            Vector3 targetDirection = target - game.position;
 
             float singleStep = Speed * Time.deltaTime;
 
-            Vector3 newDirection = Vector3.RotateTowards(rootPosition.forward, targetDirection, singleStep, 0.0f);
+            Vector3 newDirection = Vector3.RotateTowards(game.forward, targetDirection, singleStep, 0.0f);
 
             //타겟을 바라보며 회전해라
-            rootPosition.rotation = Quaternion.LookRotation(newDirection);
-
-            rootPosition.eulerAngles = new Vector3(0, Mathf.Clamp(Mathf.Repeat(rootPosition.eulerAngles.y + 180, 360) - 180, -90, 90), 0);
+            //rootPosition.rotation = Quaternion.LookRotation(newDirection);
+            game.rotation = Quaternion.LookRotation(newDirection);
+            print(game.eulerAngles.y);
+            game.eulerAngles = new Vector3(0, Mathf.Clamp(Mathf.Repeat(game.eulerAngles.y + 180, 360) - 180, -90, 90), 0);
 
         }
 
