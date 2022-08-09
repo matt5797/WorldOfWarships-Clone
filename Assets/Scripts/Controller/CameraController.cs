@@ -48,11 +48,11 @@ namespace WOW.Controller
             if (stateData!=null)
             {
                 Gizmos.color = Color.red;
-                Gizmos.DrawSphere(m_Target.position + stateData.targetOffset, 1f);
+                Gizmos.DrawSphere(m_Target.position + stateData.targetOffset, 0.1f);
             }
 
             Gizmos.color = Color.blue;
-            Gizmos.DrawSphere(transform.position, 1f);
+            Gizmos.DrawSphere(transform.position, 0.1f);
         }
     }
 }

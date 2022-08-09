@@ -31,7 +31,7 @@ namespace WOW.Controller
             t.stateData.targetOffset = new Vector3(0, t.stateData.stateChangeYMin + 0.05f, 0);
             t.stateData.cameraOffset = Vector3.zero; //new Vector3(0, t.cameraOffset.y, 0);
 
-            t.stateData.m_XSpeed = 20;
+            //t.stateData.m_XSpeed = 20;
         }
 
         public override void Update(CameraController t)

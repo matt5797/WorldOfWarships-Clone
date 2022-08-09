@@ -33,15 +33,20 @@ namespace WOW
             else
             {
                 Destroy(gameObject);
+                return;
             }
+
+            string filePath = Path.Combine(Application.streamingAssetsPath, m_DatabaseFileName);
+            Debug.Log(filePath);
+            m_DatabaseAccess = new DatabaseAccess("data source = " + filePath);
         }
         
         void Start()
         {
             //print(m_DatabaseFileName);
-            string filePath = Path.Combine(Application.streamingAssetsPath, m_DatabaseFileName);
+            /*string filePath = Path.Combine(Application.streamingAssetsPath, m_DatabaseFileName);
             Debug.Log(filePath);
-            m_DatabaseAccess = new DatabaseAccess("data source = " + filePath);
+            m_DatabaseAccess = new DatabaseAccess("data source = " + filePath);*/
 
             //print(GetAngle(2, 12000));
         }
@@ -53,7 +58,7 @@ namespace WOW
             Dictionary<int, float> insertData = new Dictionary<int, float>();
             while (res.Read())
             {
-                insertData.Add(res.GetInt32(0), res.GetFloat(1));
+                insertData.Add((int)res.GetFloat(0), res.GetFloat(1));
             }
             m_FiringTable.Add(shell, insertData);
         }
@@ -69,7 +74,6 @@ namespace WOW
             int nearest = int.MaxValue;
             foreach (var item in m_FiringTable[shell])
             {
-                print(item.Key + " / " + item.Value);
                 if (Mathf.Abs(item.Key - targetX) < nearest)
                 {
                     nearestAngle = item.Value;
@@ -80,12 +84,23 @@ namespace WOW
             return nearestAngle;
         }
         
-/*
-        public float GetAngle(int shell, int targetX)
+        public int GetShellID(string ShellName)
+        {
+            string sql = string.Format("SELECT * from Shells where name==\"{0}\";", ShellName);
+            var res = m_DatabaseAccess.ExecuteQuery(sql);
+            if (res.Read())
+            {
+                res.GetInt32(0);
+            }
+            return 1;
+        }
+
+
+        /*public float GetAngle(int shell, int targetX)
         {
             FiringTable min = default;
             FiringTable max = default;
-            
+
             string sql = string.Format("SELECT * FROM FiringTable WHERE Shell=={0} AND X<{1} ORDER BY X DESC, Angle LIMIT 1;", shell, targetX);
             var res = m_DatabaseAccess.ExecuteQuery(sql);
 
@@ -119,8 +134,8 @@ namespace WOW
                 return min.Angle;
             }
             // 추후 근사치 계산 추가?
-        }
-*/
+        }*/
+
         private void OnDestroy()
         {
             m_DatabaseAccess.CloseSqlConnection();

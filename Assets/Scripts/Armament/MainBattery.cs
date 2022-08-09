@@ -24,6 +24,7 @@ namespace WOW.Armament
         {
             PC = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<PlayerController>();
             bulletFactory = HE;
+            ChangeBullet("HE");
         }
 
         // Update is called once per frame
@@ -41,7 +42,9 @@ namespace WOW.Armament
 
             //타겟을 바라보며 회전해라
             rootPosition.rotation = Quaternion.LookRotation(newDirection);
-            rootPosition.eulerAngles = new Vector3(GetAngle((int)new Vector3(target.x, transform.position.y, target.z).magnitude), Mathf.Clamp(Mathf.Repeat(rootPosition.eulerAngles.y + 180, 360) - 180, -90, 90), 0);
+            float x = GetAngle((int)new Vector3(target.x, transform.position.y, target.z).magnitude) * -1;
+            x = Mathf.Clamp(x, -45, 0);
+            rootPosition.eulerAngles = new Vector3(x, Mathf.Clamp(Mathf.Repeat(rootPosition.eulerAngles.y + 180, 360) - 180, -90, 90), 0);
         }
 
         // 발사할 수 있는지 여부를 반환합니다.
@@ -74,18 +77,18 @@ namespace WOW.Armament
             if (bulletType == "AP")
             {
                 bulletFactory = AP;
+                ShellID = BallisiticManager.Instance.GetShellID(HE.name);
             }
             else if (bulletType == "HE")
             {
                 bulletFactory = HE;
+                ShellID = BallisiticManager.Instance.GetShellID(HE.name);
             }
         }
 
         float GetAngle(int targetX)
         {
-            float temp = BallisiticManager.Instance.GetAngle(ShellID, targetX / 100);
-            //print(temp);
-            return temp;
+            return BallisiticManager.Instance.GetAngle(ShellID, targetX * 100);
         }
     }
 }
