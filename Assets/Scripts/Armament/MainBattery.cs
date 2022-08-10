@@ -22,7 +22,7 @@ namespace WOW.Armament
         public float Speed = 1;
         public GameObject HE;
         public GameObject AP;
-        PlayerController PC;
+        ShipController PC;
         public GameObject[] firePoint;
 
         GameObject bulletFactory;
@@ -36,7 +36,7 @@ namespace WOW.Armament
         // Start is called before the first frame update
         void Start()
         {
-            PC = GameObject.FindGameObjectWithTag("PlayerController")?.GetComponent<PlayerController>();
+            PC = GameObject.FindGameObjectWithTag("ShipController")?.GetComponent<ShipController>();
             bulletFactory = HE;
             ChangeBullet("HE");
             //transform.rotation = gunSet == GunSet.front ? Quaternion.Euler(Vector3.zero) : Quaternion.Euler(0, 180, 0);

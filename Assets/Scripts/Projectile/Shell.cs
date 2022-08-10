@@ -51,6 +51,8 @@ namespace WOW.Projectile
         //public ParticleSystem[] impactParticles;
         public ParticleSystem[] explosionParticles;
 
+        public float worldScale = 100;
+
         private void Start()
         {
             if (shellData != null)
@@ -145,7 +147,8 @@ namespace WOW.Projectile
         protected override void OnImpact(Damageable damageable)
         {
             //print(GetInstanceID() + " OnImpact");
-            penetration = (float)GetPenetration();
+            penetration = (float)GetPenetration() * worldScale;
+            print("init penetration: " + penetration);
             //print("관통력: " + penetration);
             // 피격 시 이벤트
             //print("Shell OnImpact");
@@ -160,18 +163,20 @@ namespace WOW.Projectile
                     Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
                 }
                 //print(lastraycastHit.normal + " / " + transform.forward);
-                //print("입사각: " + angle);
+                print("입사각: " + angle);
                 // 도탄 확인
                 if (damageable.CheckRicochet(angle, shellData.bulletRicochetAt, shellData.bulletAlwaysRicochetAt))
                 {
                     print("도탄 발생");
+                    DamageTextManager.Instance.CreateDamageText(transform, "도탄 발생", 20);
                     OnExplosion();
                     return;
                 }
                 // 관통 확인
                 if (!damageable.CheckPenetrate(ref penetration))
                 {
-                    print("관통 실패");
+                    print("관통 실패: " + penetration);
+                    DamageTextManager.Instance.CreateDamageText(transform, "관통 실패", 20);
                     OnExplosion();
                     return;
                 }
@@ -198,18 +203,18 @@ namespace WOW.Projectile
                     Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
                 }
                 //print(lastraycastHit.normal + " / " + transform.forward);
-                print("입사각: " + angle);
+                //print("입사각: " + angle);
                 // 도탄 확인
                 if (damageable.CheckRicochet(angle, shellData.bulletRicochetAt, shellData.bulletAlwaysRicochetAt))
                 {
-                    print("도탄 발생");
+                    //print("도탄 발생");
                     OnExplosion();
                     return;
                 }
                 // 관통 확인
                 if (!damageable.CheckPenetrate(ref penetration))
                 {
-                    print("관통 실패");
+                    //print("관통 실패");
                     OnExplosion();
                     return;
                 }
