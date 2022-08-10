@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using WOW.Data;
 
 namespace WOW
 {
@@ -93,6 +94,30 @@ namespace WOW
                 return res.GetInt32(0);
             }
             return 1;
+        }
+
+        public ShellData GetShellData(int shellID)
+        {
+            ShellData shellData = new ShellData();
+            string sql = string.Format("SELECT * from Shells where ID=={0};", shellID);
+            var res = m_DatabaseAccess.ExecuteQuery(sql);
+            if (res.Read())
+            {
+                Debug.Log(res.GetString(1));
+                shellData.alphaPiercingCS = res.GetFloat(2);
+                shellData.alphaPiercingHE = res.GetFloat(3);
+                shellData.bulletAirDrag = res.GetFloat(4);
+                shellData.bulletAlwaysRicochetAt = res.GetFloat(5);
+                shellData.bulletCapNormalizeMaxAngle = res.GetFloat(6);
+                shellData.bulletDetonator = res.GetFloat(7);
+                shellData.bulletDetonatorThreshold = res.GetFloat(8);
+                shellData.bulletDiametr = res.GetFloat(9);
+                shellData.bulletKrupp = res.GetFloat(10);
+                shellData.bulletMass = res.GetFloat(11);
+                shellData.bulletRicochetAt = res.GetFloat(12);
+                shellData.bulletSpeed = res.GetFloat(13);
+            }
+            return shellData;
         }
 
 
