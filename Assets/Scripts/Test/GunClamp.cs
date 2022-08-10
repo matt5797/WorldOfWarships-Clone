@@ -20,7 +20,7 @@ public class GunClamp : MonoBehaviour
 
     void Start()
     {
-        transform.rotation = gunSet == GunSet.front ? Quaternion.Euler(Vector3.zero) : Quaternion.Euler(0, 180, 0);
+        //transform.rotation = gunSet == GunSet.front ? Quaternion.Euler(Vector3.zero) : Quaternion.Euler(0, 180, 0);
     }
 
     void Update()
@@ -39,13 +39,12 @@ public class GunClamp : MonoBehaviour
             Quaternion rot = Quaternion.LookRotation(dir, transform.up);
             transform.rotation = Quaternion.Lerp(transform.rotation, rot, rotSpeed);
         }
-        else if(gunSet == GunSet.back && frontBack <=0)
+        else if(gunSet == GunSet.back && frontBack < 0)
         {
             //transform.rotation = Quaternion.LookRotation(dir);
-            Quaternion rot = Quaternion.LookRotation(dir, transform.up);
+            Quaternion rot = Quaternion.LookRotation(dir * -1, transform.up);
             transform.rotation = Quaternion.Lerp(transform.rotation, rot, rotSpeed);
         }
-
     }
 
     Vector3 GetMouseWorldPosition()
@@ -65,7 +64,7 @@ public class GunClamp : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.blue;
 
         if (target != Vector3.zero)
         {

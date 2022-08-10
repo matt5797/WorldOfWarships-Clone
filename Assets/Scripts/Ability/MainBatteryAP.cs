@@ -18,7 +18,7 @@ namespace WOW.Ability
         //for double click
         public float m_DoubleClickSecond = 0.25f;
         private bool m_IsOneClick = false;
-        private double m_Timer = 0;
+        private float m_Timer = 0;
         
         private void Start()
         {

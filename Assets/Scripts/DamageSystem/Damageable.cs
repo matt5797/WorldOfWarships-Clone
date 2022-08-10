@@ -13,6 +13,7 @@ namespace WOW.DamageSystem
         public int damage;
         public int bulletID;
         public int hitPointID;
+        public Damageable damageable;
     }
     
     public abstract class Damageable : MonoBehaviour
@@ -21,7 +22,30 @@ namespace WOW.DamageSystem
         public UnityEvent<DamageInfo> onHit, onThrough;
         public UnityEvent onBreakdown, onRecovery, onCompleteDestroy, onFire;
         bool canDamage = true;
-        float destroyTime;
+        public bool canRecovery = false;
+        public float destroyTime = 5;
+
+        int hp;
+        public int HP
+        {
+            get { return hp; }
+            set
+            {
+                hp = value;
+                if (hp <= 0)
+                {
+                    if (canRecovery)
+                    {
+                        onBreakdown.Invoke();
+                    }
+                    else
+                    {
+                        onCompleteDestroy.Invoke();
+                    }
+                    canDamage = false;
+                }
+            }
+        }
 
         private void Start()
         {
@@ -29,6 +53,8 @@ namespace WOW.DamageSystem
             onRecovery.AddListener(OnRecovery);
             onCompleteDestroy.AddListener(OnCompleteDestroy);
             onFire.AddListener(OnFire);
+
+            HP = damageableData.hp;
         }
 
         public bool CheckOvermatch(float diameter)
@@ -86,37 +112,44 @@ namespace WOW.DamageSystem
         public void CheckDamage(int damage, int bulletID)
         {
             //print("CheckDamage");
-            if (canDamage)
-            {
-                DamageInfo damageInfo = new DamageInfo();
-                damageInfo.time = Time.time;
-                damageInfo.damage = damage;
-                damageInfo.bulletID = bulletID;
-                damageInfo.hitPointID = GetInstanceID();
-                onHit.Invoke(damageInfo);
-            }
+            DamageInfo damageInfo = new DamageInfo();
+            damageInfo.time = Time.time;
+            damageInfo.damage = damage;
+            damageInfo.bulletID = bulletID;
+            damageInfo.hitPointID = GetInstanceID();
+            damageInfo.damageable = this;
+            onHit.Invoke(damageInfo);
         }
 
-        public void ApplyDamage(int damage)
+        public int ApplyDamage(int damage)
         {
-            print("ApplyDamage");
+            if (canDamage)
+            {
+                print(damage + "/" + HP + " damage: " + gameObject);
+                HP -= (int)(damage * damageableData.multiple);
+                return (int)(damage * damageableData.multiple);
+            }
+            return 0;
         }
 
 
         private void OnRecovery()
         {
+            canDamage = true;
+            HP = damageableData.hp;
             DamageTextManager.Instance.CreateDamageText(transform, "회복", 12);
         }
 
-        private void OnBreakdown()
+        public void OnBreakdown()
         {
-            destroyTime = Time.time;
             StartCoroutine(Recovery());
+            DamageTextManager.Instance.CreateDamageText(transform, "파손", 12);
         }
 
-        private void OnCompleteDestroy()
+        public void OnCompleteDestroy()
         {
             canDamage = false;
+            DamageTextManager.Instance.CreateDamageText(transform, "완전 파손", 12);
         }
 
         private void OnFire()
@@ -132,6 +165,17 @@ namespace WOW.DamageSystem
             }
             onRecovery.Invoke();
             yield return null;
+        }
+
+        public void OnThrough(int bulletID)
+        {
+            DamageInfo damageInfo = new DamageInfo();
+            damageInfo.time = Time.time;
+            damageInfo.damage = 0;
+            damageInfo.bulletID = bulletID;
+            damageInfo.hitPointID = GetInstanceID();
+            damageInfo.damageable = this;
+            onThrough.Invoke(damageInfo);
         }
     }
 }

@@ -37,7 +37,7 @@ namespace WOW.Projectile
         [NonSerialized] public bool isShoot;
         public ShellData shellData;
         public float speedMultiple = 1;
-        public float DestroyY = -10;
+        public float DestroyY = -0.01f;
         Quaternion fireRotation;
         float penetration;
 
@@ -47,6 +47,9 @@ namespace WOW.Projectile
 
         Vector3 lastPosition;
         RaycastHit lastraycastHit;
+
+        //public ParticleSystem[] impactParticles;
+        public ParticleSystem[] explosionParticles;
 
         private void Start()
         {
@@ -93,7 +96,7 @@ namespace WOW.Projectile
                 //Move
                 //transform.position += fireRotation * new Vector3(0, (float)y / 100, (float)x / 100);
                 //transform.position = new Vector3(0, (float)y / 100, (float)x / 100);
-                transform.position += fireRotation * new Vector3(0, (float)v_y / 250, (float)v_x / 250);
+                transform.position += fireRotation * new Vector3(0, (float)v_y / 3000, (float)v_x / 3000);
 
                 Vector3 attackVector = transform.position - lastPosition;
 
@@ -123,7 +126,7 @@ namespace WOW.Projectile
             this.shootAngle = shootAngle * Mathf.Deg2Rad;
             print("OnShoot: " + shootAngle + ", " + this.shootAngle);
             v_x = Math.Cos(this.shootAngle) * shellData.bulletSpeed;
-            v_y = Math.Sin(this.shootAngle) * shellData.bulletSpeed;
+            v_y = Math.Sin(this.shootAngle) * shellData.bulletSpeed * UnityEngine.Random.Range(1,10) / 10;
             y = 0;
             x = 0;
         }
@@ -141,11 +144,50 @@ namespace WOW.Projectile
 
         protected override void OnImpact(Damageable damageable)
         {
+            //print(GetInstanceID() + " OnImpact");
             penetration = (float)GetPenetration();
-            print("관통력: " + penetration);
+            //print("관통력: " + penetration);
             // 피격 시 이벤트
             //print("Shell OnImpact");
             // 오버매치이면 과관통, 도탄 무시
+            if (!damageable.CheckOvermatch(shellData.bulletDiametr))
+            {
+                float angle = Vector3.Angle(lastraycastHit.normal * -1, transform.forward);
+                if (lastraycastHit.normal.magnitude == 0)
+                {
+                    // 레이가 초기값일 가능성이 높지만, 만약을 위해 60도로 판정
+                    angle = 60;
+                    Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
+                }
+                //print(lastraycastHit.normal + " / " + transform.forward);
+                //print("입사각: " + angle);
+                // 도탄 확인
+                if (damageable.CheckRicochet(angle, shellData.bulletRicochetAt, shellData.bulletAlwaysRicochetAt))
+                {
+                    print("도탄 발생");
+                    OnExplosion();
+                    return;
+                }
+                // 관통 확인
+                if (!damageable.CheckPenetrate(ref penetration))
+                {
+                    print("관통 실패");
+                    OnExplosion();
+                    return;
+                }
+            }
+            else
+            {
+                print("오버매치 발생");
+            }
+            // 부가 효과 체크
+            damageable.CheckEffect(shellData);
+            damageable.CheckDamage(shellData.damage, GetInstanceID());
+        }
+
+        protected override void OnThrough(Damageable damageable)
+        {
+            //print(damageable.name + " 관통");
             if (!damageable.CheckOvermatch(shellData.bulletDiametr))
             {
                 float angle = Vector3.Angle(lastraycastHit.normal * -1, transform.forward);
@@ -176,20 +218,19 @@ namespace WOW.Projectile
             {
                 print("오버매치 발생");
             }
-            // 부가 효과 체크
-            damageable.CheckEffect(shellData);
-            damageable.CheckDamage(shellData.damage, GetInstanceID());
-        }
-
-        protected override void OnThrough(Damageable damageable)
-        {
-            print(damageable.name + " 관통");
+            damageable.OnThrough(GetInstanceID());
         }
 
         void OnExplosion()
         {
             // 추후 확산 판정 삽입?
-            print("OnExplosion");
+            //print("OnExplosion");
+            foreach (ParticleSystem particleFactory in explosionParticles)
+            {
+                ParticleSystem particle = Instantiate<ParticleSystem>(particleFactory);
+                particle.transform.position = transform.position;
+                particle.Play();
+            }
             OnApplyDamage();
             Destroy(gameObject);
         }
