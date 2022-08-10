@@ -1681,7 +1681,7 @@ TerrainCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711615287}
   m_Material: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 8d39451e2fce31d448b082ee1e7d5285, type: 2}
   m_EnableTreeColliders: 0
 --- !u!218 &1711615289
@@ -2076,6 +2076,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 754991105}
     m_Modifications:
+    - target: {fileID: 2841164060616850478, guid: 429b20fcbb0bd104d9369697be660298,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2841164060616850478, guid: 429b20fcbb0bd104d9369697be660298,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3aac4fd694712a24992abde75e687120,
+        type: 3}
     - target: {fileID: 5253183808434227088, guid: 429b20fcbb0bd104d9369697be660298,
         type: 3}
       propertyPath: m_Name
@@ -2195,6 +2206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689155349296252119, guid: 429b20fcbb0bd104d9369697be660298,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.65098
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429b20fcbb0bd104d9369697be660298, type: 3}
