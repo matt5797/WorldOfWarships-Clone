@@ -5,16 +5,21 @@ using WOW.Controller;
 
 namespace WOW.Armament
 {
-
+    /// <summary>
+    /// 배의 주포 클래스
+    /// </summary>
     public class MainBattery : ArmamentBase
     {
+        /// <summary>
+        /// 주포의 위치
+        /// </summary>
         public enum GunSet
         {
             front,
             back
         }
-
-        public GunSet gunSet = GunSet.front;
+        
+        public GunSet gunSet = GunSet.front;    //현재 방향
         
         public Transform rootPosition;
         Vector3 ScreenCenter;
@@ -116,29 +121,36 @@ namespace WOW.Armament
                 GameObject bullet = Instantiate(bulletFactory);
                 bullet.transform.position = firePoint[i].transform.position;
                 bullet.transform.rotation = firePoint[i].transform.rotation;
-                //float angle = Vector3.SignedAngle(Vector3.up, transform.up, transform.right) * -1;
-                // 탄환의 스크립트에 접근하여, 총구의 각도를 전해주고, 발사하도록 명령한다.
-                // 탄환.GetComponent<Ballistic>().OnShoot(현재 총구 각도)
-                //bullet.GetComponent<Ballistic>().OnShoot(angle);
             }
         }
 
+        /// <summary>
+        /// 탄환을 바꿔줍니다.
+        /// </summary>
+        /// <param name="bulletType">탄환의 종류 ("AP", "HE")</param>
         public void ChangeBullet(string bulletType)
         {
             if (bulletType == "AP")
             {
+                // 탄환을 AP로 바꿔줍니다.
                 bulletFactory = AP;
+                // 탄환의 이름을 통해 탄환 ID를 가져옵니다.
                 ShellID = BallisiticManager.Instance.GetShellID(HE.name);
-                print(ShellID);
             }
             else if (bulletType == "HE")
             {
+                // 탄환을 HE로 바꿔줍니다.
                 bulletFactory = HE;
+                // 탄환의 이름을 통해 탄환 ID를 가져옵니다.
                 ShellID = BallisiticManager.Instance.GetShellID(HE.name);
-                print(ShellID);
             }
         }
 
+        /// <summary>
+        /// 타겟에 맞추기 위한 각도를 반환합니다.
+        /// </summary>
+        /// <param name="targetX">타겟과의 X축 거리</param>
+        /// <returns></returns>
         float GetAngle(int targetX)
         {
             return BallisiticManager.Instance.GetAngle(ShellID, targetX * 100);
