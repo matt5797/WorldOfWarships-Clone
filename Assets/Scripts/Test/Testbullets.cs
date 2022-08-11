@@ -5,43 +5,38 @@ using UnityEngine;
 
 public class Testbullets : MonoBehaviour
 {
-
+    // 해수면에 향해 떨어지고 싶다
+    // 해수면에 닿으면 앞으로 날아가고 싶다
     public float speed = 5;
 
     //좌표값 받아오는 변수
-    public int torpedo_pos;
-    public int monster_pos;
+    public float torpedo_pos;
+    public float water_pos;
 
     public Transform torpedo;
-    public Transform monster;
+    public Transform water;
+
 
 
     void Update()
     {
         // 어뢰의 y값을 저장한다
-        torpedo_pos = (int)torpedo.transform.position.y;
+        torpedo_pos = torpedo.transform.position.y;
 
         if (GameObject.Find("torpedo Bullet"))
         {
-            // 몬스터를 찾아 y값을 저장 한다
-            monster_pos = (int)GameObject.Find("Monster").transform.position.y;
-
-            // 만약 어뢰와 몬스터의 y 값이 같다면
-            if (torpedo_pos == monster_pos)
+            // 만약 어뢰와 물의 y 값이 같다면
+            if (transform.position.y <= 0)
             {
                 
-                // 어뢰가 몬스터와의 y값이 같은 곳에 리지드 바디의 y 값을 고정하고
+                // 어뢰가 물의 y값이 같은 곳에 리지드 바디의 y 값을 고정하고
                 gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
-                // 어뢰가 몬스터를 향해 달려 나간다
-                transform.position = Vector3.MoveTowards(gameObject.transform.position, monster.transform.position, speed * Time.deltaTime);
-               
+                // 어뢰가 앞을 향해 달려 나간다
+                transform.Translate(gameObject.transform.forward * Time.deltaTime, Space.World);
             }
 
         }
-        else
-        {
-            // 만약 몬스터가 없을 시 그냥 바닥에 떨어진다
-        }
+     
     }
 
     private void OnCollisionEnter(Collision collision)
