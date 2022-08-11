@@ -64,7 +64,7 @@ namespace WOW
             m_FiringTable.Add(shell, insertData);
         }
 
-        public float GetAngle(int shell, int targetX)
+        /*public float GetAngle(int shell, int targetX)
         {
             if (!m_FiringTable.ContainsKey(shell))
             {
@@ -83,7 +83,7 @@ namespace WOW
             }
 
             return nearestAngle;
-        }
+        }*/
         
         public int GetShellID(string ShellName)
         {
@@ -121,7 +121,7 @@ namespace WOW
         }
 
 
-        /*public float GetAngle(int shell, int targetX)
+        public float GetAngle(int shell, int targetX)
         {
             FiringTable min = default;
             FiringTable max = default;
@@ -159,7 +159,7 @@ namespace WOW
                 return min.Angle;
             }
             // 추후 근사치 계산 추가?
-        }*/
+        }
 
         private void OnDestroy()
         {
