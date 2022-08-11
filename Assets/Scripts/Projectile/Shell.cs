@@ -173,7 +173,7 @@ namespace WOW.Projectile
                 {
                     // 레이가 초기값일 가능성이 높지만, 만약을 위해 60도로 판정
                     angle = 60;
-                    Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
+                    //Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
                 }
                 //print(lastraycastHit.normal + " / " + transform.forward);
                 print("입사각: " + angle);
@@ -213,7 +213,7 @@ namespace WOW.Projectile
                 {
                     // 레이가 초기값일 가능성이 높지만, 만약을 위해 60도로 판정
                     angle = 60;
-                    Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
+                    //Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
                 }
                 //print(lastraycastHit.normal + " / " + transform.forward);
                 //print("입사각: " + angle);

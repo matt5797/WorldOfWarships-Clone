@@ -19,7 +19,7 @@ namespace WOW.DamageSystem
         Dictionary<int, List<DamageInfo>> damageInfoDict = new Dictionary<int, List<DamageInfo>>();
         bool isDead = false;
         Damageable[] damageables;
-        HPBar hpBar;
+        public HPBar hpBar;
 
         public int HP
         {
@@ -34,7 +34,7 @@ namespace WOW.DamageSystem
         private void Start()
         {
             runtimeHP = maxHP;
-            hpBar = GetComponentInChildren<HPBar>();
+            //hpBar = GetComponentInChildren<HPBar>();
             onThrough = new UnityEvent<DamageInfo>();
             onThrough.AddListener(OnThrough);
 

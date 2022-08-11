@@ -8,7 +8,7 @@ namespace WOW.Armament
     /// <summary>
     /// 배의 주포 클래스
     /// </summary>
-    public class MainBattery : ArmamentBase
+    public class MainBattery1 : ArmamentBase
     {
         /// <summary>
         /// 주포의 위치
@@ -33,12 +33,10 @@ namespace WOW.Armament
         GameObject bulletFactory;
         public int ShellID;
 
-        //public Transform root;
+        public Transform root;
         //public Vector3 target;
         [Range(0.0f, 1.0f)]
         public float rotSpeed = 0.1f;
-
-        public Quaternion rotateOffset;
 
         // Start is called before the first frame update
         void Start()
@@ -55,7 +53,7 @@ namespace WOW.Armament
                 ChangeBullet("AP");
             }
             //transform.rotation = gunSet == GunSet.front ? Quaternion.Euler(Vector3.zero) : Quaternion.Euler(0, 180, 0);
-            //root = gameObject.GetComponentInParent<BattleShip.BattleShipBase>().transform;
+            root = gameObject.GetComponentInParent<BattleShip.BattleShipBase>().transform;
         }
 
         // Update is called once per frame
@@ -73,16 +71,26 @@ namespace WOW.Armament
             target.y = transform.position.y;
 
             Vector3 dir = (target - transform.position).normalized;
-            Debug.DrawRay(transform.position, dir, Color.red);
+
+            float frontBack = Vector3.Dot(root.forward, dir) ;
 
             float x = GetAngle((int)new Vector3(target.x, transform.position.y, target.z).magnitude);
             x = Mathf.Clamp(x, 0, 30);
-
-            Quaternion rot = Quaternion.LookRotation(dir, transform.up) * rotateOffset;
-            rot.eulerAngles = new Vector3(x, rot.eulerAngles.y, 0);
-            //print(GetInstanceID() + " / " + rot);
-            //print(GetInstanceID() + " / " + transform.position);
-            transform.rotation = Quaternion.Lerp(transform.rotation, rot, rotSpeed);
+            
+            if (gunSet == GunSet.front && frontBack >= -0.6)
+            {
+                //transform.rotation = Quaternion.LookRotation(dir);
+                Quaternion rot = Quaternion.LookRotation(dir, transform.up);
+                rot.eulerAngles = new Vector3(-x, rot.eulerAngles.y, 0);
+                transform.rotation = Quaternion.Lerp(transform.rotation, rot, rotSpeed);
+            }
+            else if (gunSet == GunSet.back && frontBack <= 0.6)
+            {
+                //transform.rotation = Quaternion.LookRotation(dir);
+                Quaternion rot = Quaternion.LookRotation(dir * -1, transform.up);
+                rot.eulerAngles = new Vector3(x, rot.eulerAngles.y, 0);
+                transform.rotation = Quaternion.Lerp(transform.rotation, rot, rotSpeed);
+            }
         }
 
         // 발사할 수 있는지 여부를 반환합니다.

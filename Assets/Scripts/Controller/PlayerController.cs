@@ -1,5 +1,7 @@
 using UnityEngine;
 using WOW.BattleShip;
+using WOW.DamageSystem;
+using WOW.UI;
 
 namespace WOW.Controller
 {
@@ -9,8 +11,14 @@ namespace WOW.Controller
         RaycastHit cameraCenterHit;
         public float rayMaxDistance = 1000;
         public LayerMask targetLayerMask;
-        
-        // Update is called once per frame
+
+        private void Start()
+        {
+            Destroy(GetComponentInChildren<Canvas>().gameObject);
+            GameObject.FindGameObjectWithTag("PlayerHPBar");
+            GetComponentInChildren<DamageableManager>().hpBar = GameObject.FindGameObjectWithTag("PlayerHPBar")?.GetComponent<HPBar>();
+        }
+
         void Update()
         {
             // Set Target from Camera Point
@@ -71,7 +79,7 @@ namespace WOW.Controller
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(TargetPoint, 0.3f);
+            Gizmos.DrawSphere(TargetPoint, 0.1f);
         }
     }
 }
