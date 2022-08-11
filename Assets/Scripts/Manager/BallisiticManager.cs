@@ -64,7 +64,7 @@ namespace WOW
             m_FiringTable.Add(shell, insertData);
         }
 
-        /*public float GetAngle(int shell, int targetX)
+        public float GetAngle(int shell, int targetX)
         {
             if (!m_FiringTable.ContainsKey(shell))
             {
@@ -83,8 +83,8 @@ namespace WOW
             }
 
             return nearestAngle;
-        }*/
-        
+        }
+
         public int GetShellID(string ShellName)
         {
             string sql = string.Format("SELECT ID from Shells where name==\"{0}\";", ShellName);
@@ -120,7 +120,7 @@ namespace WOW
             return shellData;
         }
 
-
+/*
         public float GetAngle(int shell, int targetX)
         {
             FiringTable min = default;
@@ -160,7 +160,7 @@ namespace WOW
             }
             // 추후 근사치 계산 추가?
         }
-
+*/
         private void OnDestroy()
         {
             m_DatabaseAccess.CloseSqlConnection();
