@@ -3,21 +3,12 @@ using WOW.BattleShip;
 
 namespace WOW.Controller
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : ShipController
     {
-        public BattleShipBase ship;
-        public Vector3 targetPoint;
-
         Ray cameraCenterRay;
         RaycastHit cameraCenterHit;
         public float rayMaxDistance = 1000;
         public LayerMask targetLayerMask;
-
-        public Vector3 TargetPoint
-        {
-            get { return targetPoint; }
-            private set { targetPoint = value; }
-        }
         
         // Update is called once per frame
         void Update()

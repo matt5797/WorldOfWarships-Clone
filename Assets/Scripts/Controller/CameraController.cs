@@ -15,7 +15,7 @@ namespace WOW.Controller
         // Start is called before the first frame update
         void Start()
         {
-            m_Target = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<PlayerController>().ship.transform;
+            //m_Target = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<PlayerController>().ship.transform;
             cameraState = new OrbitState();
         }
 
