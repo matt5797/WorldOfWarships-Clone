@@ -1,0 +1,930 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 27.07.2017 14:51:17
+
+newmtl ASC006_Atlanta_1942
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\ASC006_Atlanta_1942_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\ASC006_Atlanta_1942_a.dds
+
+newmtl C008_Grid_5
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\C008_Grid_5_a.dds
+	map_d G:\Models\World_of_Warships\Atlanta_1942!\C008_Grid_5_a.dds
+
+newmtl C002_Razlom
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\C002_Razlom_a.dds
+
+newmtl AM029_Ammunition_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM029_Ammunition_Box_a.dds
+
+newmtl AM485_Fairlead
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM485_Fairlead_a.dds
+
+newmtl AM001_Bollard_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM001_Bollard_2_a.dds
+
+newmtl AM024_Hatch_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM024_Hatch_2_a.dds
+
+newmtl AM072_Ships_bell
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM072_Ships_bell_a.dds
+
+newmtl CM010_Fire_Hose_Reel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\CM010_Fire_Hose_Reel_a.dds
+
+newmtl AM088_Capstan
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM088_Capstan_a.dds
+
+newmtl AM068_Hatch_3
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM068_Hatch_3_a.dds
+
+newmtl AD001_Director_Mk37
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AD001_Director_Mk37_a.dds
+
+newmtl AD035_Torpedo_Director_27_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AD035_Torpedo_Director_27_a.dds
+
+newmtl AD075_Director_Mk44_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AD075_Director_Mk44_a.dds
+
+newmtl AGA003_20mm_Oerlikon_MK4
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AGA003_20mm_Oerlikon_MK4_a.dds
+
+newmtl AGA013_1in_Mk2_Mod2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AGA013_1in_Mk2_Mod2_a.dds
+
+newmtl AGS010_5in38_Mk32_Mod12_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AGS010_5in38_Mk32_Mod12_a.dds
+
+newmtl ARS077_SC1_radar_antenna_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\ARS077_SC1_radar_antenna_a.dds
+
+newmtl C006_Grid_3_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\C006_Grid_3_a.dds
+	map_d G:\Models\World_of_Warships\Atlanta_1942!\C006_Grid_3_a.dds
+
+newmtl AF076_Rangefinder_2_5m_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AF076_Rangefinder_2_5m_a.dds
+
+newmtl Format_0021
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM032_Flag_a.dds
+
+newmtl AM108_Reels_4
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM108_Reels_4_a.dds
+
+newmtl AM115_RDF
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM115_RDF_a.dds
+
+newmtl AM433_MC_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM433_MC_Box_a.dds
+
+newmtl AM490_Trash_can
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM490_Trash_can_a.dds
+
+newmtl AM176_Target_Desingnator
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM176_Target_Desingnator_a.dds
+
+newmtl AM114_Freon_Cylinder_acetylene
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM114_Freon_Cylinder_acetylene_a.dds
+
+newmtl AM058_Boat
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM058_Boat_a.dds
+
+newmtl AM105_Signal_Lamp_3
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM105_Signal_Lamp_3_a.dds
+
+newmtl AM045_Running_Lights_F
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM045_Running_Lights_F_a.dds
+
+newmtl AM293_Reels
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM293_Reels_a.dds
+
+newmtl AM509_Voice_tube_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM509_Voice_tube_2_a.dds
+
+newmtl AM535_Elec_Panel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM535_Elec_Panel_a.dds
+
+newmtl AM177_Ammunition_Box_8
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM177_Ammunition_Box_8_a.dds
+
+newmtl AM077_Paravane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM077_Paravane_a.dds
+
+newmtl AM091_motor_boats
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM091_motor_boats_a.dds
+
+newmtl AM129_Turtles_box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM129_Turtles_box_a.dds
+
+newmtl AM037_Searchlight_900mm
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM037_Searchlight_900mm_a.dds
+
+newmtl AM018_Compass_Binnacle
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM018_Compass_Binnacle_a.dds
+
+newmtl AM173_Insulator
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM173_Insulator_a.dds
+
+newmtl AM532_Sky_Lookout_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM532_Sky_Lookout_2_a.dds
+
+newmtl AM025_Pelorus_Mk7
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM025_Pelorus_Mk7_a.dds
+
+newmtl AM549_Life_Buoy
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM549_Life_Buoy_a.dds
+
+newmtl CM004_Barbette_Out
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\CM004_Barbette_Out_a.dds
+
+newmtl AM038_Searchlight_600mm
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM038_Searchlight_600mm_a.dds
+
+newmtl AM019_Ventilators_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM019_Ventilators_1_a.dds
+
+newmtl AM073_Floater_Net_Basket
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM073_Floater_Net_Basket_a.dds
+	map_d G:\Models\World_of_Warships\Atlanta_1942!\AM073_Floater_Net_Basket_a.dds
+
+newmtl C017_Grid_10
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\C017_Grid_10_a.dds
+	map_d G:\Models\World_of_Warships\Atlanta_1942!\C017_Grid_10_a.dds
+
+newmtl AM533_Wind_Speed_Direction
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM533_Wind_Speed_Direction_a.dds
+
+newmtl AM006_Reels_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM006_Reels_1_a.dds
+
+newmtl AM356_Signal_Trap
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM356_Signal_Trap_a.dds
+
+newmtl AM482_12ft_punt
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM482_12ft_punt_a.dds
+
+newmtl AM044_Boat_Winch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM044_Boat_Winch_a.dds
+
+newmtl AM092_motor_launch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM092_motor_launch_a.dds
+
+newmtl AGT004_21in_MK14_Torpedo_Tubes
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AGT004_21in_MK14_Torpedo_Tubes_a.dds
+
+newmtl AM012_Depth_Charge_Roller_Rack
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM012_Depth_Charge_Roller_Rack_a.dds
+
+newmtl AM130_Acetilen_Cylinder
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM130_Acetilen_Cylinder_a.dds
+
+newmtl AM287_Davit
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM287_Davit_a.dds
+
+newmtl AM070_Loading_Machine
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM070_Loading_Machine_a.dds
+
+newmtl AM496_Torpedo_533mm_Mk_15
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM496_Torpedo_533mm_Mk_15_a.dds
+
+newmtl AM200_Screened_speed_light
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM200_Screened_speed_light_a.dds
+
+newmtl AM491_Crane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM491_Crane_a.dds
+
+newmtl AM191_Ammunition_Box_11
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM191_Ammunition_Box_11_a.dds
+
+newmtl AM352_Stern_Light
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM352_Stern_Light_a.dds
+
+newmtl CM001_Propeller
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\CM001_Propeller_a.dds
+
+newmtl AM014_Depth_Charge_Roller_Track
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Atlanta_1942!\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Atlanta_1942!\AM014_Depth_Charge_Roller_Track_a.dds

@@ -21,10 +21,10 @@ namespace WOW.Armament
         
         public GunSet gunSet = GunSet.front;    //현재 방향
         
-        public Transform rootPosition;
-        Vector3 ScreenCenter;
+        //public Transform rootPosition;
+        //Vector3 ScreenCenter;
         public Vector3 target;
-        public float Speed = 1;
+        //public float Speed = 1;
         public GameObject HE;
         public GameObject AP;
         ShipController controller;
@@ -38,7 +38,9 @@ namespace WOW.Armament
         [Range(0.0f, 1.0f)]
         public float rotSpeed = 0.1f;
 
-        public Quaternion rotateOffset;
+        public Quaternion rotateOffset = Quaternion.Euler(0, 0.001f, 0);
+        public float minY = -90;
+        public float maxY = 90;
 
         // Start is called before the first frame update
         void Start()
@@ -72,6 +74,7 @@ namespace WOW.Armament
             
             target.y = transform.position.y;
 
+/*
             Vector3 dir = (target - transform.position).normalized;
             Debug.DrawRay(transform.position, dir, Color.red);
 
@@ -79,10 +82,10 @@ namespace WOW.Armament
             x = Mathf.Clamp(x, 0, 30);
 
             Quaternion rot = Quaternion.LookRotation(dir, transform.up) * rotateOffset;
-            rot.eulerAngles = new Vector3(x, rot.eulerAngles.y, 0);
-            //print(GetInstanceID() + " / " + rot);
-            //print(GetInstanceID() + " / " + transform.position);
+            rot.eulerAngles = new Vector3(x, Mathf.Clamp(Mathf.Repeat(rot.eulerAngles.y + 180, 360) - 180, minY, maxY), 0);
             transform.rotation = Quaternion.Lerp(transform.rotation, rot, rotSpeed);
+*/
+            
         }
 
         // 발사할 수 있는지 여부를 반환합니다.

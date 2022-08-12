@@ -1,0 +1,1039 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 29.07.2017 15:49:40
+
+newmtl JSA032_Ryujo_1944
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\JSA032_Ryujo_1944_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JSA032_Ryujo_1944_a.dds
+
+newmtl C002_Razlom
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\C002_Razlom_a.dds
+
+newmtl JGA010_25mm_Type96
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JGA010_25mm_Type96_a.dds
+
+newmtl JM027_Fairlead_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM027_Fairlead_2_a.dds
+
+newmtl JM029_Leadsman_Platform
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM029_Leadsman_Platform_a.dds
+
+newmtl JM026_Bollards
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM026_Bollards_a.dds
+
+newmtl CM005_Anchor_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\CM005_Anchor_1_a.dds
+
+newmtl JM033_Roller_Fairled
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM033_Roller_Fairled_a.dds
+
+newmtl JM124_Signal_Lamp_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM124_Signal_Lamp_2_a.dds
+
+newmtl JM018_Ventilators_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM018_Ventilators_2_a.dds
+
+newmtl JM119_Gun_Deck_3
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM119_Gun_Deck_3_a.dds
+
+newmtl JM058_Deck_Hatch_7
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM058_Deck_Hatch_7_a.dds
+
+newmtl JM310_Chrysanthemum_full
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM310_Chrysanthemum_full_a.dds
+
+newmtl JSA032_Ryujo_1944_Deck
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\JSA032_Ryujo_1944_Deck_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JSA032_Ryujo_1944_Deck_a.dds
+
+newmtl C004_Grid_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\C004_Grid_1_a.dds
+	map_d G:\Models\World_of_Warships\Ryujo1944\C004_Grid_1_a.dds
+
+newmtl JD030_Director_Type_95_Mod2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JD030_Director_Type_95_Mod2_a.dds
+
+newmtl JD056_MachineGun_Control_Position
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JD056_MachineGun_Control_Position_a.dds
+
+newmtl JD075_Director_Type_91
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JD075_Director_Type_91_a.dds
+
+newmtl JD022_Director_Type_95_Mod1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JD022_Director_Type_95_Mod1_a.dds
+
+newmtl JF009_Rangefinder_4_5
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JF009_Rangefinder_4_5_a.dds
+
+newmtl JM107_Binocular
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM107_Binocular_a.dds
+
+newmtl JF012_Rangefinder_1_5m_Fuso
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JF012_Rangefinder_1_5m_Fuso_a.dds
+
+newmtl JGA018_25mm_Type96_single
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JGA018_25mm_Type96_single_a.dds
+
+newmtl JGS009_127mm40_Type_89_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JGS009_127mm40_Type_89_a.dds
+
+newmtl JRS007_Radar_Type_22_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JRS007_Radar_Type_22_a.dds
+
+newmtl Format_0022
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM001_flag_a.dds
+
+newmtl Japan_Disk_3Blade_05
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\Japan_Disk_3Blade_05_a.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\Japan_Disk_3Blade_05_a.dds
+
+newmtl JAB009_Nakajima_B3N
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JAB009_Nakajima_B3N_a.dds
+
+newmtl Planes_Propeller_jap_red
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\Planes_Propeller_jap_red_a.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\Planes_Propeller_jap_red_a.dds
+
+newmtl JAD002_D3A1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JAD002_D3A1_a.dds
+
+newmtl Planes_Propeller_2_red
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\Planes_Propeller_2_red_a.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\Planes_Propeller_2_red_a.dds
+
+newmtl JAF005_Mitsubishi_A5M2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JAF005_Mitsubishi_A5M2_a.dds
+
+newmtl JM164_Turning_Indicator
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM164_Turning_Indicator_a.dds
+
+newmtl JM099_Signal_Lamp
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM099_Signal_Lamp_a.dds
+
+newmtl JM189_Compass_Binnacle
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM189_Compass_Binnacle_a.dds
+
+newmtl JM182_deck
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM182_deck_a.dds
+
+newmtl JM141_Chain_Fairlead
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM141_Chain_Fairlead_a.dds
+
+newmtl JM158_Main_Wheel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM158_Main_Wheel_a.dds
+
+newmtl JM092_Running_Lights_R
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM092_Running_Lights_R_a.dds
+
+newmtl JM028_Deck_Winch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM028_Deck_Winch_a.dds
+
+newmtl CM021_Accommodation_Ladder
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\CM021_Accommodation_Ladder_a.dds
+
+newmtl JM109_Deck_Hatch_11
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM109_Deck_Hatch_11_a.dds
+
+newmtl JM202_Fender
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM202_Fender_a.dds
+
+newmtl CM029_Emergency_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\CM029_Emergency_Box_a.dds
+
+newmtl CM010_Fire_Hose_Reel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\CM010_Fire_Hose_Reel_a.dds
+
+newmtl JM035_Dinghy_6m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM035_Dinghy_6m_a.dds
+
+newmtl JM101_Runway_Lights_1L
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM101_Runway_Lights_1L_a.dds
+
+newmtl JM149_Ammunition_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM149_Ammunition_Box_a.dds
+
+newmtl CM008_Life_Buoy_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\CM008_Life_Buoy_1_a.dds
+
+newmtl JM224_Searchlight_Control
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM224_Searchlight_Control_a.dds
+
+newmtl JM113_Flag_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM113_Flag_Box_a.dds
+
+newmtl CM028_Swab_Rack
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\CM028_Swab_Rack_a.dds
+
+newmtl JM009_Signal_Lamp
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM009_Signal_Lamp_a.dds
+
+newmtl JM037_Cutter_9m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM037_Cutter_9m_a.dds
+
+newmtl JM013_Reels_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM013_Reels_1_a.dds
+
+newmtl JM005_Freon_Cylinder
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM005_Freon_Cylinder_a.dds
+
+newmtl JM106_Ventilators_10
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM106_Ventilators_10_a.dds
+
+newmtl JM178_winch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM178_winch_a.dds
+
+newmtl JM194_Ventilation
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM194_Ventilation_a.dds
+
+newmtl JM030_Wind_detection
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM030_Wind_detection_a.dds
+
+newmtl JM002_Paravane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM002_Paravane_a.dds
+
+newmtl JM216_Board_crane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM216_Board_crane_a.dds
+
+newmtl JM040_Motor_Launch_Hangar_12m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM040_Motor_Launch_Hangar_12m_a.dds
+
+newmtl JM153_Boat
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM153_Boat_a.dds
+
+newmtl JM170_Crane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM170_Crane_a.dds
+
+newmtl JM016_Binocular_3
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM016_Binocular_3_a.dds
+
+newmtl JM198_Winch_Crane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM198_Winch_Crane_a.dds
+
+newmtl JM168_Ventilation
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM168_Ventilation_a.dds
+
+newmtl JM191_SanBox
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM191_SanBox_a.dds
+
+newmtl JM059_Deck_Hatch_8
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM059_Deck_Hatch_8_a.dds
+
+newmtl JM007_Life_Buoy_box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM007_Life_Buoy_box_a.dds
+
+newmtl JM044_After_Capstan
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM044_After_Capstan_a.dds
+
+newmtl CM001_Propeller
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\CM001_Propeller_a.dds
+
+newmtl JM117_Crew_Exercise_Machine
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Ryujo1944\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Ryujo1944\JM117_Crew_Exercise_Machine_a.dds

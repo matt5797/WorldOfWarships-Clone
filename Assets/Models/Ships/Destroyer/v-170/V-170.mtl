@@ -1,0 +1,272 @@
+newmtl _default_
+Kd 0.502 0.502 0.502 
+Ks 0.067 0.067 0.067 
+Ns 30
+
+newmtl GM753_Hatch_375
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm753_hatch_a.jpg
+map_Ks germany/common/textures/misc/gm753_hatch_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM755_Hatch_455
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm755_hatch_a.jpg
+map_Ks germany/common/textures/misc/gm755_hatch_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl CM029_Emergency_Box_596
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm029_emergency_box_a.jpg
+map_Ks common/textures/misc/cm029_emergency_box_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM534_Life_Boat_687
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm534_life_boat_a.jpg
+map_Ks germany/common/textures/misc/gm534_life_boat_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM700_AmmoBox_719
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm700_ammobox_a.jpg
+map_Ks germany/common/textures/misc/gm700_ammobox_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl CM010_Fire_Hose_Reel_736
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm010_fire_hose_reel_a.jpg
+map_Ks common/textures/misc/cm010_fire_hose_reel_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM007_LifeBuoy_749
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm007_lifebuoy_a.jpg
+map_Ks germany/common/textures/misc/gm007_lifebuoy_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl CM052_Fender_801
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm052_fender_a.jpg
+map_Ks common/textures/misc/cm052_fender_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl CM043_Accommodation_Ladder_949
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm043_accommodation_ladder_a.jpg
+map_Ks common/textures/misc/cm024_stairway_big_l_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl CM056_Ships_bell_957
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm056_ships_bell_a.jpg
+map_Ks common/textures/misc/cm056_ships_bell_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM876_Running_Lights_R_962
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm876_running_lights_r_a.jpg
+map_Ks germany/common/textures/misc/gm876_running_lights_r_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM028_Compass_Binnacle_975
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm028_compass_binnacle_a.jpg
+map_Ks germany/common/textures/misc/gm028_compass_binnacle_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl CM040_Steering_Wheel_989
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm040_steering_wheel_a.jpg
+map_Ks common/textures/misc/cm040_steering_wheel_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM506_Dinghy_4m_16
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm506_dinghy_4m_a.jpg
+map_Ks germany/common/textures/misc/gm506_dinghy_4m_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM084_Telegraph_25
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm084_telegraph_a.jpg
+map_Ks usa/common/textures/misc/am558_telegraph_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM853_Signal_Lamp_53
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm853_signal_lamp_a.jpg
+map_Ks germany/common/textures/misc/gm853_signal_lamp_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM003_Reels_1_95
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm003_reels_1_a.jpg
+map_Ks germany/common/textures/misc/gm003_reels_1_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM860_Searchlight_1_4m_156
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm860_searchlight_1_4m_a.jpg
+map_Ks germany/common/textures/misc/gm860_searchlight_1_4m_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM752_Hatch_242
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm752_hatch_a.jpg
+map_Ks germany/common/textures/misc/gm752_hatch_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM804_Ventilation_mushroom_499
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm804_ventilation_mushroom_a.jpg
+map_Ks germany/common/textures/misc/gm804_ventilation_mushroom_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GM503_Long_Boat_8m_305
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm503_long_boat_8m_a.jpg
+map_Ks germany/common/textures/misc/gm503_long_boat_8m_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl CM061_Barrel_324
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm061_barrel_a.jpg
+map_Ks common/textures/misc/cm061_barrel_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl CM126_Cleat_337
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm126_cleat_a.jpg
+map_Ks common/textures/misc/cm126_cleat_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GSD003_V170_1930_801
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/ship/destroyer/gsd003_v170_1930_a.jpg
+map_Ks germany/common/textures/ship/destroyer/gsd003_v170_1930_mg.jpg
+map_Ao germany/common/textures/ship/destroyer/gsd003_v170_1930_ao.jpg
+
+newmtl GSD003_V170_1930_wire_802
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/ship/destroyer/gsd003_v170_1930_a.jpg
+map_Ks germany/common/textures/ship/destroyer/gsd003_v170_1930_mg.jpg
+
+newmtl GM950_Fairlead_1_101
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/misc/gm950_fairlead_1_a.jpg
+map_Ks germany/common/textures/misc/gm950_fairlead_1_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GGM085_105mm_tbts_LC_16_skinned_177
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/gun/main/ggm085_105mm_tbts_lc_16_a.jpg
+map_Ks germany/common/textures/gun/main/ggm085_105mm_tbts_lc_16_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl C008_Grid_5_alpha_406
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/c008_grid_5_alpha_a.jpg
+
+newmtl CM115_Propeller3_R_652
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/misc/cm115_propeller3_r_a.jpg
+map_Ks common/textures/misc/cm115_propeller3_r_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GD047_Directoscope_skinned_727
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/director/gd047_directoscope_a.jpg
+map_Ks germany/common/textures/director/gd047_directoscope_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GF023_2m_Zeiss_Rangefinder_835
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/finder/gf023_2m_zeiss_rangefinder_a.jpg
+map_Ks germany/common/textures/finder/gf023_2m_zeiss_rangefinder_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl GGT073_500mm_Torpedo_Tubes_Twin_890
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/gun/torpedo/ggt073_500mm_torpedo_tubes_twin_a.jpg
+map_Ks germany/common/textures/gun/torpedo/ggt073_500mm_torpedo_tubes_twin_mg.jpg
+map_Ao common/textures/default_ao.jpg
+
+newmtl transparent_glass_alpha_798
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd common/textures/transparent_glass_alpha_a.png
+
+newmtl GD033_Zielsaule_C26_344
+Kd 0.502 0.502 0.502 
+Ks 0.251 0.251 0.251 
+Ns 48
+map_Kd germany/common/textures/director/gd033_zielsaule_c26_a.jpg
+map_Ks germany/common/textures/director/gd033_zielsaule_c26_mg.jpg
+map_Ao common/textures/default_ao.jpg
+

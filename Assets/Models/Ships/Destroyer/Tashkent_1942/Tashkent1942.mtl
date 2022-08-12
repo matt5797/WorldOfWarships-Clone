@@ -1,0 +1,899 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 27.07.2017 15:14:04
+
+newmtl RSD015_Pr_20i_Tashkent_1945
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\RSD015_Pr_20i_Tashkent_1945_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RSD015_Pr_20i_Tashkent_1945_a.dds
+
+newmtl C002_Razlom
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\C002_Razlom_a.dds
+
+newmtl RM181_Anchor_Fairled
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM181_Anchor_Fairled_a.dds
+
+newmtl RM075_Fairlead
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM075_Fairlead_a.dds
+
+newmtl RM151_Manage_Anchor
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM151_Manage_Anchor_a.dds
+
+newmtl RM220_Bollard
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM220_Bollard_a.dds
+
+newmtl CM102_Anchor_Navy_Stockless
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM102_Anchor_Navy_Stockless_a.dds
+
+newmtl RM179_Anchor_Stopper
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM179_Anchor_Stopper_a.dds
+
+newmtl RM218_Deck_Hatch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM218_Deck_Hatch_a.dds
+
+newmtl RM209_Red_Star
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM209_Red_Star_a.dds
+
+newmtl RD025_Dir_TA_ITA
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RD025_Dir_TA_ITA_a.dds
+
+newmtl RD015_1NM_Hight_Angle_night_dir
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RD015_1NM_Hight_Angle_night_dir_a.dds
+
+newmtl RD024_Dip_Compass_dir_TA_ITA
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RD024_Dip_Compass_dir_TA_ITA_a.dds
+
+newmtl RF014_KDP2_3_Duplex_ITL
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RF014_KDP2_3_Duplex_ITL_a.dds
+
+newmtl RGA008_12_DShK
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RGA008_12_DShK_a.dds
+
+newmtl RGA005_37mm70K
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RGA005_37mm70K_a.dds
+
+newmtl RGM046_130mm_B2LM_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RGM046_130mm_B2LM_a.dds
+
+newmtl RGT054_533mm_1N_3tubes
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RGT054_533mm_1N_3tubes_a.dds
+
+newmtl RPT005_Torpedo_53_39
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RPT005_Torpedo_53_39_a.dds
+
+newmtl Format_0021
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM001_flag_a.dds
+
+newmtl CM029_Emergency_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM029_Emergency_Box_a.dds
+
+newmtl RM010_Insulator
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM010_Insulator_a.dds
+
+newmtl RM173_Signal_lanp_450mm_MSPl452
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM173_Signal_lanp_450mm_MSPl452_a.dds
+
+newmtl RM061_Basket_Rope
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM061_Basket_Rope_a.dds
+
+newmtl CM010_Fire_Hose_Reel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM010_Fire_Hose_Reel_a.dds
+
+newmtl RM066_Ammunition_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM066_Ammunition_Box_a.dds
+
+newmtl RM043_Bollard_black
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM043_Bollard_black_a.dds
+
+newmtl RM190_Searchlight_900mm_ITL
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM190_Searchlight_900mm_ITL_a.dds
+
+newmtl RM188_Boat_ITL
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM188_Boat_ITL_a.dds
+
+newmtl C001_Net
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\C001_Net_a.dds
+	map_d G:\Models\World_of_Warships\Tashkent_1942\C001_Net_a.dds
+
+newmtl RM231_Provisions_TA
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM231_Provisions_TA_a.dds
+
+newmtl RM116_Crane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM116_Crane_a.dds
+
+newmtl CM004_Barbette_Out
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM004_Barbette_Out_a.dds
+
+newmtl RM203_Torpedo_Bogie
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM203_Torpedo_Bogie_a.dds
+
+newmtl CM076_Fender
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM076_Fender_a.dds
+
+newmtl RM208_Flag_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM208_Flag_Box_a.dds
+
+newmtl RM204_Crane_for_Paravane_and_TA
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM204_Crane_for_Paravane_and_TA_a.dds
+
+newmtl RM217_Ventilation_Mushroom
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM217_Ventilation_Mushroom_a.dds
+
+newmtl RM096_Paravane
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM096_Paravane_a.dds
+
+newmtl RM084_Running_Lights_R
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM084_Running_Lights_R_a.dds
+
+newmtl RM058_Antenna
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM058_Antenna_a.dds
+
+newmtl RM170_Motor_Launch_8_5m_ITL
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM170_Motor_Launch_8_5m_ITL_a.dds
+
+newmtl RM015_Bollard
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM015_Bollard_a.dds
+
+newmtl RM168_Motor_Launch_7_5m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM168_Motor_Launch_7_5m_a.dds
+
+newmtl RM088_Anemometer
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM088_Anemometer_a.dds
+
+newmtl RM171_Captain_cutter_7m_ITL
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM171_Captain_cutter_7m_ITL_a.dds
+
+newmtl RM205_Speaker
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM205_Speaker_a.dds
+
+newmtl RF018_DP_3m_duplex_Hight_Angle_ITL
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RF018_DP_3m_duplex_Hight_Angle_ITL_a.dds
+
+newmtl RM176_Dinghy_3_5_m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM176_Dinghy_3_5_m_a.dds
+
+newmtl RM019_Reels
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM019_Reels_a.dds
+
+newmtl CM061_Barrel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM061_Barrel_a.dds
+
+newmtl CM021_Accommodation_Ladder
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM021_Accommodation_Ladder_a.dds
+
+newmtl RM147_Crane_TA
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM147_Crane_TA_a.dds
+
+newmtl RM165_Tuzik_3_65m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM165_Tuzik_3_65m_a.dds
+
+newmtl CM028_Swab_Rack
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM028_Swab_Rack_a.dds
+
+newmtl RM195_Electric_Telegraph
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM195_Electric_Telegraph_a.dds
+
+newmtl CM082_Rope
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM082_Rope_a.dds
+
+newmtl RM048_Steering_Wheel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM048_Steering_Wheel_a.dds
+
+newmtl RGA050_76mm_39k
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RGA050_76mm_39k_a.dds
+
+newmtl RM182_Depth_Charge_BB1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM182_Depth_Charge_BB1_a.dds
+
+newmtl RM184_Depth_Charge_Shelving_BM1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM184_Depth_Charge_Shelving_BM1_a.dds
+
+newmtl RM060_Hatch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM060_Hatch_a.dds
+
+newmtl RM215_Deck_Hatch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\RM215_Deck_Hatch_a.dds
+
+newmtl CM002_Propeller_4b
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Tashkent_1942\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Tashkent_1942\CM002_Propeller_4b_a.dds
