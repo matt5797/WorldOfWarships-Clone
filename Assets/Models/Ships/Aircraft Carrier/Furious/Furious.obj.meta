@@ -3,7 +3,327 @@ guid: 5d2671e950b0e304391fa91bd9959b91
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BD018_Ster_Shell_Sight_832
+    second: {fileID: 2100000, guid: 06b4bde84e814534383e1069fa999e5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BD042_HACS_MK_I_with_Radar_type285_skinned_584
+    second: {fileID: 2100000, guid: 98fc09f0fd717ee4cb846a2f85f5f198, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BD045_Pom_Pom_director_mk1_516
+    second: {fileID: 2100000, guid: 4f9de08cec7684b4397d2ca6e3b469da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BGA007_20mm_Oerlikon_MK4_194
+    second: {fileID: 2100000, guid: 79d9641b37113ce4b9d9eb10c02989f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BGA008_2_pdr_MkVIII_8barrel_406
+    second: {fileID: 2100000, guid: 0c9412960c808064aa6433e97af1f72c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BGA008_2_pdr_MkVIII_8barrel_wire_408
+    second: {fileID: 2100000, guid: 80bf4a34ed55eb54fab64be4f4e382d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BGA073_2_pdr_MkVIII_8barrel_shield_407
+    second: {fileID: 2100000, guid: 2acce8aca4b346744832eb3f529ef8a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BGS006_4in45_QF_Mk_XIX_skinned_908
+    second: {fileID: 2100000, guid: 17f93e806c5faee4ebb6cb59cc973be5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM004_Reels_633
+    second: {fileID: 2100000, guid: e8bf94e4a7291ce448eda25967959461, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM012_Telpher_106
+    second: {fileID: 2100000, guid: eb8bcc24837d7274e99247b799ca295a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM026_Reels_382
+    second: {fileID: 2100000, guid: a3ba0aac112608342976c194258118b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM037_Sounding_Machine_253
+    second: {fileID: 2100000, guid: 84a921aa6af4ea544820e357adbbbf8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM039_Artillery_shell_871
+    second: {fileID: 2100000, guid: 3013d0890ea0cc9439b8360011a12c9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM062_Hand_pump_971
+    second: {fileID: 2100000, guid: b922661fc1d999d4f909e40e30e8d7a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM452_Radar_type_285_556
+    second: {fileID: 2100000, guid: 7ecbe95df5a3dd84c9f57ea1a5d810d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM452_Radar_type_285_wire_557
+    second: {fileID: 2100000, guid: b65f9c8ca19c1aa41aeccf63068dc301, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM500_GIG_30ft_423
+    second: {fileID: 2100000, guid: 2e1b141d11ae51744a2f15570434a8dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM501_Cutter_32ft_598
+    second: {fileID: 2100000, guid: f8ecb9ff0b8867747afc2d00d2d72d03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM503_Motor_Boat_35ft_618
+    second: {fileID: 2100000, guid: 663e54524b39eec4884e13b3c892dae4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM507_Whaler_27ft_516
+    second: {fileID: 2100000, guid: 2970779084056b949a21fdc20f9686e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM508_Motor_boat_35ft_929
+    second: {fileID: 2100000, guid: c67c17d151231474a95bdb01481d6d22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM509_Liferaft_type_20_10ft_270
+    second: {fileID: 2100000, guid: 6ea96fb3b8006f64382c8e1154d4e613, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM512_Liferaft_type_20_10ft_864
+    second: {fileID: 2100000, guid: bfa4b1c088b3b124f93969ca1e5cea54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM513_Motor_Boat_25ft_378
+    second: {fileID: 2100000, guid: 1c1724c8af4dddc46ac7ef4b5820aa33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM518_Motorboat_36ft_64
+    second: {fileID: 2100000, guid: ecd3208298e77da40b7556f18fbc1108, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM522_Motor_Cutter_25ft_300
+    second: {fileID: 2100000, guid: 4faffd19f7eb19b4087de5be54f99b20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM524_Motor_Boat_30ft_81
+    second: {fileID: 2100000, guid: 075998be2621cfe4eb9ee373d2270955, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM600_Sky_Lookout_703
+    second: {fileID: 2100000, guid: 1d9979371f6fa4147b2fb76509c5b9c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM602_Pelorus_94
+    second: {fileID: 2100000, guid: f1c7b23ee9299d34ea9415af20ab1307, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM604_Voice_Tube_26
+    second: {fileID: 2100000, guid: 196f30eed77fe8f49bc0205d86da4df6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM612_Switch_Panel_815
+    second: {fileID: 2100000, guid: 28f1b497ccd67d54c88a89df7a5ca4da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM625_Telephone_580
+    second: {fileID: 2100000, guid: 1cd3c7e6200ef5d4889d498d8a2c1580, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM705_Ammunition_Box_158
+    second: {fileID: 2100000, guid: a6bb09a9da05de94a91a8b42ca73e4a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM708_Ammunition_Box_968
+    second: {fileID: 2100000, guid: 96bc4e797de727a409382ce3ee8d364d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM710_Flag_Box_144
+    second: {fileID: 2100000, guid: 8e688f50baad0c94398e7f15e175f1cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM801_Ventilators_mushroom_777
+    second: {fileID: 2100000, guid: 571b59c1cc8217244beb27be3885d748, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM803_Ventilation_box_689
+    second: {fileID: 2100000, guid: bc3df08cc81dc494ab3396afb92ca871, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM851_Searchlight_20in_972
+    second: {fileID: 2100000, guid: 29afcfe976c1dc841a473c5a76f58490, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM856_Daylight_signaling_lanterm_295
+    second: {fileID: 2100000, guid: 1768b2bcf40a14346a95e04544caba10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM857_Fog_Light_106
+    second: {fileID: 2100000, guid: 03ee89dc5f3bbe445aaff156c6f891f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM868_Screened_speed_light_135
+    second: {fileID: 2100000, guid: 31e15aad2a928c243901de8ced2cfe09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM869_Searchlight_36in_662
+    second: {fileID: 2100000, guid: e522f24926592804a8f10aba3f94158b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM870_searchlight_18in_505
+    second: {fileID: 2100000, guid: aa0bf5fa6f4ce5b4da6745f6988ff149, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM871_Running_Lights_F_413
+    second: {fileID: 2100000, guid: 91825bb1babd94f47afe75e972bf6880, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM875_Running_Light_228
+    second: {fileID: 2100000, guid: eae44de52bc754243b8f32a3e9bfe431, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM876_Running_Light_222
+    second: {fileID: 2100000, guid: 366e0a52c6155864d8355010c277c081, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM957_Anchor_Capstan_big_176
+    second: {fileID: 2100000, guid: a028297afa9ff5c40affd34a7765c1c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM959_Anchor_WW2_199
+    second: {fileID: 2100000, guid: c38b3982628a06742ac0a6071a4f7e1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM965_3ton_electrik_winch_558
+    second: {fileID: 2100000, guid: 907ec1dbfa32ced47810303466056fcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM966_Fairlead_591
+    second: {fileID: 2100000, guid: 381dfc2f062c37a4b9dafed59b47e053, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM968_Winch_316
+    second: {fileID: 2100000, guid: bdee094d584f18f48bba24594a9dcad9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BM974_Winch_for_provisions_R_659
+    second: {fileID: 2100000, guid: c54e602db7359fe4581300af182d1059, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BSA002_Furious_1943_DeckHouse_748
+    second: {fileID: 2100000, guid: cdf478d691777884badbf7bd239d16d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BSA002_Furious_1943_Hull_678
+    second: {fileID: 2100000, guid: d0cac9101bbe0c94bbb40b14243515f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BSA002_Furious_1943_Hull_wire_750
+    second: {fileID: 2100000, guid: e26f5d335251ba74cb5a8cdb88084b2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C005_Grid_2_alpha_749
+    second: {fileID: 2100000, guid: 6266ad6657677db4aa265781270c8d08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CM001_Propeller_938
+    second: {fileID: 2100000, guid: 80d16801b033fb346a5d5856b8477fee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CM010_Fire_Hose_Reel_261
+    second: {fileID: 2100000, guid: e80d1401a7a924144a29c5c8d8c30d06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CM028_Swab_Rack_38
+    second: {fileID: 2100000, guid: 8cc9d3eca66552f478b2b695957ec4e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CM029_Emergency_Box_15
+    second: {fileID: 2100000, guid: ce79712d280c6cc4da769142a634089f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CM052_Fender_170
+    second: {fileID: 2100000, guid: 1bb7f6f3f4975084bbc056ce93120564, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CM056_Ships_bell_737
+    second: {fileID: 2100000, guid: e1b309046ee76594682b2f09dd651889, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: transparent_glass_alpha_300
+    second: {fileID: 2100000, guid: 21dd9a51881b6b547a0e9f3daf8eec0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: transparent_glass_alpha_748
+    second: {fileID: 2100000, guid: 7b7625598227a734f8aecc4604a05c77, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
