@@ -7,6 +7,7 @@ namespace WOW.Controller
     {
         public BattleShipBase ship;
         public Vector3 targetPoint;
+        public ShipAutoPilot autoPilot;
 
         public Vector3 TargetPoint
         {

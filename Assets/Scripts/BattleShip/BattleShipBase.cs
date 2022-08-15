@@ -30,6 +30,7 @@ namespace WOW.BattleShip
         [SerializeField] protected float steerResetSpeed = 0.1f;
         [SerializeField] protected int _gear = 0;
         [SerializeField] protected float _steer = 0;
+        //[SerializeField] protected Quaternion rot = default;
 
         private int currentAbilityIndex;
 
@@ -81,7 +82,6 @@ namespace WOW.BattleShip
             if (isMovable)
             {
                 Propeller();
-                Steering();
             }
             if (m_Rigidbody.velocity.magnitude > maxSpeed)
             {
@@ -114,13 +114,15 @@ namespace WOW.BattleShip
 
         private void Propeller()
         {
-            m_Rigidbody.AddForceAtPosition(transform.forward * movePower / 4 * Gear * Time.deltaTime, propeller.position, ForceMode.Force);
+            Vector3 dir = transform.forward * movePower / 4 * Gear * Time.deltaTime;
+            Quaternion rot = Quaternion.Euler(0, Mathf.Clamp(Steer * steerPower * 90, -90, 90) /** Time.deltaTime*/, 0);
+            m_Rigidbody.AddForceAtPosition(rot * dir, propeller.position, ForceMode.Force);
         }
 
-        private void Steering()
+        /*private void Steering()
         {
-            m_Rigidbody.AddForceAtPosition(transform.right * steerPower * Steer * Time.deltaTime, propeller.position, ForceMode.Force);
-        }
+            //m_Rigidbody.AddForceAtPosition(transform.right * steerPower * Steer * Time.deltaTime, propeller.position, ForceMode.Force);
+        }*/
 
         private void ResetSteer()
         {
@@ -160,6 +162,38 @@ namespace WOW.BattleShip
                 m_AbilityDict.Add(i+1, abilities[i]);
             }
             currentAbilityIndex = 1;
+        }
+        
+        Vector3 PredictionPos(float _predictiontime)
+        {
+            //get the rigidbodies velocity
+            Vector3 _targvelocity = m_Rigidbody.velocity;
+            //multiply it by the amount of seconds you want to see into the future
+            _targvelocity *= _predictiontime;
+            //add it to the rigidbodies position
+            _targvelocity += m_Rigidbody.position;
+            //Return the position of where the target will be in the amount of seconds you want to see into the future
+            return _targvelocity;
+        }
+
+        Quaternion PredictionRot(float _predictiontime)
+        {
+            return Quaternion.Euler(transform.InverseTransformVector(angularVelocity) * Mathf.Rad2Deg * _predictiontime);
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawSphere(PredictionPos(3), 0.3f);
+            Gizmos.DrawSphere(PredictionPos(5), 0.5f);
+            Gizmos.DrawSphere(PredictionPos(7), 0.7f);
+
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(transform.position, PredictionRot(3) * transform.forward * 100);
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(transform.position, PredictionRot(5) * transform.forward * 100);
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(transform.position, PredictionRot(7) * transform.forward * 100);
         }
     }
 }
