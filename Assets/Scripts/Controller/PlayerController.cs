@@ -2,6 +2,7 @@ using UnityEngine;
 using WOW.BattleShip;
 using WOW.DamageSystem;
 using WOW.UI;
+using UnityEngine.AI;
 
 namespace WOW.Controller
 {
@@ -12,11 +13,17 @@ namespace WOW.Controller
         public float rayMaxDistance = 1000;
         public LayerMask targetLayerMask;
 
-        private void Start()
+        public GameObject autoPilotTarget;
+
+        protected override void Start()
         {
+            base.Start();
+            
             Destroy(GetComponentInChildren<Canvas>().gameObject);
             GameObject.FindGameObjectWithTag("PlayerHPBar");
             GetComponentInChildren<DamageableManager>().hpBar = GameObject.FindGameObjectWithTag("PlayerHPBar")?.GetComponent<HPBar>();
+
+            SetAutoPilot();
         }
 
         void Update()
@@ -37,18 +44,22 @@ namespace WOW.Controller
             if (Input.GetKeyDown(KeyCode.W))
             {
                 ship.GearUp();
+                isAutoPilot = false;
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
                 ship.GearDown();
+                isAutoPilot = false;
             }
             if (Input.GetKey(KeyCode.A))
             {
                 ship.SteerDown();
+                isAutoPilot = false;
             }
             if (Input.GetKey(KeyCode.D))
             {
                 ship.SteerUp();
+                isAutoPilot = false;
             }
 
             // Ship Attack
@@ -74,6 +85,25 @@ namespace WOW.Controller
             {
                 ship.ChangeArmament(4);
             }
+        }
+
+        void SetAutoPilot()
+        {
+            isAutoPilot = true;
+
+            /*NavMeshPath path = new NavMeshPath();
+
+            NavMesh.CalculatePath(transform.position, autoPilotTarget.transform.position, NavMesh.AllAreas, path);
+
+            //path.status = NavMeshPathStatus.PathComplete;
+            foreach (Vector3 corner in path.corners)
+            {
+                print(corner);
+            }
+            //Vector3[] wayPoints = new Vector3[1] { autoPilotTarget.transform.position };
+            //autoPilot.SetWayPoint(path.corners);
+*/
+            autoPilot.SetDestination(autoPilotTarget.transform.position);
         }
 
         private void OnDrawGizmos()

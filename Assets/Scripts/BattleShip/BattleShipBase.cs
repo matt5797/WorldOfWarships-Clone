@@ -5,18 +5,28 @@ using WOW.Ability;
 
 namespace WOW.BattleShip
 {
+    public enum Camp
+    {
+        None,
+        Allies, // 연합국
+        Axis    // 추축국
+    }
+    
     public enum BattleShipType
     {
         None,
-        Destroyer,
-        Cruiser,
-        Battleship,
-        AircraftCarrier,
+        Destroyer,  // 구축함
+        Cruiser,    // 순양함
+        Battleship, // 전함
+        AircraftCarrier,    //항공모함
     }
 
     [RequireComponent(typeof(Rigidbody))]
     public abstract class BattleShipBase : MonoBehaviour
     {
+        public Camp camp;
+        [HideInInspector] public BattleShipType shipType;
+        
         private Rigidbody m_Rigidbody;
         [SerializeField] private Transform propeller;
         private AbilityBase[] abilities;
@@ -164,7 +174,12 @@ namespace WOW.BattleShip
             currentAbilityIndex = 1;
         }
         
-        Vector3 PredictionPos(float _predictiontime)
+        /// <summary>
+        /// 몇 초 뒤 위치를 반환
+        /// </summary>
+        /// <param name="_predictiontime">초</param>
+        /// <returns></returns>
+        public Vector3 PredictionPos(float _predictiontime)
         {
             //get the rigidbodies velocity
             Vector3 _targvelocity = m_Rigidbody.velocity;
@@ -176,13 +191,21 @@ namespace WOW.BattleShip
             return _targvelocity;
         }
 
-        Quaternion PredictionRot(float _predictiontime)
+        /// <summary>
+        /// 몇 초 뒤 회전각도를 반환
+        /// </summary>
+        /// <param name="_predictiontime">초</param>
+        /// <returns></returns>
+        public Quaternion PredictionRot(float _predictiontime)
         {
             return Quaternion.Euler(transform.InverseTransformVector(angularVelocity) * Mathf.Rad2Deg * _predictiontime);
         }
 
         private void OnDrawGizmosSelected()
         {
+            if (!m_Rigidbody)
+                return;
+            
             Gizmos.color = Color.green;
             Gizmos.DrawSphere(PredictionPos(3), 0.3f);
             Gizmos.DrawSphere(PredictionPos(5), 0.5f);

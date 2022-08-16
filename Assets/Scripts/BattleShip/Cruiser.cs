@@ -6,6 +6,7 @@ namespace WOW.BattleShip
         protected override void Start()
         {
             base.Start();
+            shipType = BattleShipType.Cruiser;
         }
 
         // Update is called once per frame
