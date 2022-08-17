@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using WOW.Data;
 using WOW.DamageSystem;
+using WOW.BattleShip;
 
 namespace WOW.Projectile
 {
@@ -53,6 +54,8 @@ namespace WOW.Projectile
 
         public float worldScale = 100;  // 1유닛이 몇 미터인지
 
+        public Camp camp;   //내 진영
+
         private void Start()
         {
             if (shellData != null)
@@ -65,13 +68,13 @@ namespace WOW.Projectile
                 k = (0.5 * shellData.bulletAirDrag * Math.Pow((shellData.bulletDiametr / 2), 2) * Math.PI / shellData.bulletMass); // CONSTANTS TERMS OF DRAG
 
                 // 만들어진 시점의 각도가 해수면 대비 몇 도인지 계산
-                float angle = Vector3.SignedAngle(Vector3.up, transform.up, transform.right) * -1;
+                //float angle = Vector3.SignedAngle(Vector3.up, transform.up, transform.right) * -1;
                 // 탄환을 발사, 발사 각도를 전달
-                OnShoot(angle);
+                //OnShoot(angle);
 
                 //forwardRay = new Ray(transform.position, transform.forward);
                 // 처음에는 마지막 위치가 없기 때문에 일단 현재 위치를 저장
-                lastPosition = transform.position;
+                //lastPosition = transform.position;
             }
         }
 
@@ -129,6 +132,9 @@ namespace WOW.Projectile
         // 탄환을 발사한다.
         public void OnShoot(double shootAngle)
         {
+            // 처음에는 마지막 위치가 없기 때문에 일단 현재 위치를 저장
+            lastPosition = transform.position;
+
             // 발사 여부를 설정한다.
             isShoot = true;
             // 발사 시점의 각도를 가져온다.
@@ -142,6 +148,15 @@ namespace WOW.Projectile
             // 초기 위치를 0, 0으로 설정한다.
             y = 0;
             x = 0;
+        }
+
+        /// <summary>
+        /// 탄환의 진영을 정해준다.
+        /// </summary>
+        /// <param name="camp"></param>
+        public void SetCamp(Camp camp)
+        {
+            this.camp = camp;
         }
 
         // 현재 관통력을 계산하여 반환합니다.
