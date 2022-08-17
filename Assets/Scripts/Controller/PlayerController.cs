@@ -14,7 +14,10 @@ namespace WOW.Controller
         public LayerMask targetLayerMask;
 
         public GameObject autoPilotTarget;
-
+        NavMeshPath path;
+        public float pathTime = 0.5f;
+        float pathCurrentTime;
+        
         protected override void Start()
         {
             base.Start();
@@ -23,7 +26,10 @@ namespace WOW.Controller
             GameObject.FindGameObjectWithTag("PlayerHPBar");
             GetComponentInChildren<DamageableManager>().hpBar = GameObject.FindGameObjectWithTag("PlayerHPBar")?.GetComponent<HPBar>();
 
-            SetAutoPilot();
+            path = new NavMeshPath();
+            //SetAutoPilot();
+            isAutoPilot = true;
+            autoPilot.isEnabled = true;
         }
 
         void Update()
@@ -84,6 +90,21 @@ namespace WOW.Controller
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 ship.ChangeArmament(4);
+            }
+
+            // Auto Pillot
+            if (isAutoPilot)
+            {
+                if (pathCurrentTime <= 0)
+                {
+                    pathCurrentTime = pathTime;
+                    NavMesh.CalculatePath(ship.transform.position, autoPilotTarget.transform.position, NavMesh.AllAreas, path);
+                    autoPilot.SetWayPoint(path.corners);
+                }
+                else
+                {
+                    pathCurrentTime -= Time.deltaTime;
+                }
             }
         }
 
