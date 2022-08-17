@@ -91,19 +91,15 @@ namespace WOW.Controller
         {
             isAutoPilot = true;
 
-            /*NavMeshPath path = new NavMeshPath();
+            NavMeshPath path = new NavMeshPath();
 
             NavMesh.CalculatePath(transform.position, autoPilotTarget.transform.position, NavMesh.AllAreas, path);
 
             //path.status = NavMeshPathStatus.PathComplete;
-            foreach (Vector3 corner in path.corners)
-            {
-                print(corner);
-            }
             //Vector3[] wayPoints = new Vector3[1] { autoPilotTarget.transform.position };
-            //autoPilot.SetWayPoint(path.corners);
-*/
-            autoPilot.SetDestination(autoPilotTarget.transform.position);
+            autoPilot.SetWayPoint(path.corners);
+
+            //autoPilot.SetDestination(autoPilotTarget.transform.position);
         }
 
         private void OnDrawGizmos()

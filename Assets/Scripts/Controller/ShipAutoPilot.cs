@@ -6,155 +6,10 @@ using UnityEngine.AI;
 
 namespace WOW.Controller
 {
-    /*
     public class ShipAutoPilot : MonoBehaviour
     {
         public ShipController controller;
         public Vector3[] wayPoints;
-        public Vector3 destination;
-        NavMeshPath path;
-        int currentWayPoint = 0;
-        private float elapsed = 0.0f;
-        bool isEnabled = false;
-        float distance, steer;
-
-        private void Awake()
-        {
-            controller = GetComponentInParent<ShipController>();
-        }
-        
-        // Start is called before the first frame update
-        void Start()
-        {
-            path = new NavMeshPath();
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            if (!isEnabled)
-                return;
-
-            elapsed += Time.deltaTime;
-            if (elapsed > 1.0f)
-            {
-                elapsed = 0;
-                NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
-            }
-
-            if (path.status == NavMeshPathStatus.PathComplete)
-            {
-                return;
-            }
-
-            distance = Vector3.Distance(transform.position, path.corners[0]);
-            
-            // 코너링
-            if (distance < Vector3.Distance(transform.position, controller.ship.PredictionPos(10)))
-            {
-                if (currentWayPoint < wayPoints.Length-1)
-                {
-                    // 다음 타겟 방향으로 방향타를 조정
-                    steer = SteerTowardsTarget(path.corners[1]);
-                }
-            }
-            else
-            {
-                // 타겟 방향으로 방향타를 조정
-                steer = SteerTowardsTarget(path.corners[0]);
-            }
-            
-            if (steer >= 0)
-            {
-                controller.ship.SteerDown();
-            }
-            else if (steer <= -0)
-            {
-                controller.ship.SteerUp();
-            }
-
-            // 출발시 최대로 가속
-            if (currentWayPoint==0)
-            {
-                controller.ship.Gear = 4;
-            }
-            // 거리에 따라 기어 변속
-            else if (currentWayPoint== path.corners.Length-1)
-            {
-                if (distance < Vector3.Distance(transform.position, controller.ship.PredictionPos(10)))
-                {
-                    controller.ship.Gear = 1;
-                }
-            }
-            
-            // 가까워지면 다음 웨이포인트로 이동
-            //if (Vector3.Distance(path.corners[0], transform.position) < 1)
-            //    NextWayPoint();
-        }
-
-        public void SetWayPoint(Vector3[] wayPoints)
-        {
-            this.wayPoints = wayPoints;
-            isEnabled = true;
-        }
-
-        public void SetDestination(Vector3 destination)
-        {
-            this.destination = destination;
-            isEnabled = true;
-        }
-
-        void NextWayPoint()
-        {
-            currentWayPoint++;
-            if (currentWayPoint >= wayPoints.Length)
-            {
-                print("도착");
-                controller.ship.Gear = 0;
-                isEnabled = false;
-            }
-        }
-
-        public float SteerTowardsTarget(Vector3 destination)
-        {
-            float distance = Vector3.Distance(destination, transform.position);
-
-            if (distance > 1)
-            {
-                Vector3 desiredHeading = destination - transform.position;
-                //Vector3 currentHeading = transform.forward;
-                Vector3 currentHeading = controller.ship.PredictionRot(5) * transform.forward;
-
-                Debug.DrawLine(transform.position, destination, Color.blue);
-                float angleToDestination = Vector3.SignedAngle(currentHeading, desiredHeading, Vector3.up);
-                return Mathf.Clamp(angleToDestination / 90f, -1, 1);
-            }
-            else
-            {
-                return 0;
-            }
-
-        }
-
-        private void OnDrawGizmosSelected()
-        {
-            if (path == null)
-                return;
-            for (int i = 0; i < path.corners.Length - 1; i++)
-            {
-                print(path.corners[i]);
-                Debug.DrawLine(path.corners[i], path.corners[i + 1], Color.red);
-            }
-        }
-    }
-    */
-
-
-    public class ShipAutoPilot : MonoBehaviour
-    {
-        public ShipController controller;
-        public Vector3[] wayPoints;
-        NavMeshPath path;
         int currentWayPoint = 0;
         bool isEnabled = false;
         float distance, steer;
@@ -215,9 +70,6 @@ namespace WOW.Controller
                     controller.ship.Gear = 1;
                 }
             }
-
-            NavMeshPath path = new NavMeshPath();
-            NavMesh.CalculatePath(transform.position, autoPilotTarget.transform.position, NavMesh.AllAreas, path);
 
             // 가까워지면 다음 웨이포인트로 이동
             if (Vector3.Distance(wayPoints[currentWayPoint], transform.position) < 1)
