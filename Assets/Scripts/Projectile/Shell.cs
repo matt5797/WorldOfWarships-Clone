@@ -13,8 +13,8 @@ namespace WOW.Projectile
         private double C = 0.5561613f; //PENETRATION
         private double a = 9.81f; // GRAVITY
         private double T_0 = 288; // TEMPERATURE AT SEA LEVEL
-        private double L = 0.0065f; // TEMPERATURE LAPSE RATE 온도 경과률?
-        private double p_0 = 101325f; // PRESSURE AT SEA LEVEL 바다 압력?
+        private double L = 0.0065f; // TEMPERATURE LAPSE RATE 
+        private double p_0 = 101325f; // PRESSURE AT SEA LEVEL 
         private double R = 8.31447f; // UNIV GAS CONSTANT
         private double M = 0.0289644f; // MOLAR MASS OF AIR
 

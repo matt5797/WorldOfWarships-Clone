@@ -39,16 +39,6 @@ public class Testbullets : MonoBehaviour
      
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-
-        if(collision.gameObject.name == "Monster")
-        {
-            Debug.Log("Ãæµ¹");
-            Destroy(collision.gameObject); // ³ÊÁ×°í
-            Destroy(gameObject); // ³ªÁ×ÀÚ
-        }
-    }
 }
   
     

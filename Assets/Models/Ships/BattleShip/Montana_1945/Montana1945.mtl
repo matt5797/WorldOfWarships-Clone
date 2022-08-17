@@ -1,1154 +1,604 @@
-# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
-# File Created: 27.07.2017 15:07:47
-
-newmtl ASB017_Montana
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\ASB017_Montana_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\ASB017_Montana_a.dds
-
-newmtl C002_Razlom
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\C002_Razlom_a.dds
-
-newmtl AGA003_20mm_Oerlikon_MK4
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AGA003_20mm_Oerlikon_MK4_a.dds
-
-newmtl AGM034_16in50_Mk7_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AGM034_16in50_Mk7_a.dds
-
-newmtl AM029_Ammunition_Box
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM029_Ammunition_Box_a.dds
-
-newmtl CM004_Barbette_Out
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\CM004_Barbette_Out_a.dds
-
-newmtl AM024_Hatch_2
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM024_Hatch_2_a.dds
-
-newmtl AM549_Life_Buoy
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM549_Life_Buoy_a.dds
-
-newmtl CM010_Fire_Hose_Reel
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\CM010_Fire_Hose_Reel_a.dds
-
-newmtl AM108_Reels_4
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM108_Reels_4_a.dds
-
-newmtl AM590_Anchor_Chain_Jack
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM590_Anchor_Chain_Jack_a.dds
-
-newmtl AM129_Turtles_box
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM129_Turtles_box_a.dds
-
-newmtl AM001_Bollard_2
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM001_Bollard_2_a.dds
-
-newmtl AM019_Ventilators_1
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM019_Ventilators_1_a.dds
-
-newmtl AM045_Running_Lights_F
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM045_Running_Lights_F_a.dds
-
-newmtl AM105_Signal_Lamp_3
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM105_Signal_Lamp_3_a.dds
-
-newmtl CM006_Anchor_2
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\CM006_Anchor_2_a.dds
-
-newmtl AM077_Paravane
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM077_Paravane_a.dds
-
-newmtl AM088_Capstan
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM088_Capstan_a.dds
-
-newmtl AM115_RDF
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM115_RDF_a.dds
-
-newmtl AM150_Telegraph_Engine
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM150_Telegraph_Engine_a.dds
-
-newmtl AM072_Ships_bell
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM072_Ships_bell_a.dds
-
-newmtl ASB017_Montana_Deckhouse
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\ASB017_Montana_Deckhouse_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\ASB017_Montana_Deckhouse_a.dds
-
-newmtl AD003_Director_Mk51
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AD003_Director_Mk51_a.dds
-
-newmtl AD001_Director_Mk37
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AD001_Director_Mk37_a.dds
-
-newmtl AD018_Director_Mk38
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AD018_Director_Mk38_a.dds
-
-newmtl AD027_Director_MK57_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AD027_Director_MK57_a.dds
-
-newmtl AF029_Periscope_1
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AF029_Periscope_1_a.dds
-
-newmtl AGA056_40mm_Bofors
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AGA056_40mm_Bofors_a.dds
-
-newmtl AGS145_5in54_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AGS145_5in54_a.dds
-
-newmtl ARS017_Radar_CXAM_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\ARS017_Radar_CXAM_a.dds
-
-newmtl C011_Grid_9_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\C011_Grid_9_a.dds
-	map_d G:\Models\World_of_Warships\Montana_1945\C011_Grid_9_a.dds
-
-newmtl ARS011_Radar_SK2_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\ARS011_Radar_SK2_a.dds
-
-newmtl C004_Grid_1_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\C004_Grid_1_a.dds
-	map_d G:\Models\World_of_Warships\Montana_1945\C004_Grid_1_a.dds
-
-newmtl ARS004_Radar_SG_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\ARS004_Radar_SG_a.dds
-
-newmtl Format_0042
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM032_Flag_a.dds
-
-newmtl CM029_Emergency_Box
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\CM029_Emergency_Box_a.dds
-
-newmtl AM350_Filling_connection
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM350_Filling_connection_a.dds
-
-newmtl AM433_MC_Box
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM433_MC_Box_a.dds
-
-newmtl CM076_Fender
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\CM076_Fender_a.dds
-
-newmtl AM509_Voice_tube_2
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM509_Voice_tube_2_a.dds
-
-newmtl AD044_Director_Mk54
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AD044_Director_Mk54_a.dds
-
-newmtl AM061_Sky_Lookout_1
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM061_Sky_Lookout_1_a.dds
-
-newmtl AM063_Wind_Direction
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM063_Wind_Direction_a.dds
-
-newmtl AM042_YE_Homing_Beacon
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM042_YE_Homing_Beacon_a.dds
-
-newmtl AM080_Whips_Antenna
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM080_Whips_Antenna_a.dds
-
-newmtl AM025_Pelorus_Mk7
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM025_Pelorus_Mk7_a.dds
-
-newmtl AM057_Boat
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM057_Boat_a.dds
-
-newmtl AM114_Freon_Cylinder_acetylene
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM114_Freon_Cylinder_acetylene_a.dds
-
-newmtl AM130_Acetilen_Cylinder
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM130_Acetilen_Cylinder_a.dds
-
-newmtl CM028_Swab_Rack
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\CM028_Swab_Rack_a.dds
-
-newmtl AM018_Compass_Binnacle
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM018_Compass_Binnacle_a.dds
-
-newmtl AM176_Target_Desingnator
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM176_Target_Desingnator_a.dds
-
-newmtl AM154_Switch_Panel_1
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM154_Switch_Panel_1_a.dds
-
-newmtl AM056_Boat
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM056_Boat_a.dds
-
-newmtl AM170_Flag_Box_2
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM170_Flag_Box_2_a.dds
-
-newmtl AM173_Insulator
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM173_Insulator_a.dds
-
-newmtl AM073_Floater_Net_Basket
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM073_Floater_Net_Basket_a.dds
-	map_d G:\Models\World_of_Warships\Montana_1945\AM073_Floater_Net_Basket_a.dds
-
-newmtl AM098_Sirena
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM098_Sirena_a.dds
-
-newmtl AM038_Searchlight_600mm
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM038_Searchlight_600mm_a.dds
-
-newmtl AM037_Searchlight_900mm
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM037_Searchlight_900mm_a.dds
-
-newmtl AM187_Switch_Panel_4
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM187_Switch_Panel_4_a.dds
-
-newmtl CM024_Stairway_Big_L
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\CM024_Stairway_Big_L_a.dds
-
-newmtl AM559_Alarm_Tool
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM559_Alarm_Tool_a.dds
-
-newmtl AM535_Elec_Panel
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM535_Elec_Panel_a.dds
-
-newmtl AM100_Spare_barrel_tube
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM100_Spare_barrel_tube_a.dds
-
-newmtl AM006_Reels_1
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM006_Reels_1_a.dds
-
-newmtl AM091_motor_boats
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM091_motor_boats_a.dds
-
-newmtl AM070_Loading_Machine
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM070_Loading_Machine_a.dds
-
-newmtl AM200_Screened_speed_light
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM200_Screened_speed_light_a.dds
-
-newmtl AM514_Boat_Winch
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM514_Boat_Winch_a.dds
-
-newmtl AM511_Crescent_Davit
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM511_Crescent_Davit_a.dds
-
-newmtl ARS006_Radar_SK
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\ARS006_Radar_SK_a.dds
-
-newmtl AM541_Loading_Bofors
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM541_Loading_Bofors_a.dds
-
-newmtl C017_Grid_10
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\C017_Grid_10_a.dds
-	map_d G:\Models\World_of_Warships\Montana_1945\C017_Grid_10_a.dds
-
-newmtl AM373_Float_Seaplane
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM373_Float_Seaplane_a.dds
-
-newmtl AC004_Catapult_4_skinned
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AC004_Catapult_4_a.dds
-
-newmtl CM002_Propeller_4b
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\CM002_Propeller_4b_a.dds
-
-newmtl AM044_Boat_Winch
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM044_Boat_Winch_a.dds
-
-newmtl AM078_Crane_Control_Wheel
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM078_Crane_Control_Wheel_a.dds
-
-newmtl AM352_Stern_Light
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM352_Stern_Light_a.dds
-
-newmtl AM076_Aircraft_Cran_1
-	Ns 56.4386
-	Ni 1.5000
-	d 1.0000
-	Tr 1.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.0000 0.0000 0.0000
-	Kd 1.0000 1.0000 1.0000
-	Ks 0.3000 0.3000 0.3000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka G:\Models\World_of_Warships\Montana_1945\default_ao.dds
-	map_Kd G:\Models\World_of_Warships\Montana_1945\AM076_Aircraft_Cran_1_a.dds
+# Blender MTL File: 'Yamato.blend'
+# Material Count: 50
+
+newmtl C001_Net
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\C001_Net_a.dds
+map_d C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\C001_Net_a.dds
+
+newmtl C003_Razlom_old
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\C003_Razlom_old_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\C003_Razlom_old_a.dds
+
+newmtl C010_Grid_8
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\C010_Grid_8_a.dds
+map_d C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\C010_Grid_8_a.dds
+
+newmtl CM001_Propeller
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\CM001_Propeller_a.dds
+
+newmtl CM005_Anchor_1
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\misc\\textures\\CM005_Anchor_1_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\CM005_Anchor_1_a.dds
+
+newmtl CM008_Life_Buoy_1
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\CM008_Life_Buoy_1_a.dds
+
+newmtl Format:0038
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\C021_flag_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM001_flag_a.dds
+
+newmtl JC001_Catapult_Cradle_skinned
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\germany\\catapult\\textures\\GC001_Catapult_1_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JC001_Catapult_Cradle_a.dds
+
+newmtl JC001_Catapult_Shiki2
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\catapult\\textures\\JC001_Catapult_Shiki2_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JC001_Catapult_Shiki2_a.dds
+
+newmtl JD013_Director_Type_98_Mod1
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\director\\textures\\JD013_Director_Type_98_Mod1_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JD013_Director_Type_98_Mod1_a.dds
+
+newmtl JD014_Director_Type_98_10m
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\director\\textures\\JD014_Director_Type_98_10m_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JD014_Director_Type_98_10m_a.dds
+
+newmtl JD018_Director_Type_98_15m_Yamato
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\director\\textures\\JD018_Director_Type_98_15m_Yamato_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JD018_Director_Type_98_15m_Yamato_a.dds
+
+newmtl JD019_Machine_Gun_ControlTower
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\director\\textures\\JD019_Machine_Gun_ControlTower_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JD019_Machine_Gun_ControlTower_a.dds
+
+newmtl JD022_Director_Type_95_Mod1
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\director\\textures\\JD022_Director_Type_95_Mod1_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JD022_Director_Type_95_Mod1_a.dds
+
+newmtl JD030_Director_Type_95_Mod2
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\director\\textures\\JD030_Director_Type_95_Mod2_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JD030_Director_Type_95_Mod2_a.dds
+
+newmtl JD056_MachineGun_Control_Position
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\director\\textures\\JD056_MachineGun_Control_Position_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JD056_MachineGun_Control_Position_a.dds
+
+newmtl JF017_Rangefinder_4_5m
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\finder\\textures\\JF017_Rangefinder_4_5m_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JF017_Rangefinder_4_5m_a.dds
+
+newmtl JF029_Rangefinder_1_5m_Yamato
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\finder\\textures\\JF029_Rangefinder_1_5m_Yamato_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JF029_Rangefinder_1_5m_Yamato_a.dds
+
+newmtl JGA004_25mm_Type96_Triple_1
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\gun\\aaircraft\\textures\\JGA004_25mm_Type96_Triple_1_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JGA004_25mm_Type96_Triple_1_a.dds
+
+newmtl JGA010_25mm_Type96
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\gun\\aaircraft\\textures\\JGA010_25mm_Type96_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JGA010_25mm_Type96_a.dds
+
+newmtl JGM001_460mm45_Type96_skinned
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\gun\\main\\textures\\JGM001_460mm45_Type96_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JGM001_460mm45_Type96_a.dds
+
+newmtl JGS002_155mm60_Type3_skinned
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\gun\\secondary\\textures\\JGS002_155mm60_Type3_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JGS002_155mm60_Type3_a.dds
+
+newmtl JGS003_127mm40_Type89_Mod_A_skinned
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\gun\\secondary\\textures\\JGS003_127mm40_Type89_Mod_A_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JGS003_127mm40_Type89_Mod_A_a.dds
+
+newmtl JGS009_127mm40_Type_89_skinned
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\gun\\secondary\\textures\\JGS009_127mm40_Type_89_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JGS009_127mm40_Type_89_a.dds
+
+newmtl JM002_Paravane
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM002_Paravane_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM002_Paravane_a.dds
+
+newmtl JM003_Searchlight_Control_1
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM003_Searchlight_Control_1_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM003_Searchlight_Control_1_a.dds
+
+newmtl JM007_Life_Buoy_box
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM007_Life_Buoy_box_a.dds
+
+newmtl JM008_Searchlight
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM008_Searchlight_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM008_Searchlight_a.dds
+
+newmtl JM009_Signal_Lamp
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM009_Signal_Lamp_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM009_Signal_Lamp_a.dds
+
+newmtl JM013_Reels_1
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM013_Reels_1_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM013_Reels_1_a.dds
+
+newmtl JM025_Fairled
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM025_Fairled_a.dds
+
+newmtl JM026_Bollards
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM026_Bollards_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM026_Bollards_a.dds
+
+newmtl JM029_Leadsman_Platform
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM029_Leadsman_Platform_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM029_Leadsman_Platform_a.dds
+
+newmtl JM030_Wind_detection
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM030_Wind_detection_a.dds
+
+newmtl JM033_Roller_Fairled
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM033_Roller_Fairled_a.dds
+
+newmtl JM039_Cutter_12m
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM039_Cutter_12m_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM039_Cutter_12m_a.dds
+
+newmtl JM059_Deck_Hatch_8
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM059_Deck_Hatch_8_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM059_Deck_Hatch_8_a.dds
+
+newmtl JM086_Crane_3
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM086_Crane_3_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM086_Crane_3_a.dds
+
+newmtl JM089_Signal_Platform_1
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM089_Signal_Platform_1_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM089_Signal_Platform_1_a.dds
+
+newmtl JM107_Binocular
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM107_Binocular_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM107_Binocular_a.dds
+
+newmtl JM109_Deck_Hatch_11
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM109_Deck_Hatch_11_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM109_Deck_Hatch_11_a.dds
+
+newmtl JM110_Deck_Hatch_12
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM110_Deck_Hatch_12_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM110_Deck_Hatch_12_a.dds
+
+newmtl JM111_Deck_Hatch_13
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM111_Deck_Hatch_13_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM111_Deck_Hatch_13_a.dds
+
+newmtl JM112_Gun_Deck_3
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\misc\\textures\\JM112_Gun_Deck_3_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM112_Gun_Deck_3_a.dds
+
+newmtl JM310_Chrysanthemum_full
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\common\\textures\\default_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JM310_Chrysanthemum_full_a.dds
+
+newmtl JRS002_Radar_Type_21_2
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\radar\\search\\textures\\JRS002_Radar_Type_21_2_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JRS002_Radar_Type_21_2_a.dds
+
+newmtl JRS007_Radar_Type_22_skinned
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\radar\\search\\textures\\JRS007_Radar_Type_22_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JRS007_Radar_Type_22_a.dds
+
+newmtl JRS010_Radar_Type_13_skinned
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\radar\\search\\textures\\JRS010_Radar_Type_13_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JRS010_Radar_Type_13_a.dds
+
+newmtl JSB018_Yamato_1944_deck
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\ship\\battleship\\textures\\JSB018_Yamato_1944_deck_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JSB018_Yamato_1944_deck_a.dds
+
+newmtl JSB018_Yamato_1944_hull
+Ns 499.999899
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Program Files (x86)\\World of Warships\\res\\content\\gameplay\\japan\\ship\\battleship\\textures\\JSB018_Yamato_1944_hull_n.dds
+map_Kd C:\\Users\\HP\\Documents\\GitHub\\WorldOfWarships-Clone\\Assets\\Models\\Ships\\BattleShip\\Yamato1944\\JSB018_Yamato_1944_hull_a.dds

@@ -97,5 +97,6 @@ public class Ballistic: MonoBehaviour
     public double GetImpactAngle()
     {
         return Math.Atan(Math.Abs(v_y) / Math.Abs(v_x));
+
     }
 }
