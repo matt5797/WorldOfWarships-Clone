@@ -10,8 +10,10 @@ namespace WOW.Controller
     {
         public ShipController controller;
         public Vector3[] wayPoints;
+        Vector3 destination;
+        NavMeshHit hit;
         int currentWayPoint = 0;
-        bool isEnabled = false;
+        public bool isEnabled = false;
         float distance, steer;
 
         private void Awake()
@@ -22,7 +24,7 @@ namespace WOW.Controller
         // Start is called before the first frame update
         void Start()
         {
-
+            hit = new NavMeshHit();
         }
 
         // Update is called once per frame
@@ -79,7 +81,16 @@ namespace WOW.Controller
         public void SetWayPoint(Vector3[] wayPoints)
         {
             this.wayPoints = wayPoints;
-            isEnabled = true;
+        }
+
+        public bool SetDestination(Vector3 destination)
+        {
+            if (NavMesh.SamplePosition(destination, out hit, 1000, 1))
+            {
+                destination = hit.position;
+                return true;
+            }
+            return false;
         }
 
         void NextWayPoint()
@@ -112,6 +123,19 @@ namespace WOW.Controller
                 return 0;
             }
 
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            if (wayPoints != null)
+            {
+                for (int i = 0; i < wayPoints.Length-1; i++)
+                {
+                    Gizmos.color = Color.red;
+                    Gizmos.DrawSphere(wayPoints[i], 0.1f);
+                    Gizmos.DrawLine(wayPoints[i], wayPoints[(i + 1)]);
+                }
+            }
         }
     }
 
