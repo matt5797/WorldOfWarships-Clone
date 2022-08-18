@@ -8,7 +8,7 @@ namespace WOW.Controller
     {
         public BattleShipBase ship;
         public Vector3 targetPoint;
-        protected ShipAutoPilot autoPilot;
+        public ShipAutoPilot autoPilot;
         protected NavMeshAgent agent;
 
         protected bool isAutoPilot = false;

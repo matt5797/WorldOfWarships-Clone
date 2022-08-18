@@ -14,7 +14,6 @@ namespace WOW.Controller
         public LayerMask targetLayerMask;
 
         public GameObject autoPilotTarget;
-        NavMeshPath path;
         public float pathTime = 0.5f;
         float pathCurrentTime;
         
@@ -26,10 +25,7 @@ namespace WOW.Controller
             GameObject.FindGameObjectWithTag("PlayerHPBar");
             GetComponentInChildren<DamageableManager>().hpBar = GameObject.FindGameObjectWithTag("PlayerHPBar")?.GetComponent<HPBar>();
 
-            path = new NavMeshPath();
-            //SetAutoPilot();
-            isAutoPilot = true;
-            autoPilot.isEnabled = true;
+            //StartAutoPilot();
         }
 
         void Update()
@@ -98,8 +94,7 @@ namespace WOW.Controller
                 if (pathCurrentTime <= 0)
                 {
                     pathCurrentTime = pathTime;
-                    NavMesh.CalculatePath(ship.transform.position, autoPilotTarget.transform.position, NavMesh.AllAreas, path);
-                    autoPilot.SetWayPoint(path.corners);
+                    autoPilot.SetDestination(autoPilotTarget.transform.position);
                 }
                 else
                 {
@@ -108,19 +103,10 @@ namespace WOW.Controller
             }
         }
 
-        void SetAutoPilot()
+        void StartAutoPilot()
         {
             isAutoPilot = true;
-
-            NavMeshPath path = new NavMeshPath();
-
-            NavMesh.CalculatePath(transform.position, autoPilotTarget.transform.position, NavMesh.AllAreas, path);
-
-            //path.status = NavMeshPathStatus.PathComplete;
-            //Vector3[] wayPoints = new Vector3[1] { autoPilotTarget.transform.position };
-            autoPilot.SetWayPoint(path.corners);
-
-            //autoPilot.SetDestination(autoPilotTarget.transform.position);
+            autoPilot.SetActive(true);
         }
 
         private void OnDrawGizmos()
