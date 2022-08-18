@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CSJ/MainTestScene.unity
     guid: ca2a6b0ba859a0a458c61c30e3cbf9a6
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0e49702b90f1dd24b8253d57be9cf95f,
+      type: 2}
