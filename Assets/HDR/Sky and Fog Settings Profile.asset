@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d877ec3e844f2ca46830012e8e79319b, type: 3}
   m_Name: PhysicallyBasedSky
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   rotation:
     m_OverrideState: 0
     m_Value: 0
@@ -44,10 +44,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   type:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   sphericalMode:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   seaLevel:
     m_OverrideState: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 6378100
   planetCenterPosition:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0, y: -6378100, z: 0}
   airDensityR:
     m_OverrideState: 0
@@ -90,9 +90,9 @@ MonoBehaviour:
     m_Value: 3
   groundTint:
     m_OverrideState: 1
-    m_Value: {r: 0.4, g: 0.25, b: 0.15, a: 1}
+    m_Value: {r: 0.5849056, g: 0.40601972, b: 0.28362405, a: 1}
   groundColorTexture:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {fileID: 8900000, guid: 16aa73cccbb9e09418b76ee3a79933c4, type: 3}
   groundEmissionTexture:
     m_OverrideState: 1
@@ -101,7 +101,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1000
   planetRotation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0, y: 0, z: 0}
   spaceEmissionTexture:
     m_OverrideState: 0
@@ -154,14 +154,14 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   colorMode:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   color:
     m_OverrideState: 0
     m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   tint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 2.792157, b: 4, a: 1}
   maxFogDistance:
     m_OverrideState: 0
     m_Value: 5000
@@ -184,11 +184,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 400
   enableVolumetricFog:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   albedo:
     m_OverrideState: 1
-    m_Value: {r: 0.07746529, g: 0.1509434, b: 0.11667411, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
   globalLightProbeDimmer:
     m_OverrideState: 0
     m_Value: 1
@@ -254,27 +254,27 @@ MonoBehaviour:
   active: 1
   rotation:
     m_OverrideState: 1
-    m_Value: 31
+    m_Value: 258
   skyIntensityMode:
     m_OverrideState: 1
     m_Value: 1
   exposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 15
   multiplier:
     m_OverrideState: 0
     m_Value: 1
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 2.8044171
+    m_Value: 3.2682078
   upperHemisphereLuxColor:
     m_OverrideState: 0
-    m_Value: {x: 0.4550503, y: 0.4735824, z: 0.5}
+    m_Value: {x: 0.33923835, y: 0.42069665, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 1
     m_Value: 15000
   updateMode:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   updatePeriod:
     m_OverrideState: 0
@@ -284,10 +284,10 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: 16aa73cccbb9e09418b76ee3a79933c4, type: 3}
+    m_Value: {fileID: 8900000, guid: d29a97842a4b186479fe8612c171eafd, type: 3}
   distortionMode:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 0
   flowmap:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -378,7 +378,7 @@ MonoBehaviour:
     m_Value: 1
   cloudType:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 0
   skyAmbientMode:
     m_OverrideState: 0
     m_Value: 1
