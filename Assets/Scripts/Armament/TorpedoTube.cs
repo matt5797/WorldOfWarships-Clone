@@ -11,7 +11,7 @@ namespace WOW.Armament
         public int bulletCount = 3;
 
         // Start is called before the first frame update
-        void Start()
+        protected override void Start()
         {
             Invoke("Fire", 2f);
            

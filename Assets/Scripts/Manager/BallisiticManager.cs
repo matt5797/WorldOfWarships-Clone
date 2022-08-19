@@ -54,12 +54,13 @@ namespace WOW
 
         void InsertFiringTable(int shell)
         {
-            string sql = string.Format("SELECT X, Angle FROM FiringTable WHERE Shell=={0} AND (Angle*100)%100==0", shell);
+            //string sql = string.Format("SELECT X, Angle FROM FiringTable WHERE Shell=={0} AND (Angle*100)%100==0", shell);
+            string sql = string.Format("SELECT X, Angle FROM FiringTable WHERE Shell=={0}", shell);
             var res = m_DatabaseAccess.ExecuteQuery(sql);
             Dictionary<int, float> insertData = new Dictionary<int, float>();
             while (res.Read())
             {
-                insertData.Add((int)res.GetFloat(0), res.GetFloat(1));
+                insertData.TryAdd((int)res.GetFloat(0), res.GetFloat(1));
             }
             m_FiringTable.Add(shell, insertData);
         }

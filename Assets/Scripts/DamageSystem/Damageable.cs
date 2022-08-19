@@ -125,7 +125,7 @@ namespace WOW.DamageSystem
         {
             if (canDamage)
             {
-                print(damage + "/" + HP + " damage: " + gameObject);
+                //print(damage + "/" + HP + " damage: " + gameObject);
                 HP -= (int)(damage * damageableData.multiple);
                 return (int)(damage * damageableData.multiple);
             }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WOW.Controller;
 
 namespace WOW.Armament
 {
@@ -21,6 +22,16 @@ namespace WOW.Armament
         public float cooldownTime = 1;  // 쿨타임
         private bool canUse = true; // 사용 가능 여부
         
+        public Transform rootPosition;
+        [HideInInspector] public Vector3 target;
+        protected ShipController controller;
+        public GameObject[] firePoint;
+
+        protected virtual void Start()
+        {
+            controller = GetComponentInParent<ShipController>();
+        }
+
         /// <summary>
         /// 사격 가능하다면 사격하고, 사격에 성공했는지 반환
         /// </summary>

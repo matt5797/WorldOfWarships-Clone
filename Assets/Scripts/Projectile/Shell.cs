@@ -128,7 +128,10 @@ namespace WOW.Projectile
             }
         }
 
-        // 탄환을 발사한다.
+        /// <summary>
+        /// 탄환을 발사한다.
+        /// </summary>
+        /// <param name="shootAngle">발사 각도 deg</param>
         public void OnShoot(double shootAngle)
         {
             // 처음에는 마지막 위치가 없기 때문에 일단 현재 위치를 저장
@@ -140,7 +143,6 @@ namespace WOW.Projectile
             fireRotation = transform.rotation;
             //매개변수로 받은 발사 각도를 라디안으로 변환하여 클래스 변수에 저장한다.
             this.shootAngle = shootAngle * Mathf.Deg2Rad;
-            print("OnShoot: " + shootAngle + ", " + this.shootAngle);
             // 초기 x,y 변화량을 계산한다.
             v_x = Math.Cos(this.shootAngle) * shellData.bulletSpeed;
             v_y = Math.Sin(this.shootAngle) * shellData.bulletSpeed * UnityEngine.Random.Range(1,10) / 10;

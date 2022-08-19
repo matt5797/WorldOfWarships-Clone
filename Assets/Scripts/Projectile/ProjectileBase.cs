@@ -13,7 +13,7 @@ namespace WOW.Projectile
     public abstract class ProjectileBase : MonoBehaviour
     {
         protected DamageableManager targetDamageableManager;    // 대상 배의 모듈 관리자를 저장
-        public Camp camp;   //내 진영
+        [HideInInspector] public Camp camp;   //내 진영
 
         protected virtual void OnTriggerEnter(Collider other)
         {

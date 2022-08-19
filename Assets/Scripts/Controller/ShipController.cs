@@ -19,11 +19,16 @@ namespace WOW.Controller
             set { targetPoint = value; }
         }
 
-        protected virtual void Start()
+        protected virtual void Awake()
         {
             ship = GetComponentInChildren<BattleShipBase>();
             autoPilot = GetComponentInChildren<ShipAutoPilot>();
             admiral = GetComponentInParent<Admiral>();
+        }
+
+        protected virtual void Start()
+        {
+            
         }
     }
 }

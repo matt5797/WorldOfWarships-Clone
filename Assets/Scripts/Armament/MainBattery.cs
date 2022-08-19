@@ -11,12 +11,8 @@ namespace WOW.Armament
     /// </summary>
     public class MainBattery : ArmamentBase
     {
-        public Transform rootPosition;
-        [HideInInspector] public Vector3 target;
         public Shell HE;
         public Shell AP;
-        ShipController controller;
-        public GameObject[] firePoint;
 
         Shell bulletFactory;
         int ShellID;
@@ -32,9 +28,9 @@ namespace WOW.Armament
         Vector3 forward;
 
         // Start is called before the first frame update
-        void Start()
+        protected override void Start()
         {
-            controller = GetComponentInParent<ShipController>();
+            base.Start();
             if (HE != null)
             {
                 bulletFactory = HE;
@@ -63,15 +59,13 @@ namespace WOW.Armament
             target.y = rootPosition.position.y;
 
             Vector3 dir = (target - rootPosition.position).normalized;
-            Debug.DrawRay(rootPosition.position, dir, Color.red);
-            Debug.DrawRay(rootPosition.position, forward, Color.green);
 
             float singleStep = rotSpeed * Time.deltaTime;
             Vector3 newDirection = Vector3.RotateTowards(rootPosition.forward, dir, singleStep, 0.0f);
             Quaternion rot = Quaternion.LookRotation(newDirection);
             Vector3 temp = rootPosition.eulerAngles;
             rootPosition.eulerAngles = new Vector3(0, rot.eulerAngles.y, 0);
-            if (Vector3.Dot(forward, rootPosition.forward) < minY)
+            if (Vector3.Dot(rootPosition.parent.forward, rootPosition.forward) < minY)
             {
                 rootPosition.eulerAngles = temp;
             }
@@ -102,12 +96,6 @@ namespace WOW.Armament
             for (int i = 0; i < firePoint.Length; i++)
             {
                 // ÃÑ±¸ ¾Õ¿¡ ÅºÈ¯ »ý¼º
-                /*GameObject bullet = Instantiate(bulletFactory);
-                bullet.transform.position = firePoint[i].transform.position;
-                bullet.transform.rotation = firePoint[i].transform.rotation;
-                bullet.GetComponent<Shell>().camp = controller.ship.camp;
-                bullet.GetComponent<Shell>().OnShoot(angle);*/
-
                 Shell bullet = Instantiate<Shell>(bulletFactory);
                 bullet.transform.position = firePoint[i].transform.position;
                 bullet.transform.rotation = firePoint[i].transform.rotation;
