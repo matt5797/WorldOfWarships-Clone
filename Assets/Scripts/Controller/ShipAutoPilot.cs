@@ -3,52 +3,91 @@ using System.Collections.Generic;
 using UnityEngine;
 using WOW.BattleShip;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace WOW.Controller
 {
     public class ShipAutoPilot : MonoBehaviour
     {
         public ShipController controller;
-        public Vector3[] wayPoints;
         Vector3 destination;
+        Vector3 lookAtPoint;
+        NavMeshPath path;
         NavMeshHit hit;
-        int currentWayPoint = 0;
-        public bool isEnabled = false;
+        public bool isMove = false;
+        public bool isArrived = false;
         float distance, steer;
+        public float pathTime = 0.5f;
+        float pathCurrentTime;
 
         private void Awake()
         {
             controller = GetComponentInParent<ShipController>();
         }
 
-        // Start is called before the first frame update
         void Start()
         {
             hit = new NavMeshHit();
+            path = new NavMeshPath();
         }
 
-        // Update is called once per frame
         void Update()
         {
-            if (!isEnabled || wayPoints.Length == 0)
-                return;
+            UpdateMove();
+        }
 
-            distance = Vector3.Distance(transform.position, wayPoints[currentWayPoint]);
-
-            // 코너링
-            if (distance < Vector3.Distance(transform.position, controller.ship.PredictionPos(10)))
+        // 미세하게 앞뒤로 움직이며 목표 방향을 바라본다.
+        IEnumerator Parking()
+        {
+            int _gear = 1;
+            float _steerTime = 2f;
+            float _steerTimer;
+            while (Vector3.Dot((lookAtPoint-transform.position).normalized, transform.forward) < 0.95)
             {
-                if (currentWayPoint < wayPoints.Length - 1)
+                _gear *= -1;
+                controller.ship.Gear = _gear;
+                _steerTimer = _steerTime;
+                while (_steerTimer > 0 && Vector3.Dot((lookAtPoint - transform.position).normalized, transform.forward) < 0.95)
                 {
-                    // 다음 타겟 방향으로 방향타를 조정
-                    steer = SteerTowardsTarget(wayPoints[currentWayPoint + 1]);
+                    _steerTimer -= Time.deltaTime;
+                    steer = SteerTowardsTarget(lookAtPoint);
+
+                    if (steer <= 0)
+                    {
+                        controller.ship.SteerDown();
+                    }
+                    else if (steer >= -0)
+                    {
+                        controller.ship.SteerUp();
+                    }
+                    yield return null;
                 }
+            }
+            controller.ship.Gear = 0;
+            yield break;
+        }
+
+        void UpdateMove()
+        {
+            if (!isMove || destination == null)
+                return;
+            
+            // 경로 계산
+            if (pathCurrentTime <= 0)
+            {
+                pathCurrentTime = pathTime;
+                NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
             }
             else
             {
-                // 타겟 방향으로 방향타를 조정
-                steer = SteerTowardsTarget(wayPoints[currentWayPoint]);
+                pathCurrentTime -= Time.deltaTime;
             }
+
+            if (path.status != NavMeshPathStatus.PathComplete || path.corners.Length<=1)
+                return;
+
+            // 타겟 방향으로 방향타를 조정
+            steer = SteerTowardsTarget(path.corners[1]);
 
             if (steer >= 0)
             {
@@ -59,49 +98,64 @@ namespace WOW.Controller
                 controller.ship.SteerUp();
             }
 
-            // 출발시 최대로 가속
-            if (currentWayPoint == 0)
+            distance = Vector3.Distance(transform.position, path.corners[1]);
+            
+            // 다음 코너 거리에 따라 기어 변속
+            if (distance < 1f && path.corners.Length <= 2)
+            {
+                // 목적지에 도착하면 종료
+                controller.ship.Gear = 0;
+                StartCoroutine(Parking());
+                SetActive(false);
+            }
+            else if (distance < 10)
+            {
+                controller.ship.Gear = 2;
+            }
+            else if (distance < 50)
+            {
+                controller.ship.Gear = 3;
+            }
+            else
             {
                 controller.ship.Gear = 4;
             }
-            // 거리에 따라 기어 변속
-            else if (currentWayPoint == wayPoints.Length - 1)
-            {
-                if (distance < Vector3.Distance(transform.position, controller.ship.PredictionPos(10)))
-                {
-                    controller.ship.Gear = 1;
-                }
-            }
-
-            // 가까워지면 다음 웨이포인트로 이동
-            if (Vector3.Distance(wayPoints[currentWayPoint], transform.position) < 1)
-                NextWayPoint();
         }
 
-        public void SetWayPoint(Vector3[] wayPoints)
+        public void SetActive(bool isActive)
         {
-            this.wayPoints = wayPoints;
+            if (isActive)
+            {
+                isMove = true;
+                isArrived = false;
+                StopAllCoroutines();
+            }
+            else
+            {
+                isMove = false;
+                isArrived = true;
+            }
         }
 
         public bool SetDestination(Vector3 destination)
         {
             if (NavMesh.SamplePosition(destination, out hit, 1000, 1))
             {
-                destination = hit.position;
+                this.destination = hit.position;
                 return true;
             }
             return false;
         }
-
-        void NextWayPoint()
+        
+        public bool SetDestination(Vector3 destination, Vector3 lookAtPoint)
         {
-            currentWayPoint++;
-            if (currentWayPoint >= wayPoints.Length)
+            if (NavMesh.SamplePosition(destination, out hit, 1000, 1))
             {
-                print("도착");
-                controller.ship.Gear = 0;
-                isEnabled = false;
+                this.destination = hit.position;
+                this.lookAtPoint = lookAtPoint;
+                return true;
             }
+            return false;
         }
 
         public float SteerTowardsTarget(Vector3 destination)
@@ -111,7 +165,6 @@ namespace WOW.Controller
             if (distance > 1)
             {
                 Vector3 desiredHeading = destination - transform.position;
-                //Vector3 currentHeading = transform.forward;
                 Vector3 currentHeading = controller.ship.PredictionRot(5) * transform.forward;
 
                 Debug.DrawLine(transform.position, destination, Color.blue);
@@ -122,19 +175,33 @@ namespace WOW.Controller
             {
                 return 0;
             }
-
         }
 
         private void OnDrawGizmosSelected()
         {
-            if (wayPoints != null)
+            if (path!=null)
             {
-                for (int i = 0; i < wayPoints.Length-1; i++)
+                Gizmos.color = Color.green;
+                Gizmos.DrawSphere(destination, 2);
+
+                if (path.corners.Length > 1)
                 {
-                    Gizmos.color = Color.red;
-                    Gizmos.DrawSphere(wayPoints[i], 0.1f);
-                    Gizmos.DrawLine(wayPoints[i], wayPoints[(i + 1)]);
+                    Gizmos.color = Color.black;
+                    Gizmos.DrawSphere(path.corners[0], 3f);
                 }
+
+                for (int i = 0; i < path.corners.Length - 1; i++)
+                {
+                    Gizmos.color = Color.green;
+                    Gizmos.DrawSphere(path.corners[i], 0.5f);
+                    Gizmos.DrawLine(path.corners[i], path.corners[(i + 1)]);
+                }
+            }
+
+            if (lookAtPoint != null)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawSphere(lookAtPoint, 2);
             }
         }
     }
