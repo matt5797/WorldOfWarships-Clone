@@ -44,8 +44,11 @@ namespace WOW.UI
 
             }
 
-            dist_text.text = Mathf.Round(distance * 10) * 0.1F + "Km";
-            second_text.text = Mathf.Round(second * 10) * 0.1F + "s";
+            string dis = string.Format("{0:F2}", Mathf.Round(distance * 100) * 0.01F);
+            string sec = string.Format("{0:F2}", Mathf.Round(second * 100) * 0.01F);
+
+            dist_text.text = dis + "Km";
+            second_text.text = sec + "s";
 
         }
 
