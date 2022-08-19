@@ -6,24 +6,24 @@ namespace WOW.Controller
 {
     public class ShipController : MonoBehaviour
     {
-        public BattleShipBase ship;
-        public Vector3 targetPoint;
-        public ShipAutoPilot autoPilot;
-        protected NavMeshAgent agent;
+        [HideInInspector] public BattleShipBase ship;
+        [HideInInspector] public Vector3 targetPoint;
+        [HideInInspector] public ShipAutoPilot autoPilot;
+        [HideInInspector] public Admiral admiral;
 
         protected bool isAutoPilot = false;
 
         public Vector3 TargetPoint
         {
             get { return targetPoint; }
-            protected set { targetPoint = value; }
+            set { targetPoint = value; }
         }
 
         protected virtual void Start()
         {
             ship = GetComponentInChildren<BattleShipBase>();
             autoPilot = GetComponentInChildren<ShipAutoPilot>();
-            agent = GetComponentInChildren<NavMeshAgent>();
+            admiral = GetComponentInParent<Admiral>();
         }
     }
 }

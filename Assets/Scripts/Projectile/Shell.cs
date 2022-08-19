@@ -54,7 +54,6 @@ namespace WOW.Projectile
 
         public float worldScale = 100;  // 1유닛이 몇 미터인지
 
-        public Camp camp;   //내 진영
 
         private void Start()
         {
