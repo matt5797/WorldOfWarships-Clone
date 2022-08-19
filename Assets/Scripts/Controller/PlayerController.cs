@@ -55,12 +55,12 @@ namespace WOW.Controller
             }
             if (Input.GetKey(KeyCode.A))
             {
-                ship.SteerDown();
+                ship.SteerUp();
                 isAutoPilot = false;
             }
             if (Input.GetKey(KeyCode.D))
             {
-                ship.SteerUp();
+                ship.SteerDown();
                 isAutoPilot = false;
             }
 

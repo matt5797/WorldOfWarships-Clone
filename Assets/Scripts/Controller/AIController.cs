@@ -43,5 +43,21 @@ namespace WOW.Controller
         {
             AIState.LateUpdate(this);
         }
+
+        public BattleShipBase GetClosestEnemy()
+        {
+            float minDistance = float.MaxValue;
+            BattleShipBase closetShip = null;
+            foreach (BattleShipBase ship in admiral.enemy.battleShips)
+            {
+                float distance = Vector3.Distance(ship.transform.position, ship.transform.position);
+                if (distance<minDistance)
+                {
+                    minDistance = distance;
+                    closetShip = ship;
+                }
+            }
+            return closetShip;
+        }
     }
 }

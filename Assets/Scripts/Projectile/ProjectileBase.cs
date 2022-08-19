@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using WOW.DamageSystem;
 using UnityEngine.Events;
+using WOW.BattleShip;
 
 namespace WOW.Projectile
 {
@@ -12,9 +13,17 @@ namespace WOW.Projectile
     public abstract class ProjectileBase : MonoBehaviour
     {
         protected DamageableManager targetDamageableManager;    // 대상 배의 모듈 관리자를 저장
+        public Camp camp;   //내 진영
 
         protected virtual void OnTriggerEnter(Collider other)
         {
+            BattleShipBase ship = other.GetComponentInParent<BattleShipBase>();
+            if (ship == null)
+                return;
+
+            if (ship.camp == camp)
+                return;
+
             // 충돌 대상이 Damageable 컴포넌트를 가지고 있는지 확인
             Damageable damageable = other.GetComponent<Damageable>();
             if (damageable != null)
@@ -35,6 +44,13 @@ namespace WOW.Projectile
 
         private void OnTriggerExit(Collider other)
         {
+            BattleShipBase ship = other.GetComponentInParent<BattleShipBase>();
+            if (ship == null)
+                return;
+
+            if (ship.camp == camp)
+                return;
+            
             // 충돌 대상이 Damageable 컴포넌트를 가지고 있는지 확인
             Damageable damageable = other.GetComponent<Damageable>();
             if (damageable != null)

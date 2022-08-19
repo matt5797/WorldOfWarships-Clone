@@ -43,6 +43,9 @@ namespace WOW.Controller
         public override void Update(AIController t)
         {
             base.Update(t);
+
+            // 사격 포인트를 가장 가까운 적의 5초 뒤 위치로 한다.
+            t.TargetPoint = t.GetClosestEnemy().PredictionPos(5);
         }
 
         public override void Exit(AIController t)
@@ -62,6 +65,14 @@ namespace WOW.Controller
         public override void Enter(AIController t)
         {
             base.Enter(t);
+        }
+        
+        public override void Update(AIController t)
+        {
+            base.Update(t);
+
+            // 사격 포인트를 가장 가까운 적의 5초 뒤 위치로 한다.
+            t.TargetPoint = t.GetClosestEnemy().PredictionPos(5);
         }
     }
 
