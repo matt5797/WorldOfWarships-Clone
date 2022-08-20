@@ -66,5 +66,13 @@ namespace WOW.Ability
                 battery.TryFire();
             }
         }
+
+        public override void OnAbilityChange()
+        {
+            foreach (MainBattery battery in armamentArray)
+            {
+                battery.ChangeBullet("HE");
+            }
+        }
     }
 }

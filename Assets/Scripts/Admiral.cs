@@ -22,7 +22,8 @@ namespace WOW
         // Start is called before the first frame update
         void Start()
         {
-            controllers[0].AIState = new MoveState(GameObject.Find("Test Target 2").transform.position, GameObject.Find("Test Target 2 (1)").transform.position);
+            //controllers[0].AIState = new MoveState(GameObject.Find("Test Target 2").transform.position, GameObject.Find("Test Target 2 (1)").transform.position);
+            controllers[0].AIState = new MoveState(GameObject.Find("Test Target 2").transform.position);
         }
 
         // Update is called once per frame

@@ -38,5 +38,10 @@ namespace WOW.Ability
                 canUse = true;
             }
         }
+
+        public virtual void OnAbilityChange()
+        {
+            
+        }
     }
 }

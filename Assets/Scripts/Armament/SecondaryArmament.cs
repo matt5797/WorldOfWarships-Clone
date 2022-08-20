@@ -13,8 +13,8 @@ namespace WOW.Armament
         public Shell bulletFactory;
         int ShellID;
 
-        [Range(0.0f, 0.1f)]
-        public float rotSpeed = 0.05f;
+        [Range(0.0f, 5f)]
+        public float rotSpeed = 1f;
 
         public float minX = 0;
         public float maxX = 30;

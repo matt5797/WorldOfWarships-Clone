@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using WOW.Armament;
 using WOW.Ability;
+using UnityEngine.Events;
 
 namespace WOW.BattleShip
 {
@@ -30,7 +31,7 @@ namespace WOW.BattleShip
         private Rigidbody m_Rigidbody;
         [SerializeField] private Transform propeller;
         private AbilityBase[] abilities;
-        private Dictionary<int, AbilityBase> m_AbilityDict = new Dictionary<int, AbilityBase>();
+        public Dictionary<int, AbilityBase> m_AbilityDict = new Dictionary<int, AbilityBase>();
 
         [SerializeField] protected float maxSpeed = 10f;
         [SerializeField] protected float movePower = 5f;
@@ -42,7 +43,7 @@ namespace WOW.BattleShip
         [SerializeField] protected float _steer = 0;
         //[SerializeField] protected Quaternion rot = default;
 
-        private int currentAbilityIndex;
+        public int currentAbilityIndex;
 
         public bool isDetected = false;
         public bool isMovable = true;
@@ -50,6 +51,8 @@ namespace WOW.BattleShip
         // For Debugging
         public Vector3 velocity;
         public Vector3 angularVelocity;
+
+        public UnityEvent<int> onAbilityChange;
 
         public int Gear
         {
@@ -157,10 +160,11 @@ namespace WOW.BattleShip
 
         public void ChangeArmament(int index)
         {
-            if (m_AbilityDict.ContainsKey(currentAbilityIndex))
+            if (m_AbilityDict.ContainsKey(index))
             {
                 currentAbilityIndex = index;
-                // °íÆøÅº¿¡¼­ Ã¶°©ÅºÀÇ °æ¿ì ÅºÈ¯ º¯°æ¿¡ ´ëÇÑ ÄÚµå Ãß°¡
+                m_AbilityDict[currentAbilityIndex].OnAbilityChange();
+                onAbilityChange.Invoke(index);
             }
         }
 

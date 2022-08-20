@@ -12,7 +12,7 @@ namespace WOW.UI
         public TextMeshProUGUI second_text;
 
         float distance;
-        float speed = 10;
+        public float speed = 10;
         float second;
         float time;
 
@@ -30,7 +30,7 @@ namespace WOW.UI
                 //float arrival = dist / speed; //시간
 
                 // 나와 닿은 지점의 거리
-                distance = Vector3.Distance(hitInfo.point, GameObject.Find("Player Controller").transform.position);
+                distance = Vector3.Distance(hitInfo.point, GameObject.FindGameObjectWithTag("PlayerController").transform.position) * 0.1f;
 
                 // 도달하는 시간 (시간 (거리 / 속력))
                 time = distance / speed;

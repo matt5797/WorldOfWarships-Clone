@@ -13,6 +13,8 @@ namespace WOW.Controller
         Vector3 destination;
         Vector3 lookAtPoint;
 
+        float currentTime = 0;
+
         public MoveState(Vector3 destination) : base()
         {
             this.destination = destination;
@@ -46,6 +48,12 @@ namespace WOW.Controller
 
             // 사격 포인트를 가장 가까운 적의 5초 뒤 위치로 한다.
             t.TargetPoint = t.GetClosestEnemy().PredictionPos(5);
+
+            if (currentTime > t.AttackInterval)
+            {
+                currentTime = 0;
+                t.ship.TriggerAbility();
+            }
         }
 
         public override void Exit(AIController t)
@@ -73,6 +81,25 @@ namespace WOW.Controller
 
             // 사격 포인트를 가장 가까운 적의 5초 뒤 위치로 한다.
             t.TargetPoint = t.GetClosestEnemy().PredictionPos(5);
+        }
+    }
+
+    public class OccupyState : State<AIController>
+    {
+        // 거점 점령 상태
+        public override State<AIController> InputHandle(AIController t)
+        {
+            return this;
+        }
+
+        public override void Enter(AIController t)
+        {
+            base.Enter(t);
+        }
+
+        public override void Update(AIController t)
+        {
+            base.Update(t);
         }
     }
 

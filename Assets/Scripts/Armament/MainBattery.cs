@@ -17,15 +17,21 @@ namespace WOW.Armament
         Shell bulletFactory;
         int ShellID;
 
-        [Range(0.0f, 0.1f)]
-        public float rotSpeed = 0.05f;
+        [Range(0.0f, 5f)]
+        public float rotSpeed = 1f;
 
         public float minX = 0;
         public float maxX = 30;
         
         public float minY = 0;
 
-        Vector3 forward;
+        public Vector3 TargetingPoint
+        {
+            get
+            {
+                return rootPosition.forward * 10;
+            }
+        }
 
         // Start is called before the first frame update
         protected override void Start()
@@ -41,7 +47,6 @@ namespace WOW.Armament
                 bulletFactory = AP;
                 ChangeBullet("AP");
             }
-            forward = rootPosition.forward;
         }
         
         // Update is called once per frame

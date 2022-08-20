@@ -14,6 +14,8 @@ namespace WOW.Controller
     public class AIController : ShipController
     {
         public State<AIController> AIState;
+        public float AttackInterval = 2f;
+
         protected override void Start()
         {
             base.Start();
@@ -23,7 +25,6 @@ namespace WOW.Controller
         private void Update()
         {
             State<AIController> nowState = AIState.InputHandle(this);
-            print(GetInstanceID() + " / "+ nowState);
             AIState.action(this);
 
             if (!nowState.Equals(AIState))

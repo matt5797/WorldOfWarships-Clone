@@ -177,7 +177,7 @@ namespace WOW.Projectile
         {
             //print(GetInstanceID() + " OnImpact");
             penetration = (float)GetPenetration() * worldScale;
-            print("init penetration: " + penetration);
+            //print("init penetration: " + penetration);
             //print("관통력: " + penetration);
             // 피격 시 이벤트
             //print("Shell OnImpact");
@@ -192,7 +192,7 @@ namespace WOW.Projectile
                     //Debug.LogAssertion("레이가 제로 " + lastraycastHit.normal);
                 }
                 //print(lastraycastHit.normal + " / " + transform.forward);
-                print("입사각: " + angle);
+                //print("입사각: " + angle);
                 // 도탄 확인
                 if (damageable.CheckRicochet(angle, shellData.bulletRicochetAt, shellData.bulletAlwaysRicochetAt))
                 {
