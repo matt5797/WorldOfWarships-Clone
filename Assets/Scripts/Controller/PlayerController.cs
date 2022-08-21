@@ -16,7 +16,9 @@ namespace WOW.Controller
         public GameObject autoPilotTarget;
         public float pathTime = 0.5f;
         float pathCurrentTime;
-        
+
+      
+
         protected override void Start()
         {
             base.Start();
@@ -101,7 +103,11 @@ namespace WOW.Controller
                     pathCurrentTime -= Time.deltaTime;
                 }
             }
+           
+           
         }
+
+     
 
         void StartAutoPilot()
         {
