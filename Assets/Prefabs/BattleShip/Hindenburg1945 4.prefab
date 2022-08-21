@@ -479,6 +479,8 @@ GameObject:
   - component: {fileID: 2126914301207031502}
   - component: {fileID: 7976208180156032602}
   - component: {fileID: 7617452868573129734}
+  - component: {fileID: 6880738954224768279}
+  - component: {fileID: 8709213979250881140}
   m_Layer: 0
   m_Name: MidFrontShape
   m_TagString: Untagged
@@ -551,6 +553,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6880738954224768279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71553688634277703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120c5aa7ba45cc949b2bc08ba351dd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableData: {fileID: 11400000, guid: 4bea5156173aa7c4c9e46c5dc6ac21f0, type: 2}
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onThrough:
+    m_PersistentCalls:
+      m_Calls: []
+  onBreakdown:
+    m_PersistentCalls:
+      m_Calls: []
+  onRecovery:
+    m_PersistentCalls:
+      m_Calls: []
+  onCompleteDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onFire:
+    m_PersistentCalls:
+      m_Calls: []
+  canRecovery: 0
+  destroyTime: 5
+--- !u!64 &8709213979250881140
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71553688634277703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2840861006136146190, guid: 90efe424be604a64d9ebc719014d8737, type: 3}
 --- !u!1 &110690853364965458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,6 +2040,8 @@ GameObject:
   - component: {fileID: 1296208934444442639}
   - component: {fileID: 313144817022976261}
   - component: {fileID: 4917776211383772656}
+  - component: {fileID: 732665790870790972}
+  - component: {fileID: 2435042346047997916}
   m_Layer: 0
   m_Name: SternShape
   m_TagString: Untagged
@@ -2063,6 +2114,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &732665790870790972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561410121352938313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120c5aa7ba45cc949b2bc08ba351dd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableData: {fileID: 11400000, guid: eb7dfe5da14495d44810e01580d94198, type: 2}
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onThrough:
+    m_PersistentCalls:
+      m_Calls: []
+  onBreakdown:
+    m_PersistentCalls:
+      m_Calls: []
+  onRecovery:
+    m_PersistentCalls:
+      m_Calls: []
+  onCompleteDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onFire:
+    m_PersistentCalls:
+      m_Calls: []
+  canRecovery: 0
+  destroyTime: 5
+--- !u!64 &2435042346047997916
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561410121352938313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5989895296679556074, guid: 90efe424be604a64d9ebc719014d8737, type: 3}
 --- !u!1 &607019857175259848
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,7 +2592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2861897184341393515
 Transform:
   m_ObjectHideFlags: 0
@@ -2603,6 +2701,8 @@ GameObject:
   - component: {fileID: 7391536224269807238}
   - component: {fileID: 4195119081408089023}
   - component: {fileID: 4318278542125711654}
+  - component: {fileID: 8758214787104348656}
+  - component: {fileID: 4405001064282935884}
   m_Layer: 0
   m_Name: MidFront_patch_MidBackShape
   m_TagString: Untagged
@@ -2675,6 +2775,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8758214787104348656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798909017547263907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120c5aa7ba45cc949b2bc08ba351dd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableData: {fileID: 11400000, guid: 4bea5156173aa7c4c9e46c5dc6ac21f0, type: 2}
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onThrough:
+    m_PersistentCalls:
+      m_Calls: []
+  onBreakdown:
+    m_PersistentCalls:
+      m_Calls: []
+  onRecovery:
+    m_PersistentCalls:
+      m_Calls: []
+  onCompleteDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onFire:
+    m_PersistentCalls:
+      m_Calls: []
+  canRecovery: 0
+  destroyTime: 5
+--- !u!64 &4405001064282935884
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798909017547263907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1413030390126210037, guid: 90efe424be604a64d9ebc719014d8737, type: 3}
 --- !u!1 &800077181760930359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,7 +2922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7960577463812612534
 Transform:
   m_ObjectHideFlags: 0
@@ -3926,7 +4073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7743217029569044171
 Transform:
   m_ObjectHideFlags: 0
@@ -7049,7 +7196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2907954047643978546
 Transform:
   m_ObjectHideFlags: 0
@@ -20810,7 +20957,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8783998733470858585
 Transform:
   m_ObjectHideFlags: 0
@@ -21009,7 +21156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1418223661100244790
 Transform:
   m_ObjectHideFlags: 0
@@ -22150,7 +22297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8879813447392666656
 Transform:
   m_ObjectHideFlags: 0
@@ -23378,7 +23525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3326124249647961982
 Transform:
   m_ObjectHideFlags: 0
@@ -24050,7 +24197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1410674633785458218
 Transform:
   m_ObjectHideFlags: 0
@@ -25082,7 +25229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1025336047953342128
 Transform:
   m_ObjectHideFlags: 0
@@ -25422,6 +25569,8 @@ GameObject:
   - component: {fileID: 4999298375028992506}
   - component: {fileID: 5267852746641260952}
   - component: {fileID: 5040767248216637215}
+  - component: {fileID: 2330199432407180681}
+  - component: {fileID: 8435043247281473119}
   m_Layer: 0
   m_Name: Bow_patch_MidFrontShape
   m_TagString: Untagged
@@ -25494,6 +25643,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2330199432407180681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7511147074215281934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120c5aa7ba45cc949b2bc08ba351dd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableData: {fileID: 11400000, guid: 94704b583e405744db874cedc7f9fb72, type: 2}
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onThrough:
+    m_PersistentCalls:
+      m_Calls: []
+  onBreakdown:
+    m_PersistentCalls:
+      m_Calls: []
+  onRecovery:
+    m_PersistentCalls:
+      m_Calls: []
+  onCompleteDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onFire:
+    m_PersistentCalls:
+      m_Calls: []
+  canRecovery: 0
+  destroyTime: 5
+--- !u!64 &8435043247281473119
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7511147074215281934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1219088283025549204, guid: 90efe424be604a64d9ebc719014d8737, type: 3}
 --- !u!1 &7511302239741595088
 GameObject:
   m_ObjectHideFlags: 0
@@ -25795,6 +25991,8 @@ GameObject:
   - component: {fileID: 8435765108375192648}
   - component: {fileID: 3289142438051358164}
   - component: {fileID: 4316845229081328667}
+  - component: {fileID: 2563129964412988345}
+  - component: {fileID: 4847175954257046255}
   m_Layer: 0
   m_Name: MidBackShape
   m_TagString: Untagged
@@ -25867,6 +26065,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2563129964412988345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671180486420888620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120c5aa7ba45cc949b2bc08ba351dd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableData: {fileID: 11400000, guid: 4bea5156173aa7c4c9e46c5dc6ac21f0, type: 2}
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onThrough:
+    m_PersistentCalls:
+      m_Calls: []
+  onBreakdown:
+    m_PersistentCalls:
+      m_Calls: []
+  onRecovery:
+    m_PersistentCalls:
+      m_Calls: []
+  onCompleteDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onFire:
+    m_PersistentCalls:
+      m_Calls: []
+  canRecovery: 0
+  destroyTime: 5
+--- !u!64 &4847175954257046255
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671180486420888620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5836652335816271781, guid: 90efe424be604a64d9ebc719014d8737, type: 3}
 --- !u!1 &7676390017367760197
 GameObject:
   m_ObjectHideFlags: 0
@@ -26965,7 +27210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4410732051175462692
 Transform:
   m_ObjectHideFlags: 0
@@ -27042,6 +27287,8 @@ GameObject:
   - component: {fileID: 6610452117956956061}
   - component: {fileID: 318372021584463765}
   - component: {fileID: 4595896629075329743}
+  - component: {fileID: 6751445258663310826}
+  - component: {fileID: 6946828227051224483}
   m_Layer: 0
   m_Name: MidBack_patch_SternShape
   m_TagString: Untagged
@@ -27114,6 +27361,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6751445258663310826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7957684914624506127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120c5aa7ba45cc949b2bc08ba351dd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableData: {fileID: 11400000, guid: eb7dfe5da14495d44810e01580d94198, type: 2}
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onThrough:
+    m_PersistentCalls:
+      m_Calls: []
+  onBreakdown:
+    m_PersistentCalls:
+      m_Calls: []
+  onRecovery:
+    m_PersistentCalls:
+      m_Calls: []
+  onCompleteDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onFire:
+    m_PersistentCalls:
+      m_Calls: []
+  canRecovery: 0
+  destroyTime: 5
+--- !u!64 &6946828227051224483
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7957684914624506127}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7098834404676663897, guid: 90efe424be604a64d9ebc719014d8737, type: 3}
 --- !u!1 &7977433504564493626
 GameObject:
   m_ObjectHideFlags: 0
@@ -27304,6 +27598,8 @@ GameObject:
   - component: {fileID: 3993940843987198120}
   - component: {fileID: 8393315144285621593}
   - component: {fileID: 8571647159783092128}
+  - component: {fileID: 4298480648552339107}
+  - component: {fileID: 543449816985415610}
   m_Layer: 0
   m_Name: BowShape
   m_TagString: Untagged
@@ -27376,6 +27672,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4298480648552339107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036853880089425325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120c5aa7ba45cc949b2bc08ba351dd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageableData: {fileID: 11400000, guid: 94704b583e405744db874cedc7f9fb72, type: 2}
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onThrough:
+    m_PersistentCalls:
+      m_Calls: []
+  onBreakdown:
+    m_PersistentCalls:
+      m_Calls: []
+  onRecovery:
+    m_PersistentCalls:
+      m_Calls: []
+  onCompleteDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onFire:
+    m_PersistentCalls:
+      m_Calls: []
+  canRecovery: 0
+  destroyTime: 5
+--- !u!64 &543449816985415610
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036853880089425325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1682926434722843740, guid: 90efe424be604a64d9ebc719014d8737, type: 3}
 --- !u!1 &8043601761272813155
 GameObject:
   m_ObjectHideFlags: 0
@@ -31313,7 +31656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &495957493150109207
 Transform:
   m_ObjectHideFlags: 0
