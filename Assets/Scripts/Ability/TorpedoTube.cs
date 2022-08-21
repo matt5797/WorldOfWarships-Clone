@@ -42,7 +42,10 @@ namespace WOW.Ability
 
         public override void OnAbilityChange()
         {
-            
+            foreach (Armament.TorpedoTube tube in armamentArray)
+            {
+                tube.indicator.GetComponent<MeshRenderer>();
+            }
         }
     }
 }

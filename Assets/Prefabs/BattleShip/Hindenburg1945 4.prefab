@@ -9599,6 +9599,7 @@ MonoBehaviour:
   - {fileID: 8501665518073813058}
   bulletFactory: {fileID: 1115507205964319755, guid: 1809c61359c60b342b91d747ec8eca06,
     type: 3}
+  indicator: {fileID: 0}
   bulletCount: 4
   fireAngle: 15
   rotSpeed: 1
@@ -12317,6 +12318,7 @@ MonoBehaviour:
   - {fileID: 2528879449488104202}
   bulletFactory: {fileID: 1115507205964319755, guid: 1809c61359c60b342b91d747ec8eca06,
     type: 3}
+  indicator: {fileID: 0}
   bulletCount: 4
   fireAngle: 15
   rotSpeed: 1
@@ -14261,6 +14263,7 @@ MonoBehaviour:
   - {fileID: 7357775567597311248}
   bulletFactory: {fileID: 1115507205964319755, guid: 1809c61359c60b342b91d747ec8eca06,
     type: 3}
+  indicator: {fileID: 0}
   bulletCount: 4
   fireAngle: 15
   rotSpeed: 1
@@ -18717,6 +18720,7 @@ MonoBehaviour:
   - {fileID: 6327683340454530100}
   bulletFactory: {fileID: 1115507205964319755, guid: 1809c61359c60b342b91d747ec8eca06,
     type: 3}
+  indicator: {fileID: 0}
   bulletCount: 4
   fireAngle: 15
   rotSpeed: 1
