@@ -38,7 +38,7 @@ public class TorpedoIndicator : MonoBehaviour
 
         //indicator.transform.rotation = LookAt2D(V3toV2(transform.position), V3toV2(target), facingDirection);
 
-        float angle = Vector2.SignedAngle(V3toV2(transform.forward), dir2);
+        float angle = Vector2.SignedAngle(V3toV2(transform.forward), dir2) * -1 - 180;
         angle = Mathf.Repeat(angle, 360);
         indicator.transform.localRotation = Quaternion.Euler(0, 0, angle);
         //print(Vector2.SignedAngle(V3toV2(transform.forward), dir2));

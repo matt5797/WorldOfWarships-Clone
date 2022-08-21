@@ -67,7 +67,7 @@ namespace WOW.Ability
             }
         }
 
-        public override void OnAbilityChange()
+        public override void OnAbilityEnabled()
         {
             foreach (MainBattery battery in armamentArray)
             {

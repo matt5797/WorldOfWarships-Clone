@@ -196,7 +196,7 @@ namespace WOW.Projectile
                 // µµÅº È®ÀÎ
                 if (damageable.CheckRicochet(angle, shellData.bulletRicochetAt, shellData.bulletAlwaysRicochetAt))
                 {
-                    print("µµÅº ¹ß»ý");
+                    //print("µµÅº ¹ß»ý");
                     DamageTextManager.Instance.CreateDamageText(transform, "µµÅº ¹ß»ý", 20);
                     OnExplosion();
                     return;

@@ -23,7 +23,7 @@ namespace WOW.Projectile
 
             if (ship.camp == camp)
                 return;
-
+            
             // 충돌 대상이 Damageable 컴포넌트를 가지고 있는지 확인
             Damageable damageable = other.GetComponent<Damageable>();
             if (damageable != null)

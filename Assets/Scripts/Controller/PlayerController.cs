@@ -107,8 +107,6 @@ namespace WOW.Controller
            
         }
 
-     
-
         void StartAutoPilot()
         {
             isAutoPilot = true;
@@ -118,7 +116,7 @@ namespace WOW.Controller
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(TargetPoint, 0.1f);
+            Gizmos.DrawSphere(TargetPoint, 1f);
         }
     }
 }

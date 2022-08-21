@@ -10,7 +10,9 @@ namespace WOW.Ability
     {
         [Header("Connections")]
         Armament.TorpedoTube[] armamentArray;
-        
+        TorpedoIndicator indicator;
+
+
         [Header("Visuals")]
 
         [Header("Etc")]
@@ -20,6 +22,11 @@ namespace WOW.Ability
         private void Start()
         {
             armamentArray = GetComponentsInChildren<Armament.TorpedoTube>();
+            indicator = GetComponentInChildren<TorpedoIndicator>();
+            if (indicator != null)
+            {
+                indicator.gameObject.SetActive(false);
+            }
         }
 
         private void Update()
@@ -40,11 +47,19 @@ namespace WOW.Ability
             }
         }
 
-        public override void OnAbilityChange()
+        public override void OnAbilityEnabled()
         {
-            foreach (Armament.TorpedoTube tube in armamentArray)
+            if (indicator != null)
             {
-                tube.indicator.GetComponent<MeshRenderer>();
+                indicator.gameObject.SetActive(true);
+            }
+        }
+
+        public override void OnAbilityDisabled()
+        {
+            if (indicator != null)
+            {
+                indicator.gameObject.SetActive(false);
             }
         }
     }

@@ -39,7 +39,7 @@ namespace WOW.Controller
         {
             base.Enter(t);
             t.autoPilot.SetActive(true);
-            t.autoPilot.SetDestination(destination, lookAtPoint);
+            t.autoPilot.SetDestination(destination);
         }
 
         public override void Update(AIController t)
@@ -52,7 +52,14 @@ namespace WOW.Controller
             if (currentTime > t.AttackInterval)
             {
                 currentTime = 0;
-                t.ship.TriggerAbility();
+                if ((t.TargetPoint - t.ship.transform.position).magnitude < t.ship.AttackRange)
+                {
+                    t.ship.TriggerAbility();
+                }
+            }
+            else
+            {
+                currentTime += Time.deltaTime;
             }
         }
 
@@ -86,6 +93,17 @@ namespace WOW.Controller
 
     public class OccupyState : State<AIController>
     {
+        Zone zone;
+        Vector3 destination;
+        float currentTime = 0;
+        float currentTime2 = 0;
+        float resetDestinationTime = 30f;
+
+        public OccupyState(Zone zone) : base()
+        {
+            this.zone = zone;
+        }
+        
         // 거점 점령 상태
         public override State<AIController> InputHandle(AIController t)
         {
@@ -95,11 +113,57 @@ namespace WOW.Controller
         public override void Enter(AIController t)
         {
             base.Enter(t);
+            t.autoPilot.SetActive(true);
+            ResetDestination(t);
         }
 
         public override void Update(AIController t)
         {
             base.Update(t);
+
+            // 현 목적지에 일정 이상 가까워지면 랜덤 위치로 목적지 변경
+            if ((destination - t.ship.transform.position).magnitude < 10f)
+            {
+                ResetDestination(t);
+            }
+
+            // 일정 시간마다 목적지를 변경
+            if (currentTime2 > resetDestinationTime)
+            {
+                currentTime2 = 0;
+                ResetDestination(t);
+            }
+            else
+            {
+                currentTime2 += Time.deltaTime;
+            }
+
+            // 사격 포인트를 가장 가까운 적의 5초 뒤 위치로 한다.
+            t.TargetPoint = t.GetClosestEnemy().PredictionPos(5);
+
+            if (currentTime > t.AttackInterval)
+            {
+                currentTime = 0;
+                if ((t.TargetPoint - t.ship.transform.position).magnitude < t.ship.AttackRange)
+                {
+                    t.ship.TriggerAbility();
+                }
+            }
+            else
+            {
+                currentTime += Time.deltaTime;
+            }
+        }
+
+        void ResetDestination(AIController t)
+        {
+            int count = 0;
+            do
+            {
+                count++;
+                //destination = zone.transform.position + UnityEngine.Random.insideUnitSphere * zone.radius;
+                destination = zone.transform.position + (new Vector3(UnityEngine.Random.Range(-1,1), 0, UnityEngine.Random.Range(-1, 1))).normalized * zone.radius;
+            } while (!t.autoPilot.SetDestination(destination) && count<20);
         }
     }
 

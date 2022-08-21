@@ -39,9 +39,13 @@ namespace WOW.Ability
             }
         }
 
-        public virtual void OnAbilityChange()
+        public virtual void OnAbilityEnabled()
         {
-            
+
+        }
+        public virtual void OnAbilityDisabled()
+        {
+
         }
     }
 }

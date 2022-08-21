@@ -82,7 +82,7 @@ namespace WOW.Controller
             {
                 pathCurrentTime -= Time.deltaTime;
             }
-
+            
             if (path.status != NavMeshPathStatus.PathComplete || path.corners.Length<=1)
                 return;
 
@@ -104,9 +104,7 @@ namespace WOW.Controller
             if (distance < 1f && path.corners.Length <= 2)
             {
                 // 목적지에 도착하면 종료
-                controller.ship.Gear = 0;
-                StartCoroutine(Parking());
-                SetActive(false);
+                OnDestination();
             }
             else if (distance < 10)
             {
@@ -120,6 +118,13 @@ namespace WOW.Controller
             {
                 controller.ship.Gear = 4;
             }
+        }
+
+        void OnDestination()
+        {
+            controller.ship.Gear = 0;
+            //StartCoroutine(Parking());
+            SetActive(false);
         }
 
         public void SetActive(bool isActive)
@@ -142,6 +147,7 @@ namespace WOW.Controller
             if (NavMesh.SamplePosition(destination, out hit, 1000, 1))
             {
                 this.destination = hit.position;
+                StopAllCoroutines();
                 return true;
             }
             return false;

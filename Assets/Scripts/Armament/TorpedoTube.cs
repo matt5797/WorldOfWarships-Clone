@@ -7,7 +7,6 @@ namespace WOW.Armament
     public class TorpedoTube : ArmamentBase
     {
         public GameObject bulletFactory;
-        public GameObject indicator;
         public int bulletCount = 4;
         public float fireAngle = 15;
         

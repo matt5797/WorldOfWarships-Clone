@@ -54,6 +54,8 @@ namespace WOW.BattleShip
 
         public UnityEvent<int> onAbilityChange;
 
+        public float attackRange = 10f;
+
         public int Gear
         {
             get { return _gear; }
@@ -68,6 +70,11 @@ namespace WOW.BattleShip
         {
             get
             { return m_Rigidbody.velocity.magnitude; }
+        }
+
+        public float AttackRange
+        {
+            get { return attackRange; }
         }
 
         private void Awake()
@@ -162,8 +169,9 @@ namespace WOW.BattleShip
         {
             if (m_AbilityDict.ContainsKey(index))
             {
+                m_AbilityDict[index].OnAbilityEnabled();
+                m_AbilityDict[currentAbilityIndex].OnAbilityDisabled();
                 currentAbilityIndex = index;
-                m_AbilityDict[currentAbilityIndex].OnAbilityChange();
                 onAbilityChange.Invoke(index);
             }
         }
