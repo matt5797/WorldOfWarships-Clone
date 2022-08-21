@@ -15,6 +15,8 @@ public class TimeManager : MonoBehaviour
         Time.timeScale = multiplier;
         if (textUI)
             textUI.text = "Timescale: " + multiplier + "x";
+        if (slider)
+            slider.value = multiplier;
     }
 
     public void OnTimescaleSelected(float multiplier)

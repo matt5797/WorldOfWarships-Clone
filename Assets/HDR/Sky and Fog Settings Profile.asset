@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d877ec3e844f2ca46830012e8e79319b, type: 3}
   m_Name: PhysicallyBasedSky
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   rotation:
     m_OverrideState: 0
     m_Value: 0
@@ -146,12 +146,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953beb541740ddc499d005ee80c9ff29, type: 3}
   m_Name: Fog
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 0
     m_Value: 1
   enabled:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   colorMode:
     m_OverrideState: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   albedo:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 0, g: 0, b: 0, a: 1}
   globalLightProbeDimmer:
     m_OverrideState: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   rotation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 258
   skyIntensityMode:
     m_OverrideState: 1
@@ -266,10 +266,10 @@ MonoBehaviour:
     m_Value: 1
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 3.2682078
+    m_Value: 1.407442
   upperHemisphereLuxColor:
     m_OverrideState: 0
-    m_Value: {x: 0.33923835, y: 0.42069665, z: 0.5}
+    m_Value: {x: 0.3450639, y: 0.40553144, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 1
     m_Value: 15000
@@ -284,7 +284,7 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: d29a97842a4b186479fe8612c171eafd, type: 3}
+    m_Value: {fileID: 8900000, guid: 1cde0e200e792cb4491204276a656490, type: 3}
   distortionMode:
     m_OverrideState: 0
     m_Value: 0

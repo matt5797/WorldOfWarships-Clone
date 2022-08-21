@@ -39,7 +39,7 @@ namespace WOW.UI
             foreach (KeyValuePair<MainBattery, Image> pair in indicatorDict)
             {
                 Vector3 point = Camera.main.WorldToScreenPoint(pair.Key.TargetingPoint);
-                point.y = Screen.height / 2;
+                //point.y = Screen.height / 2;
                 point.x = Mathf.Clamp(point.x, 0, Screen.width);
                 pair.Value.transform.position = point;
             }

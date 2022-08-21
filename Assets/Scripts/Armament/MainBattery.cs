@@ -29,7 +29,7 @@ namespace WOW.Armament
         {
             get
             {
-                return rootPosition.forward * 10;
+                return rootPosition.position + rootPosition.forward * 10;
             }
         }
 
@@ -139,6 +139,12 @@ namespace WOW.Armament
         float GetAngle(int targetX)
         {
             return BallisiticManager.Instance.GetAngle(ShellID, targetX * 100);
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawSphere(TargetingPoint, 0.5f);
         }
     }
 }
