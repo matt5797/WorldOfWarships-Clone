@@ -48,6 +48,7 @@ namespace WOW.BattleShip
 
         public bool isDetected = false;
         public bool isMovable = true;
+        public bool isSteerable = true;
         public bool isDead = false;
 
         // For Debugging
@@ -121,25 +122,29 @@ namespace WOW.BattleShip
 
         public void GearUp()
         {
-            Gear = Mathf.Clamp(Gear + 1, -1, 4);
+            if (isMovable)
+                Gear = Mathf.Clamp(Gear + 1, -1, 4);
         }
         public void GearDown()
         {
-            Gear = Mathf.Clamp(Gear - 1, -1, 4);
+            if (isMovable)
+                Gear = Mathf.Clamp(Gear - 1, -1, 4);
         }
 
         public void SteerUp()
         {
-            Steer = Mathf.Clamp(Steer + steerAccel * Time.deltaTime, -1, 1);
+            if (isSteerable)
+                Steer = Mathf.Clamp(Steer + steerAccel * Time.deltaTime, -1, 1);
         }
         public void SteerDown()
         {
-            Steer = Mathf.Clamp(Steer - steerAccel * Time.deltaTime, -1, 1);
+            if (isSteerable)
+                Steer = Mathf.Clamp(Steer - steerAccel * Time.deltaTime, -1, 1);
         }
 
         private void Propeller()
         {
-            if (isDead || !isMovable)
+            if (isDead)
                 return;
             
             Vector3 dir = transform.forward * movePower / 4 * Gear * Time.deltaTime;
@@ -275,6 +280,26 @@ namespace WOW.BattleShip
             {
                 marker.SetActive(false);
             }
+        }
+
+        public void OnEngineBreak()
+        {
+            isMovable = false;
+        }
+
+        public void OnEngineRecover()
+        {
+            isMovable = true;
+        }
+        
+        public void OnSteerBreak()
+        {
+            isSteerable = false;
+        }
+
+        public void OnSteerRecover()
+        {
+            isSteerable = true;
         }
     }
 }

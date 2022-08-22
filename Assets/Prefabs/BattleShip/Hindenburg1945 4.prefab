@@ -131,6 +131,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!1 &810903775
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +267,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!1 &1170686666
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,10 +387,34 @@ MonoBehaviour:
       m_Calls: []
   onBreakdown:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7859683869174180795}
+        m_TargetAssemblyTypeName: WOW.BattleShip.BattleShipBase, Assembly-CSharp
+        m_MethodName: OnSteerBreak
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRecovery:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7859683869174180795}
+        m_TargetAssemblyTypeName: WOW.BattleShip.BattleShipBase, Assembly-CSharp
+        m_MethodName: OnSteerRecover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onCompleteDestroy:
     m_PersistentCalls:
       m_Calls: []
@@ -397,6 +423,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 1
   destroyTime: 30
+  hp: 0
 --- !u!1 &1516801573
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,10 +641,34 @@ MonoBehaviour:
       m_Calls: []
   onBreakdown:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7859683869174180795}
+        m_TargetAssemblyTypeName: WOW.BattleShip.BattleShipBase, Assembly-CSharp
+        m_MethodName: OnEngineBreak
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRecovery:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7859683869174180795}
+        m_TargetAssemblyTypeName: WOW.BattleShip.BattleShipBase, Assembly-CSharp
+        m_MethodName: OnEngineRecover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onCompleteDestroy:
     m_PersistentCalls:
       m_Calls: []
@@ -626,6 +677,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 1
   destroyTime: 30
+  hp: 0
 --- !u!1 &2036738653
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +809,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!1 &19411029070004329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1396,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!64 &8709213979250881140
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1548,6 +1602,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 1
   destroyTime: 15
+  hp: 0
 --- !u!1 &150503567886593816
 GameObject:
   m_ObjectHideFlags: 0
@@ -7494,6 +7549,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 1
   destroyTime: 15
+  hp: 0
 --- !u!1 &437389498318389186
 GameObject:
   m_ObjectHideFlags: 0
@@ -7874,6 +7930,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!64 &2435042346047997916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8535,6 +8592,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!64 &4405001064282935884
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17218,6 +17276,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 1
   destroyTime: 15
+  hp: 0
 --- !u!1 &1960513999099379425
 GameObject:
   m_ObjectHideFlags: 0
@@ -117568,6 +117627,7 @@ MonoBehaviour:
   currentAbilityIndex: 0
   isDetected: 0
   isMovable: 1
+  isSteerable: 1
   isDead: 0
   velocity: {x: 0, y: 0, z: 0}
   angularVelocity: {x: 0, y: 0, z: 0}
@@ -118408,6 +118468,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!64 &8435043247281473119
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -118830,6 +118891,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!64 &4847175954257046255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -120126,6 +120188,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!64 &6946828227051224483
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -120437,6 +120500,7 @@ MonoBehaviour:
       m_Calls: []
   canRecovery: 0
   destroyTime: 5
+  hp: 0
 --- !u!64 &543449816985415610
 MeshCollider:
   m_ObjectHideFlags: 0
