@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using WOW.Armament;
 using WOW.Ability;
 using UnityEngine.Events;
+using System.Collections;
 
 namespace WOW.BattleShip
 {
@@ -47,6 +48,7 @@ namespace WOW.BattleShip
 
         public bool isDetected = false;
         public bool isMovable = true;
+        public bool isDead = false;
 
         // For Debugging
         public Vector3 velocity;
@@ -55,6 +57,9 @@ namespace WOW.BattleShip
         public UnityEvent<int> onAbilityChange;
 
         public float attackRange = 10f;
+
+        public ParticleSystem[] deadEffects;
+        public GameObject marker;
 
         public int Gear
         {
@@ -134,6 +139,9 @@ namespace WOW.BattleShip
 
         private void Propeller()
         {
+            if (isDead || !isMovable)
+                return;
+            
             Vector3 dir = transform.forward * movePower / 4 * Gear * Time.deltaTime;
             Quaternion rot = Quaternion.Euler(0, Mathf.Clamp(Steer * steerPower * 90, -90, 90) /** Time.deltaTime*/, 0);
             m_Rigidbody.AddForceAtPosition(rot * dir, propeller.position, ForceMode.Force);
@@ -229,6 +237,44 @@ namespace WOW.BattleShip
             Gizmos.DrawRay(transform.position, PredictionRot(5) * transform.forward * 100);
             Gizmos.color = Color.green;
             Gizmos.DrawRay(transform.position, PredictionRot(7) * transform.forward * 100);
+        }
+
+        public void OnDead()
+        {
+            if (!isDead)
+            {
+                isDead = true;
+                DisableMarker();
+                StartCoroutine(OnDeadEffect());
+            }
+        }
+
+        IEnumerator OnDeadEffect()
+        {
+            yield return new WaitForSeconds(2);
+            foreach (ParticleSystem effect in deadEffects)
+            {
+                effect.Play();
+            }
+            yield return new WaitForSeconds(5);
+            while (true)
+            {
+                transform.position -= Vector3.up * Time.deltaTime;
+                yield return new WaitForSeconds(0.1f);
+                if (transform.position.y < -10)
+                {
+                    break;
+                }
+            }
+            yield break;
+        }
+
+        void DisableMarker()
+        {
+            if (marker)
+            {
+                marker.SetActive(false);
+            }
         }
     }
 }

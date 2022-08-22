@@ -3,6 +3,7 @@ using WOW.BattleShip;
 using WOW.DamageSystem;
 using WOW.UI;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 namespace WOW.Controller
 {
@@ -17,7 +18,7 @@ namespace WOW.Controller
         public float pathTime = 0.5f;
         float pathCurrentTime;
 
-      
+        public GameObject DeadUI;
 
         protected override void Start()
         {
@@ -25,9 +26,14 @@ namespace WOW.Controller
             
             Destroy(GetComponentInChildren<Canvas>().gameObject);
             GameObject.FindGameObjectWithTag("PlayerHPBar");
-            GetComponentInChildren<DamageableManager>().hpBar = GameObject.FindGameObjectWithTag("PlayerHPBar")?.GetComponent<HPBar>();
+            DamageableManager damageableManager = GetComponentInChildren<DamageableManager>();
+            damageableManager.hpBar = GameObject.FindGameObjectWithTag("PlayerHPBar")?.GetComponent<HPBar>();
 
             //StartAutoPilot();
+            damageableManager.onDead.AddListener(() =>
+            {
+                DeadUI.SetActive(true);
+            });
         }
 
         void Update()

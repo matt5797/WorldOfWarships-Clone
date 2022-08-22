@@ -76,6 +76,11 @@ namespace WOW.Armament
             
             foreach (BattleShipBase enemy in enemyList)
             {
+                if (enemy.isDead)
+                {
+                    continue;
+                }
+                
                 float distance = Vector3.Distance(rootPosition.position, enemy.transform.position);
                 
                 // 뭐가 적절한 친구인지 판단

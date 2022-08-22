@@ -24,8 +24,7 @@ namespace WOW.Manager
         // Start is called before the first frame update
         void Start()
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+
         }
 
         // Update is called once per frame
@@ -36,6 +35,8 @@ namespace WOW.Manager
 
         public void StartGame()
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             SceneManager.LoadScene(1);
         }
         
