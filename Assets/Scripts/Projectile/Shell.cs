@@ -145,8 +145,8 @@ namespace WOW.Projectile
             //매개변수로 받은 발사 각도를 라디안으로 변환하여 클래스 변수에 저장한다.
             this.shootAngle = shootAngle * Mathf.Deg2Rad;
             // 초기 x,y 변화량을 계산한다.
-            v_x = Math.Cos(this.shootAngle) * shellData.bulletSpeed;
-            v_y = Math.Sin(this.shootAngle) * shellData.bulletSpeed * UnityEngine.Random.Range(1,10) / 10;
+            v_x = Math.Cos(this.shootAngle) * shellData.bulletSpeed * UnityEngine.Random.Range(9, 12) / 10;
+            v_y = Math.Sin(this.shootAngle) * shellData.bulletSpeed * UnityEngine.Random.Range(9, 12) / 10;
             // 초기 위치를 0, 0으로 설정한다.
             y = 0;
             x = 0;

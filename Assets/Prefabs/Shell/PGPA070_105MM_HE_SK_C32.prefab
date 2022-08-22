@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2468558581306446375}
   - component: {fileID: 2468558581306446395}
   - component: {fileID: -8613858061719748838}
-  - component: {fileID: 5451222117433081887}
+  - component: {fileID: -7796067295508897246}
   m_Layer: 7
   m_Name: PGPA070_105MM_HE_SK_C32
   m_TagString: Untagged
@@ -146,7 +146,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.02
+    widthMultiplier: 0.015
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -223,7 +223,7 @@ MonoBehaviour:
   explosionParticles:
   - {fileID: 19800006, guid: 76222bdf017ff094cae58d3438c91510, type: 3}
   worldScale: 100
---- !u!54 &5451222117433081887
+--- !u!54 &-7796067295508897246
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
