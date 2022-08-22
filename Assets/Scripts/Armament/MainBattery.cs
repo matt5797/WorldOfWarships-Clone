@@ -120,14 +120,14 @@ namespace WOW.Armament
                 // 탄환을 AP로 바꿔줍니다.
                 bulletFactory = AP;
                 // 탄환의 이름을 통해 탄환 ID를 가져옵니다.
-                ShellID = BallisiticManager.Instance.GetShellID(HE.name);
+                ShellID = BallisiticManager.Instance.GetShellID(HE.shellName);
             }
             else if (bulletType == "HE")
             {
                 // 탄환을 HE로 바꿔줍니다.
                 bulletFactory = HE;
                 // 탄환의 이름을 통해 탄환 ID를 가져옵니다.
-                ShellID = BallisiticManager.Instance.GetShellID(HE.name);
+                ShellID = BallisiticManager.Instance.GetShellID(HE.shellName);
             }
         }
 

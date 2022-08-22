@@ -35,6 +35,7 @@ namespace WOW.Projectile
         private double x;
         private double y;
 
+        public string shellName;
         [NonSerialized] public bool isShoot;    // 발사 여부
         public ShellData shellData; // 탄환 데이터
         public float speedMultiple = 1; // 시간 배속

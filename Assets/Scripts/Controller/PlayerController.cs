@@ -32,6 +32,8 @@ namespace WOW.Controller
             //StartAutoPilot();
             damageableManager.onDead.AddListener(() =>
             {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 DeadUI.SetActive(true);
             });
         }

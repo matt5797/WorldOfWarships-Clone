@@ -70,7 +70,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0016f6944c89c474f970c02f1d1c08b2, type: 2}
+  - {fileID: 2100000, guid: 643a1591a83e2a14db0db195365238e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +94,7 @@ TrailRenderer:
   m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.01
+    widthMultiplier: 0.05
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camp: 0
+  shellName: PGPA023_203MM_AP_PZ_SPR_GGR_L4_4
   shellData: {fileID: 11400000, guid: c68947b2943a258448e2b9406a06667e, type: 2}
   speedMultiple: 5
   DestroyY: -0.01

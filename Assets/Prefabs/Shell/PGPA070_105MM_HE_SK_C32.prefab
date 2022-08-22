@@ -146,7 +146,7 @@ TrailRenderer:
   m_Time: 0.05
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.01
+    widthMultiplier: 0.02
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camp: 0
+  shellName: PGPA070_105MM_HE_SK_C32
   shellData: {fileID: 11400000, guid: 4797ae7d327e8e94da0230407ac717a2, type: 2}
   speedMultiple: 1
   DestroyY: -1

@@ -30,7 +30,7 @@ namespace WOW.Armament
         {
             base.Start();
             StartCoroutine(AutoFire());
-            ShellID = BallisiticManager.Instance.GetShellID(bulletFactory.name);
+            ShellID = BallisiticManager.Instance.GetShellID(bulletFactory.shellName);
         }
 
         void FixedUpdate()

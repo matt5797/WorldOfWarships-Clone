@@ -35,11 +35,18 @@ namespace WOW.Manager
 
         public void StartGame()
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
             SceneManager.LoadScene(1);
         }
-        
+
+        public void EndGame()
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene(0);
+        }
+
         public void QuitGame()
         {
             Application.Quit();

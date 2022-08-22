@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using WOW.BattleShip;
 using WOW.Controller;
+using UnityEngine.Events;
 
 namespace WOW
 {
@@ -13,6 +14,12 @@ namespace WOW
         [HideInInspector] public AIController[] controllers;
         [HideInInspector] public BattleShipBase[] battleShips;
         public Zone[] zones;
+        bool isExterminate = false;
+        public UnityEvent onExterminate;
+
+        Dictionary<AIController, Zone> targetZone = new Dictionary<AIController, Zone>();
+
+        public GameObject endUI;
 
         private void Awake()
         {
@@ -42,16 +49,63 @@ namespace WOW
                 }
                 if (closestZone != null)
                 {
+                    targetZone.Add(controller, closestZone);
                     controller.newState = new OccupyState(closestZone);
                 }
             }
+
+            onExterminate.AddListener(() =>
+            {
+                endUI.SetActive(true);
+            });
+
+            StartCoroutine(ChangeZone());
         }
 
         // Update is called once per frame
-        void Update()
+        void FixedUpdate()
         {
-            
+            if (!isExterminate)
+            {
+                bool isAllDead = true;
+                foreach (BattleShipBase battleShip in battleShips)
+                {
+                    if (!battleShip.isDead)
+                    {
+                        isAllDead = false;
+                        break;
+                    }
+                }
+                if (isAllDead)
+                    OnExterminate();
+            }
         }
 
+        void OnExterminate()
+        {
+            isExterminate = true;
+            onExterminate.Invoke();
+        }
+
+        IEnumerator ChangeZone()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(600f);
+                Dictionary<AIController, Zone> targetZoneCopy = new Dictionary<AIController, Zone>(targetZone);
+                foreach (KeyValuePair<AIController, Zone> pair in targetZone)
+                {
+                    foreach (Zone zone in zones)
+                    {
+                        if (pair.Value != zone)
+                        {
+                            targetZoneCopy[pair.Key] = zone;
+                            pair.Key.newState = new OccupyState(zone);
+                        }
+                    }
+                }
+                targetZone = targetZoneCopy;
+            }
+        }
     }
 }

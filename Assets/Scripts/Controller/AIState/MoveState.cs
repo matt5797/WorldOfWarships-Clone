@@ -146,7 +146,24 @@ namespace WOW.Controller
                 currentTime = 0;
                 if ((t.TargetPoint - t.ship.transform.position).magnitude < t.ship.AttackRange)
                 {
-                    t.ship.TriggerAbility();
+                    //t.ship.TriggerAbility();
+                    // 임시로 전부 트리거
+                    if (UnityEngine.Random.value < 0.5f)
+                    {
+                        t.ship.ChangeArmament(1);
+                        t.ship.TriggerAbility();
+                    }
+                    else
+                    {
+                        t.ship.ChangeArmament(2);
+                        t.ship.TriggerAbility();
+                    }
+                    
+                    if (UnityEngine.Random.value<0.1f)
+                    {
+                        t.ship.ChangeArmament(3);
+                        t.ship.TriggerAbility();
+                    }
                 }
             }
             else
