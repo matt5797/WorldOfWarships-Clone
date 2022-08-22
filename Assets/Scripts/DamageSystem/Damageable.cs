@@ -25,7 +25,7 @@ namespace WOW.DamageSystem
         public bool canRecovery = false;
         public float destroyTime = 5;
 
-        int hp;
+        [SerializeField] int hp;
         public int HP
         {
             get { return hp; }
