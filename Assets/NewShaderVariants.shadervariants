@@ -18,11 +18,6 @@ ShaderVariantCollection:
       variants:
       - keywords: 
         passType: 0
-  - first: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: SHADOWS_DEPTH
-        passType: 8
   - first: {fileID: 10490, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
@@ -73,42 +68,11 @@ ShaderVariantCollection:
       variants:
       - keywords: 
         passType: 0
-  - first: {fileID: 4800000, guid: 93446b5c5339d4f00b85c159e1159b7c, type: 3}
-    second:
-      variants:
-      - keywords: 
-        passType: 0
-  - first: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-    second:
-      variants:
-      - keywords: 
-        passType: 8
   - first: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
     second:
       variants:
       - keywords: 
         passType: 0
-  - first: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-    second:
-      variants:
-      - keywords: 
-        passType: 0
-  - first: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
-    second:
-      variants:
-      - keywords: 
-        passType: 8
-      - keywords: _NORMALMAP _TERRAIN_INSTANCED_PERPIXEL_NORMAL
-        passType: 8
-      - keywords: _TERRAIN_INSTANCED_PERPIXEL_NORMAL
-        passType: 8
-      - keywords: DECALS_3RT DECAL_SURFACE_GRADIENT PROBE_VOLUMES_OFF _NORMALMAP
-          _TERRAIN_INSTANCED_PERPIXEL_NORMAL
-        passType: 13
-      - keywords: _NORMALMAP _TERRAIN_INSTANCED_PERPIXEL_NORMAL
-        passType: 13
-      - keywords: _TERRAIN_INSTANCED_PERPIXEL_NORMAL
-        passType: 13
   - first: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
     second:
       variants:
@@ -124,12 +88,6 @@ ShaderVariantCollection:
         passType: 8
       - keywords: _DISABLE_SSR_TRANSPARENT _NORMALMAP_TANGENT_SPACE
         passType: 8
-      - keywords: _DISABLE_SSR_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
-        passType: 8
-      - keywords: _NORMALMAP
-        passType: 8
-      - keywords: _DISABLE_SSR_TRANSPARENT _NORMALMAP_TANGENT_SPACE
-        passType: 12
       - keywords: DECALS_3RT DECAL_SURFACE_GRADIENT PROBE_VOLUMES_OFF SCREEN_SPACE_SHADOWS_OFF
           SHADOW_MEDIUM USE_CLUSTERED_LIGHTLIST _ALPHATEST_ON _DISABLE_SSR_TRANSPARENT
           _ENABLE_FOG_ON_TRANSPARENT _NORMALMAP_TANGENT_SPACE _SURFACE_TYPE_TRANSPARENT
@@ -141,11 +99,9 @@ ShaderVariantCollection:
       - keywords: DECALS_3RT DECAL_SURFACE_GRADIENT PROBE_VOLUMES_OFF _DISABLE_SSR_TRANSPARENT
           _NORMALMAP_TANGENT_SPACE
         passType: 13
-      - keywords: _ALPHATEST_ON _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT
-          _NORMALMAP_TANGENT_SPACE _SURFACE_TYPE_TRANSPARENT
+      - keywords: _ALPHATEST_ON _DISABLE_SSR_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
         passType: 13
-      - keywords: _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT _NORMALMAP_TANGENT_SPACE
-          _SURFACE_TYPE_TRANSPARENT
+      - keywords: _DISABLE_SSR_TRANSPARENT
         passType: 13
       - keywords: _DISABLE_SSR_TRANSPARENT _NORMALMAP_TANGENT_SPACE
         passType: 13
@@ -209,14 +165,11 @@ ShaderVariantCollection:
   - first: {fileID: 4800000, guid: 9bd32a6ece529fd4f9408b8d7e00c10d, type: 3}
     second:
       variants:
+      - keywords: SHADOW_MEDIUM
+        passType: 0
       - keywords: SHADOW_MEDIUM USE_CLUSTERED_LIGHTLIST
         passType: 0
       - keywords: SHADOW_MEDIUM USE_FPTL_LIGHTLIST
-        passType: 0
-  - first: {fileID: 4800000, guid: a06934a4863e778498be65d8f865b7a4, type: 3}
-    second:
-      variants:
-      - keywords: 
         passType: 0
   - first: {fileID: 4800000, guid: 123f13d52852ef547b2962de4bd9eaad, type: 3}
     second:
@@ -253,18 +206,47 @@ ShaderVariantCollection:
       variants:
       - keywords: APPLY_AFTER_POST
         passType: 0
-  - first: {fileID: 4800000, guid: e96e3b8a4797c8f47b7ae6759a3e66af, type: 3}
+  - first: {fileID: 4800000, guid: 1d64af84bdc970c4fae0c1e06dd95b73, type: 3}
+    second:
+      variants:
+      - keywords: _COLORMAP _MASKMAP _MATERIAL_AFFECTS_ALBEDO _MATERIAL_AFFECTS_MASKMAP
+          _MATERIAL_AFFECTS_NORMAL
+        passType: 13
+      - keywords: _COLORMAP _MATERIAL_AFFECTS_ALBEDO _MATERIAL_AFFECTS_MASKMAP
+        passType: 13
+      - keywords: _COLORMAP _MATERIAL_AFFECTS_ALBEDO _MATERIAL_AFFECTS_MASKMAP _MATERIAL_AFFECTS_NORMAL
+        passType: 13
+      - keywords: _MATERIAL_AFFECTS_ALBEDO _MATERIAL_AFFECTS_MASKMAP
+        passType: 13
+      - keywords: _MATERIAL_AFFECTS_ALBEDO _MATERIAL_AFFECTS_MASKMAP _MATERIAL_AFFECTS_NORMAL
+        passType: 13
+      - keywords: _MATERIAL_AFFECTS_MASKMAP
+        passType: 13
+      - keywords: _MATERIAL_AFFECTS_MASKMAP _MATERIAL_AFFECTS_NORMAL
+        passType: 13
+  - first: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
     second:
       variants:
       - keywords: 
         passType: 8
-      - keywords: _TERRAIN_INSTANCED_PERPIXEL_NORMAL
+      - keywords: INSTANCING_ON _TERRAIN_INSTANCED_PERPIXEL_NORMAL
         passType: 8
-  - first: {fileID: 4800000, guid: 263f12c7593cf8841b5ccdbb717e3389, type: 3}
+      - keywords: _NORMALMAP _TERRAIN_INSTANCED_PERPIXEL_NORMAL
+        passType: 8
+      - keywords: DECALS_3RT DECAL_SURFACE_GRADIENT PROBE_VOLUMES_OFF _NORMALMAP
+          _TERRAIN_INSTANCED_PERPIXEL_NORMAL
+        passType: 13
+      - keywords: _NORMALMAP _TERRAIN_INSTANCED_PERPIXEL_NORMAL
+        passType: 13
+      - keywords: _TERRAIN_INSTANCED_PERPIXEL_NORMAL
+        passType: 13
+  - first: {fileID: 4800000, guid: c4edd00ff2db5b24391a4fcb1762e459, type: 3}
     second:
       variants:
-      - keywords: _NORMALMAP
-        passType: 0
+      - keywords: _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+        passType: 8
+      - keywords: _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+        passType: 13
   - first: {fileID: -6465566751694194690, guid: f3ff61003df241e4a84f6c4962ed1e66,
       type: 3}
     second:
@@ -284,8 +266,19 @@ ShaderVariantCollection:
       - keywords: _DISABLE_DECALS _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT
           _SURFACE_TYPE_TRANSPARENT
         passType: 13
-  - first: {fileID: 4800000, guid: 7f350f0f69028ff45b0d3c2a549101ca, type: 3}
+  - first: {fileID: -6465566751694194690, guid: 6fabb132d3e307c4c97becb08f822dbf,
+      type: 3}
+    second:
+      variants:
+      - keywords: _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
+        passType: 13
+  - first: {fileID: 4800000, guid: 263f12c7593cf8841b5ccdbb717e3389, type: 3}
+    second:
+      variants:
+      - keywords: _NORMALMAP
+        passType: 0
+  - first: {fileID: 4800000, guid: e96e3b8a4797c8f47b7ae6759a3e66af, type: 3}
     second:
       variants:
       - keywords: 
-        passType: 0
+        passType: 8
