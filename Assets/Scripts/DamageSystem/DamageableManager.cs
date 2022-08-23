@@ -20,7 +20,7 @@ namespace WOW.DamageSystem
         bool isDead = false;
         Damageable[] damageables;
         public HPBar hpBar;
-
+        public bool isImmutable = false;
         public int HP
         {
             get { return runtimeHP; }
@@ -133,8 +133,11 @@ namespace WOW.DamageSystem
             if (HP <= 0)
             {
                 HP = 0;
-                onDead.Invoke();
-                isDead = true;
+                if (!isImmutable)
+                {
+                    onDead.Invoke();
+                    isDead = true;
+                }
             }
             else
             {
