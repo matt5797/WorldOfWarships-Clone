@@ -4299,6 +4299,7 @@ MonoBehaviour:
   enemy: {fileID: 2093449347}
   controllers: []
   battleShips: []
+  zones: []
 --- !u!4 &1477080829
 Transform:
   m_ObjectHideFlags: 0
@@ -4541,7 +4542,7 @@ GameObject:
   - component: {fileID: 1516801577}
   - component: {fileID: 1516801576}
   - component: {fileID: 1516801575}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4556,12 +4557,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516801573}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 18.999908, z: 0}
+  m_LocalPosition: {x: 0, y: 34.94, z: 0}
   m_LocalScale: {x: 2.2502499, y: 0.08655, z: 1.64441}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1987048474836280603}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!64 &1516801575
 MeshCollider:
@@ -4709,6 +4710,7 @@ MonoBehaviour:
     m_Bits: 217
   autoPilotTarget: {fileID: 1969121646}
   pathTime: 0.5
+  DeadUI: {fileID: 0}
 --- !u!4 &1624879422
 Transform:
   m_ObjectHideFlags: 0
@@ -6085,7 +6087,7 @@ PrefabInstance:
     - target: {fileID: 4217170711615242364, guid: 885b18e209e95fe44b73f74dac99192b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4217170711615242364, guid: 885b18e209e95fe44b73f74dac99192b,
         type: 3}
@@ -6575,6 +6577,7 @@ MonoBehaviour:
   enemy: {fileID: 1477080828}
   controllers: []
   battleShips: []
+  zones: []
 --- !u!4 &2093449348
 Transform:
   m_ObjectHideFlags: 0
@@ -6720,6 +6723,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1624879422}
     m_Modifications:
+    - target: {fileID: 1516801574, guid: 5abab8c699003de4988d47a2ee4c2298, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 19411029070004329, guid: 5abab8c699003de4988d47a2ee4c2298,
         type: 3}
       propertyPath: m_Layer
@@ -8585,6 +8592,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5478128334573526322, guid: 5abab8c699003de4988d47a2ee4c2298,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5492798595333919004, guid: 5abab8c699003de4988d47a2ee4c2298,
         type: 3}
       propertyPath: m_Layer
@@ -8750,6 +8762,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969631378700697067, guid: 5abab8c699003de4988d47a2ee4c2298,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5978593370270828360, guid: 5abab8c699003de4988d47a2ee4c2298,
         type: 3}
