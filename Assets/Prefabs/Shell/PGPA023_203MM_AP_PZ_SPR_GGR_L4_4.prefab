@@ -72,7 +72,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 344
   explosionParticles:
-  - {fileID: 580674289857274267, guid: f30fbd3a2c34bf945b233dc0c449e0da, type: 3}
+  - {fileID: 612184077102948903, guid: 059aafe0c4e36cf478fea00203c320e2, type: 3}
   worldScale: 100
 --- !u!54 &-7567911122109988845
 Rigidbody:
