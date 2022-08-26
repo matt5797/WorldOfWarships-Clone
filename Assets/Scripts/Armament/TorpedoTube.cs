@@ -81,6 +81,8 @@ namespace WOW.Armament
                 theta = (i * fireAngle / (bulletCount - 1)) - (fireAngle / 2);
                 bullet.transform.Rotate(0, theta, 0);
             }
+
+            Managers.Sound.Play("torpedo", Define.Sound.Effect);
         }
 
     }

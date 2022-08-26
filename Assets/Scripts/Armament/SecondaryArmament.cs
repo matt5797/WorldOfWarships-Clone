@@ -143,6 +143,9 @@ namespace WOW.Armament
                 bullet.camp = controller.ship.camp;
                 bullet.OnShoot(angle);
             }
+
+
+            Managers.Sound.Play("secondary", Define.Sound.Effect);
         }
 
         /// <summary>

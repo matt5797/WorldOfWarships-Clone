@@ -107,6 +107,8 @@ namespace WOW.Armament
                 bullet.camp = controller.ship.camp;
                 bullet.OnShoot(angle);
             }
+
+            Managers.Sound.Play("mainbattery", Define.Sound.Effect);
         }
 
         /// <summary>
