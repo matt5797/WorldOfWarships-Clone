@@ -142,6 +142,8 @@ namespace WOW.Armament
                 bullet.transform.rotation = firePoint[i].transform.rotation;
                 bullet.camp = controller.ship.camp;
                 bullet.OnShoot(angle);
+                if (muzzleFlashs.Length > i)
+                    muzzleFlashs[i].Play();
             }
 
 
