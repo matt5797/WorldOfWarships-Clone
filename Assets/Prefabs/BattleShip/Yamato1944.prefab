@@ -15136,7 +15136,6 @@ GameObject:
   - component: {fileID: 871271589}
   - component: {fileID: 871271592}
   - component: {fileID: 871271591}
-  - component: {fileID: 871271590}
   m_Layer: 9
   m_Name: Marker
   m_TagString: Untagged
@@ -15210,20 +15209,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &871271590
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871271588}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &987825245
 GameObject:
   m_ObjectHideFlags: 0
@@ -97596,7 +97581,6 @@ GameObject:
   - component: {fileID: 2073534845}
   - component: {fileID: 2073534848}
   - component: {fileID: 2073534847}
-  - component: {fileID: 2073534846}
   m_Layer: 9
   m_Name: Quad
   m_TagString: Untagged
@@ -97669,20 +97653,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2073534846
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073534844}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2089101522
 GameObject:
   m_ObjectHideFlags: 0
@@ -119269,6 +119239,7 @@ MonoBehaviour:
   attackRange: 50
   deadEffects: []
   marker: {fileID: 871271588}
+  mainBatteries: []
 --- !u!114 &6386182668173419045
 MonoBehaviour:
   m_ObjectHideFlags: 0

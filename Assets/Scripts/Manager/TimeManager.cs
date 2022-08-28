@@ -14,9 +14,31 @@ public class TimeManager : MonoBehaviour
     {
         Time.timeScale = multiplier;
         if (textUI)
-            textUI.text = "Timescale: " + multiplier + "x";
+            textUI.text = multiplier + "x";
         if (slider)
             slider.value = multiplier;
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.KeypadPlus))
+        {
+            multiplier += 1f;
+            Time.timeScale = multiplier;
+            if (textUI)
+                textUI.text = multiplier + "x";
+            if (slider)
+                slider.value = multiplier;
+        }
+        else if (Input.GetKeyDown(KeyCode.KeypadMinus))
+        {
+            multiplier -= 1f;
+            Time.timeScale = multiplier;
+            if (textUI)
+                textUI.text = multiplier + "x";
+            if (slider)
+                slider.value = multiplier;
+        }
     }
 
     public void OnTimescaleSelected(float multiplier)
@@ -24,7 +46,7 @@ public class TimeManager : MonoBehaviour
         this.multiplier = multiplier;
         Time.timeScale = multiplier;
         if (textUI)
-            textUI.text = "Timescale: " + multiplier + "x";
+            textUI.text = multiplier + "x";
     }
 
     public void OnTimescaleChanged(float multiplier)
@@ -32,6 +54,6 @@ public class TimeManager : MonoBehaviour
         this.multiplier = multiplier;
         Time.timeScale = multiplier;
         if (textUI)
-            textUI.text = "Timescale: " + multiplier + "x";
+            textUI.text = multiplier + "x";
     }
 }

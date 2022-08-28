@@ -9,14 +9,12 @@ namespace WOW.BattleShip
 {
     public enum Camp
     {
-        None,
         Allies, // 연합국
         Axis    // 추축국
     }
     
     public enum BattleShipType
     {
-        None,
         Destroyer,  // 구축함
         Cruiser,    // 순양함
         Battleship, // 전함
@@ -61,6 +59,7 @@ namespace WOW.BattleShip
 
         public ParticleSystem[] deadEffects;
         public GameObject marker;
+        public MainBattery[] mainBatteries;
 
         public int Gear
         {
