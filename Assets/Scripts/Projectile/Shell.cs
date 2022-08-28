@@ -261,6 +261,7 @@ namespace WOW.Projectile
         /// </summary>
         void OnExplosion()
         {
+         
             // 추후 확산 판정 삽입?
             //print("OnExplosion");
             foreach (ParticleSystem particleFactory in explosionParticles)
@@ -268,7 +269,9 @@ namespace WOW.Projectile
                 ParticleSystem particle = Instantiate<ParticleSystem>(particleFactory);
                 particle.transform.position = transform.position;
                 particle.Play();
+
             }
+            Managers.Sound.Play("Bomb", Define.Sound.Effect);
             OnApplyDamage();
             Destroy(gameObject);
         }

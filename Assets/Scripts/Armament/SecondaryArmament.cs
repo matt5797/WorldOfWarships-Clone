@@ -144,7 +144,6 @@ namespace WOW.Armament
                 bullet.OnShoot(angle);
             }
 
-
             Managers.Sound.Play("secondary", Define.Sound.Effect);
         }
 

@@ -10,7 +10,7 @@ public class StartScene : BaseScene
         SceneType = Define.Scene.Start;
 
         // BGM Àç»ý
-        Managers.Sound.Play("WoW_OST start", Define.Sound.Bgm);
+        Managers.Sound.Play("WoW_OST_Start", Define.Sound.Bgm);
 
     }
 
