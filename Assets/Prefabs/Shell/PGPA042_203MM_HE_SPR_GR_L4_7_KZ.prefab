@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2468558581306446394}
   - component: {fileID: 2468558581306446373}
   - component: {fileID: 2468558581306446372}
+  - component: {fileID: -8613858061719748838}
   - component: {fileID: 2468558581306446375}
   - component: {fileID: 2468558581306446395}
-  - component: {fileID: -8613858061719748838}
   - component: {fileID: -65585734058183406}
   - component: {fileID: -8710440545732110761}
   - component: {fileID: -3631817533207210603}
@@ -90,6 +90,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-8613858061719748838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2468558581306446369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d8f6aeb34d02d43b48ec5af5ba4011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camp: 0
+  shellName: PGPA042_203MM_HE_SPR_GR_L4_7_KZ
+  shellData: {fileID: 11400000, guid: e33ee7a77915eb74897679459354cb01, type: 2}
+  speedMultiple: 5
+  DestroyY: -0.01
+  rayLayerMask:
+    serializedVersion: 2
+    m_Bits: 344
+  explosionParticles:
+  - {fileID: 612184077102948903, guid: 059aafe0c4e36cf478fea00203c320e2, type: 3}
+  worldScale: 100
 --- !u!65 &2468558581306446375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -166,10 +189,10 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 0.33333334}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 1, g: 1, b: 1, a: 0.78431374}
+      key1: {r: 1, g: 1, b: 1, a: 0.05882353}
+      key2: {r: 0, g: 0, b: 0, a: 0.039215688}
+      key3: {r: 0, g: 0, b: 0, a: 0.039215688}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
@@ -183,7 +206,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 11758
+      atime1: 655
       atime2: 65535
       atime3: 65535
       atime4: 0
@@ -202,29 +225,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &-8613858061719748838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2468558581306446369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24d8f6aeb34d02d43b48ec5af5ba4011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camp: 0
-  shellName: PGPA042_203MM_HE_SPR_GR_L4_7_KZ
-  shellData: {fileID: 11400000, guid: e33ee7a77915eb74897679459354cb01, type: 2}
-  speedMultiple: 5
-  DestroyY: -0.01
-  rayLayerMask:
-    serializedVersion: 2
-    m_Bits: 344
-  explosionParticles:
-  - {fileID: 612184077102948903, guid: 059aafe0c4e36cf478fea00203c320e2, type: 3}
-  worldScale: 100
 --- !u!54 &-65585734058183406
 Rigidbody:
   m_ObjectHideFlags: 0

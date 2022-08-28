@@ -7,9 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 149300, guid: daa68a184b10b1e498d4227aa3433d9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149302, guid: daa68a184b10b1e498d4227aa3433d9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 172038, guid: daa68a184b10b1e498d4227aa3433d9c, type: 3}
       propertyPath: m_Name
-      value: Explosion3D_5
+      value: Explosion_Second_Hindenburg
       objectReference: {fileID: 0}
     - target: {fileID: 472038, guid: daa68a184b10b1e498d4227aa3433d9c, type: 3}
       propertyPath: m_RootOrder
@@ -333,3 +341,22 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!1 &8094912676339171425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 172038, guid: daa68a184b10b1e498d4227aa3433d9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8094912676339277927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-7241867742101345473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8094912676339171425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f373d9234ac9f41bc83171d627d6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destoryTime: 2

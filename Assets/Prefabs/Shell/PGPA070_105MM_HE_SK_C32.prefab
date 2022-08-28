@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2468558581306446373}
   - component: {fileID: 2468558581306446372}
   - component: {fileID: 2468558581306446375}
-  - component: {fileID: 2468558581306446395}
   - component: {fileID: -8613858061719748838}
+  - component: {fileID: 2468558581306446395}
   - component: {fileID: -7796067295508897246}
   - component: {fileID: -4857080431633694735}
   - component: {fileID: 1826682097375730179}
@@ -103,6 +103,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8613858061719748838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2468558581306446369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d8f6aeb34d02d43b48ec5af5ba4011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camp: 0
+  shellName: PGPA070_105MM_HE_SK_C32
+  shellData: {fileID: 11400000, guid: 4797ae7d327e8e94da0230407ac717a2, type: 2}
+  speedMultiple: 1
+  DestroyY: -1
+  rayLayerMask:
+    serializedVersion: 2
+    m_Bits: 344
+  explosionParticles:
+  - {fileID: 8094912676325316929, guid: abaa23a1763788d4db3a56e3d2586359, type: 3}
+  worldScale: 100
 --- !u!96 &2468558581306446395
 TrailRenderer:
   serializedVersion: 2
@@ -145,7 +168,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.5
+  m_Time: 0.1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.05
@@ -166,9 +189,9 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 1, g: 1, b: 1, a: 0.78431374}
+      key1: {r: 1, g: 1, b: 1, a: 0.019607844}
+      key2: {r: 0, g: 0, b: 0, a: 0.019607844}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -183,8 +206,8 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
+      atime1: 655
+      atime2: 65535
       atime3: 0
       atime4: 0
       atime5: 0
@@ -192,7 +215,7 @@ TrailRenderer:
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
@@ -202,29 +225,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &-8613858061719748838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2468558581306446369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24d8f6aeb34d02d43b48ec5af5ba4011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camp: 0
-  shellName: PGPA070_105MM_HE_SK_C32
-  shellData: {fileID: 11400000, guid: 4797ae7d327e8e94da0230407ac717a2, type: 2}
-  speedMultiple: 1
-  DestroyY: -1
-  rayLayerMask:
-    serializedVersion: 2
-    m_Bits: 344
-  explosionParticles:
-  - {fileID: 8094912676325316929, guid: abaa23a1763788d4db3a56e3d2586359, type: 3}
-  worldScale: 100
 --- !u!54 &-7796067295508897246
 Rigidbody:
   m_ObjectHideFlags: 0

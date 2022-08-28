@@ -26,6 +26,7 @@ namespace WOW.Armament
         [HideInInspector] public Vector3 target;
         protected ShipController controller;
         public GameObject[] firePoint;
+        public ParticleSystem[] muzzleFlashs;
 
         protected virtual void Start()
         {
