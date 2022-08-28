@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7145774347935803784}
   - component: {fileID: 7463923470565362415}
   m_Layer: 7
-  m_Name: PGPA023_203MM_AP_PZ_SPR_GGR_L4_4
+  m_Name: PJPA017_Shell_460mm_AP_APC_Type_91
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,15 +64,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camp: 0
-  shellName: PGPA023_203MM_AP_PZ_SPR_GGR_L4_4
-  shellData: {fileID: 11400000, guid: c68947b2943a258448e2b9406a06667e, type: 2}
+  shellName: PJPA017_Shell_460mm_AP_APC_Type_91
+  shellData: {fileID: 11400000, guid: e641bfeed57ee96439e929969841477e, type: 2}
   speedMultiple: 1
   DestroyY: -0.01
   rayLayerMask:
     serializedVersion: 2
     m_Bits: 344
   explosionParticles:
-  - {fileID: 612184077102948903, guid: 059aafe0c4e36cf478fea00203c320e2, type: 3}
+  - {fileID: 612184077102948903, guid: ff3eca1894e56b0418a2d4941e372895, type: 3}
   worldScale: 100
 --- !u!54 &-7567911122109988845
 Rigidbody:
@@ -319,7 +319,7 @@ TrailRenderer:
   m_Time: 0.5
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:

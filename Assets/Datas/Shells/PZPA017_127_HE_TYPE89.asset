@@ -10,23 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38182d5fc57466e42bb27d9a50ad35a5, type: 3}
-  m_Name: 460mm_HE_C_Type_0
+  m_Name: PZPA017_127_HE_TYPE89
   m_EditorClassIdentifier: 
-  damage: 0
-  ricochetMin: 45
-  ricochetMax: 60
-  burnProbability: 30
-  penetratingPower: 1
-  spreadProbability: 1
+  damage: 2100
+  burnProbability: 8
   alphaPiercingCS: 0
-  alphaPiercingHE: 77
-  bulletAirDrag: 0.543
+  alphaPiercingHE: 21
+  bulletAirDrag: 0.3391
   bulletAlwaysRicochetAt: 60
-  bulletCapNormalizeMaxAngle: 8
+  bulletCapNormalizeMaxAngle: 68
   bulletDetonator: 0.001
   bulletDetonatorThreshold: 2
-  bulletDiametr: 0.46
-  bulletKrupp: 240
-  bulletMass: 1360
+  bulletDiametr: 0.127
+  bulletKrupp: 1
+  bulletMass: 23.45
   bulletRicochetAt: 91
-  bulletSpeed: 805
+  bulletSpeed: 725

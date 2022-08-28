@@ -105,7 +105,7 @@ MonoBehaviour:
   camp: 0
   shellName: PGPA042_203MM_HE_SPR_GR_L4_7_KZ
   shellData: {fileID: 11400000, guid: e33ee7a77915eb74897679459354cb01, type: 2}
-  speedMultiple: 5
+  speedMultiple: 1
   DestroyY: -0.01
   rayLayerMask:
     serializedVersion: 2

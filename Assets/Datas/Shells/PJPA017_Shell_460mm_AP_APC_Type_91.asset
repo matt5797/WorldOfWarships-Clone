@@ -10,14 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38182d5fc57466e42bb27d9a50ad35a5, type: 3}
-  m_Name: 460mm_AP_APC_Type_91
+  m_Name: PJPA017_Shell_460mm_AP_APC_Type_91
   m_EditorClassIdentifier: 
-  damage: 0
-  ricochetMin: 45
-  ricochetMax: 60
-  burnProbability: 30
-  penetratingPower: 1
-  spreadProbability: 1
+  damage: 7300
+  burnProbability: 0
   alphaPiercingCS: 0
   alphaPiercingHE: 0
   bulletAirDrag: 0.292
