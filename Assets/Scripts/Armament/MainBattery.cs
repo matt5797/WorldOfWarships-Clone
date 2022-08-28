@@ -93,7 +93,7 @@ namespace WOW.Armament
         {
             if (firePoint == null)
                 return;
-
+            print(Time.time);
             float angle = GetAngle((int)new Vector3(target.x, rootPosition.position.y, target.z).magnitude);
             angle = Mathf.Clamp(angle, minX, maxX);
             

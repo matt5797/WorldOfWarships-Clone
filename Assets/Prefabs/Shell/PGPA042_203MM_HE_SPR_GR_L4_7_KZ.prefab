@@ -145,7 +145,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 1
+  m_Time: 0.5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -183,9 +183,9 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 21781
+      atime1: 11758
       atime2: 65535
-      atime3: 0
+      atime3: 65535
       atime4: 0
       atime5: 0
       atime6: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 344
   explosionParticles:
-  - {fileID: 19800006, guid: 76222bdf017ff094cae58d3438c91510, type: 3}
+  - {fileID: 612184077102948903, guid: 059aafe0c4e36cf478fea00203c320e2, type: 3}
   worldScale: 100
 --- !u!54 &-65585734058183406
 Rigidbody:
