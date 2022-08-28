@@ -11,7 +11,7 @@ public class GameScene : BaseScene
         //SceneType = Define.Scene.Game;
 
         
-        Managers.Sound.Play("WoW_OST game", Define.Sound.Bgm);
+        Managers.Sound.Play("WoW_OST_Game", Define.Sound.Bgm);
         
 
     }

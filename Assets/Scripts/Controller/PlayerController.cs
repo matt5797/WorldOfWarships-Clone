@@ -36,6 +36,8 @@ namespace WOW.Controller
                 Cursor.visible = true;
                 DeadUI.SetActive(true);
             });
+
+
         }
 
         void Update()
@@ -67,11 +69,14 @@ namespace WOW.Controller
             {
                 ship.SteerUp();
                 isAutoPilot = false;
+               
             }
             if (Input.GetKey(KeyCode.D))
             {
                 ship.SteerDown();
                 isAutoPilot = false;
+               
+                // Managers.Sound.Play("front", Define.Sound.Effect);
             }
 
             // Ship Attack
@@ -111,8 +116,8 @@ namespace WOW.Controller
                     pathCurrentTime -= Time.deltaTime;
                 }
             }
-           
-           
+            
+            
         }
 
         void StartAutoPilot()

@@ -82,7 +82,7 @@ namespace WOW.Armament
                 bullet.transform.Rotate(0, theta, 0);
             }
 
-            Managers.Sound.Play("torpedo", Define.Sound.Effect);
+             Managers.Sound.Play("torpedo", Define.Sound.Effect);
         }
 
     }

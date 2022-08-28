@@ -150,6 +150,7 @@ namespace WOW.BattleShip
             Vector3 dir = transform.forward * movePower / 4 * Gear * Time.deltaTime;
             Quaternion rot = Quaternion.Euler(0, Mathf.Clamp(Steer * steerPower * 90, -90, 90) /** Time.deltaTime*/, 0);
             m_Rigidbody.AddForceAtPosition(rot * dir, propeller.position, ForceMode.Force);
+
         }
 
         /*private void Steering()

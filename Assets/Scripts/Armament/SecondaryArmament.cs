@@ -146,7 +146,6 @@ namespace WOW.Armament
                     muzzleFlashs[i].Play();
             }
 
-
             Managers.Sound.Play("secondary", Define.Sound.Effect);
         }
 
