@@ -1,10 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
 --- !u!1 &4198317711771918104
-=======
---- !u!1 &2470584140014211041
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,21 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
   - component: {fileID: 6673831386778128304}
   - component: {fileID: 1274039392166943282}
   - component: {fileID: 4730078424643510940}
   - component: {fileID: 2045337332134807248}
   - component: {fileID: 4126606095813852164}
   - component: {fileID: 8256831098334637002}
-=======
-  - component: {fileID: 2470584140014211047}
-  - component: {fileID: 2470584140014211046}
-  - component: {fileID: 2470584140014211045}
-  - component: {fileID: 2470584140014211044}
-  - component: {fileID: 2470584140014211043}
-  - component: {fileID: 2470584140014211042}
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
   m_Layer: 0
   m_Name: Torpedo Bullet
   m_TagString: Untagged
@@ -34,43 +21,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
 --- !u!4 &6673831386778128304
-=======
---- !u!4 &2470584140014211047
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
   m_GameObject: {fileID: 4198317711771918104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.13998252, y: 0.07365645, z: -0.4084754}
   m_LocalScale: {x: 0.07746005, y: 0.07746005, z: 0.07746005}
-=======
-  m_GameObject: {fileID: 2470584140014211041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.186107, y: 1.76, z: -13.202393}
-  m_LocalScale: {x: 1, y: 1, z: 1}
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
 --- !u!33 &1274039392166943282
-=======
---- !u!33 &2470584140014211046
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
   m_GameObject: {fileID: 4198317711771918104}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &4730078424643510940
@@ -89,21 +60,12 @@ MonoBehaviour:
   torpedo_pos: 0
   water_pos: 0
 --- !u!23 &2045337332134807248
-=======
-  m_GameObject: {fileID: 2470584140014211041}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &2470584140014211045
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
   m_GameObject: {fileID: 4198317711771918104}
-=======
-  m_GameObject: {fileID: 2470584140014211041}
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -139,54 +101,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
 --- !u!135 &4126606095813852164
 SphereCollider:
-=======
---- !u!114 &2470584140014211044
-MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2470584140014211041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1ffc1b83665bad4985c591dca79720d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shellData: {fileID: 11400000, guid: e9cd4652570305c4dabe72e2d89b9952, type: 2}
-  speedMultiple: 20
---- !u!114 &2470584140014211043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2470584140014211041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24d8f6aeb34d02d43b48ec5af5ba4011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shellData: {fileID: 0}
---- !u!65 &2470584140014211042
-BoxCollider:
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Torpedo Bullet.prefab
   m_GameObject: {fileID: 4198317711771918104}
-=======
-  m_GameObject: {fileID: 2470584140014211041}
->>>>>>> Stashed changes:Assets/Scripts/Projectile/Prefebs/Bullet.prefab
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8256831098334637002
 Rigidbody:

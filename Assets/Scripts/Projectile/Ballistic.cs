@@ -12,8 +12,8 @@ public class Ballistic: MonoBehaviour
     private static double C = 0.5561613f; //PENETRATION
     private static double a = 9.81f; // GRAVITY
     private static double T_0 = 288; // TEMPERATURE AT SEA LEVEL
-    private static double L = 0.0065f; // TEMPERATURE LAPSE RATE 
-    private static double p_0 = 101325f; // PRESSURE AT SEA LEVEL 
+    private static double L = 0.0065f; // TEMPERATURE LAPSE RATE 온도 경과률?
+    private static double p_0 = 101325f; // PRESSURE AT SEA LEVEL 바다 압력?
     private static double R = 8.31447f; // UNIV GAS CONSTANT
     private static double M = 0.0289644f; // MOLAR MASS OF AIR
 

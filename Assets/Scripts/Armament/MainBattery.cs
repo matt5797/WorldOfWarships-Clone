@@ -11,19 +11,8 @@ namespace WOW.Armament
     /// </summary>
     public class MainBattery : ArmamentBase
     {
-<<<<<<< Updated upstream
         public Shell HE;
         public Shell AP;
-=======
-        public Vector3 target;
-        public float Speed = 1;
-        public GameObject bulletFactory;
-        public Transform Firepos;
-        float Angle;
-        Vector3 ScreenCenter;
-        PlayerController PC;
-        GameObject[] firePoint;
->>>>>>> Stashed changes
 
         Shell bulletFactory;
         int ShellID;
@@ -102,7 +91,6 @@ namespace WOW.Armament
         // 발사합니다.
         protected override void Fire()
         {
-<<<<<<< Updated upstream
             if (firePoint == null)
                 return;
             
@@ -124,25 +112,6 @@ namespace WOW.Armament
 
             Managers.Sound.Play("mainbattery", Define.Sound.Effect);
         }
-=======
-            // 총구의 개수 만큼 반복
-            for (int i = 0; i <= firePoint.Length; i++)
-            {
-                // 총구 앞에 탄환 생성
-                GameObject Bullet = Instantiate(bulletFactory);
-
-                // 탄환 스크립트에 접근하여, 총구의 각도를 전해주고, 발사 명령 (shell + Ballistic 병합하거 나 맘대루)
-                Bullet.transform.position = Firepos.transform.position;
-                
-                float angle = Vector3.Angle(firePoint[i].transform.position, transform.forward);
-                
-                // 탄환 .GetComponent<Ballstic>().OnShoot(현재 총구 각도 = Angle)
-                Bullet.GetComponent<Ballistic>().OnShoot(angle);
-
-                print("11111111111");
-
-            }
->>>>>>> Stashed changes
 
         /// <summary>
         /// 탄환을 바꿔줍니다.

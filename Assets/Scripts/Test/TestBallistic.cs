@@ -8,7 +8,6 @@ using WOW.Data;
 
 public class TestBallistic: MonoBehaviour
 {
-    
     // SHELL CONSTANTS //
     private static double C = 0.5561613f; //PENETRATION
     private static double a = 9.81f; // GRAVITY
@@ -89,6 +88,4 @@ public class TestBallistic: MonoBehaviour
     {
         return Math.Atan(Math.Abs(v_y) / Math.Abs(v_x));
     }
-
-
 }

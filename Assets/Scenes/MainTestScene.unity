@@ -494,7 +494,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
-<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 --- !u!1 &510992302 stripped
@@ -530,14 +529,6 @@ MonoBehaviour:
   firePoint:
   - {fileID: 59226451}
 >>>>>>> 48bbb338841032af9224923c9db4f2fb5ad5518f
-=======
---- !u!4 &602056596 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6032935029278067397, guid: bf6bc58181ef5a04dabd488d003907b7,
-    type: 3}
-  m_PrefabInstance: {fileID: 3782456455881538259}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &699462376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,42 +1083,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231299258}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
 --- !u!1 &1390254809
-=======
---- !u!1 &1397320287
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1397320288}
-  m_Layer: 0
-  m_Name: Firepos
-  m_TagString: Untagged
-  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1397320288
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397320287}
-  m_LocalRotation: {x: -0.000000021855696, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.026, y: 0.046496153, z: -2.9581566}
-  m_LocalScale: {x: 2.54, y: 2.54, z: 2.54}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 602056596}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1507229220 stripped
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1159,7 +1115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb3ad9b15106f2458b51cd61f37de86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   playerController: {fileID: 1624879421}
 --- !u!65 &1390254811
 BoxCollider:
@@ -1239,13 +1194,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  cooldownTime: 1
-  target: {x: 0, y: 0, z: 0}
-  Speed: 1
-  bullet: {fileID: 2470584140014211041, guid: 78f576a464898d147b45d21c542fca19, type: 3}
-  Firepos: {fileID: 1397320288}
->>>>>>> Stashed changes
 --- !u!1 &1624879420
 GameObject:
   m_ObjectHideFlags: 0
