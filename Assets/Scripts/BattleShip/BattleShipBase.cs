@@ -121,6 +121,7 @@ namespace WOW.BattleShip
 
         public void GearUp()
         {
+            print("GearUp");
             if (isMovable)
                 Gear = Mathf.Clamp(Gear + 1, -1, 4);
         }

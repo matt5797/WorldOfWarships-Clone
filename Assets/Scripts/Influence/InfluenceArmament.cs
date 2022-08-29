@@ -8,6 +8,7 @@ namespace WOW.Influence
     public class InfluenceArmament : MonoBehaviour
     {
         BattleShipBase m_BattleShipBase;
+        public Transform rootPosition;
         public float radius;
         public int influenceScore;
         public float dot;
@@ -23,7 +24,7 @@ namespace WOW.Influence
         {
             while (true)
             {
-                InfluenceMap.Instance.CheckInfluence(transform, m_BattleShipBase.camp, GetInstanceID(), influenceScore, radius, dot);
+                InfluenceMap.Instance.CheckInfluence(rootPosition, m_BattleShipBase.camp, GetInstanceID(), influenceScore, radius, dot);
                 yield return new WaitForSeconds(2);
             }
         }

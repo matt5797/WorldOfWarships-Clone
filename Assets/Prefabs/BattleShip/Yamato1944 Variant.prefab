@@ -1810,6 +1810,7 @@ GameObject:
   - component: {fileID: 7747158851037766474}
   - component: {fileID: 2980850143683007475}
   - component: {fileID: 1958782814}
+  - component: {fileID: 697734080}
   m_Layer: 0
   m_Name: TurretShape_0149
   m_TagString: Untagged
@@ -1898,6 +1899,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 4710712717502566948}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 6608552979275939459}
   - {fileID: 8675047308400947065}
@@ -1911,6 +1913,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &697734080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267669011076453821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 4710712717502566948}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &300027689667547655
 GameObject:
   m_ObjectHideFlags: 0
@@ -10024,6 +10042,7 @@ GameObject:
   - component: {fileID: 1900098694756733324}
   - component: {fileID: 9215999312242271748}
   - component: {fileID: 581419999}
+  - component: {fileID: 1745119501}
   m_Layer: 0
   m_Name: TurretShape_0219
   m_TagString: Untagged
@@ -10112,6 +10131,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 2041527219439279015}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 8648736369884565702}
   - {fileID: 7961794181314984502}
@@ -10125,6 +10145,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &1745119501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501900393680340073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 2041527219439279015}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &1503334030529275813
 GameObject:
   m_ObjectHideFlags: 0
@@ -21756,6 +21792,7 @@ GameObject:
   - component: {fileID: 1706831721205413219}
   - component: {fileID: 789130584131814564}
   - component: {fileID: 577972780}
+  - component: {fileID: 724672242}
   m_Layer: 0
   m_Name: TurretShape_0143
   m_TagString: Untagged
@@ -21844,6 +21881,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 438421190434686525}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 788977097}
   - {fileID: 765956207}
@@ -21857,6 +21895,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &724672242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127403125930577026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 438421190434686525}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &2141234184430540168
 GameObject:
   m_ObjectHideFlags: 0
@@ -33732,6 +33786,7 @@ GameObject:
   - component: {fileID: 1850153929964057710}
   - component: {fileID: 6163415507455478854}
   - component: {fileID: 1724341456984781923}
+  - component: {fileID: 1228528246}
   m_Layer: 0
   m_Name: Type96Shape_0025
   m_TagString: Untagged
@@ -33820,6 +33875,7 @@ MonoBehaviour:
   cooldownTime: 5
   rootPosition: {fileID: 5172255651046262071}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 4912915107158331073}
   - {fileID: 3094245720117333775}
@@ -33834,6 +33890,22 @@ MonoBehaviour:
   minX: 0
   maxX: 10
   minY: -0.6
+--- !u!114 &1228528246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2710039421521125389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 4454476312259195791}
+  radius: 30
+  influenceScore: 30
+  dot: 0
 --- !u!1 &2711199921611253537
 GameObject:
   m_ObjectHideFlags: 0
@@ -35402,6 +35474,7 @@ GameObject:
   - component: {fileID: 6462808324178489712}
   - component: {fileID: 57300074985346917}
   - component: {fileID: 677680026}
+  - component: {fileID: 424800964}
   m_Layer: 0
   m_Name: TurretShape_0243
   m_TagString: Untagged
@@ -35490,6 +35563,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 6275630353522360043}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 8748503736760530859}
   - {fileID: 5581176346253885691}
@@ -35503,6 +35577,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &424800964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3274677795067764689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 6275630353522360043}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &3275389377928415205
 GameObject:
   m_ObjectHideFlags: 0
@@ -53293,6 +53383,7 @@ GameObject:
   - component: {fileID: 2698958596456161933}
   - component: {fileID: 3881040712304400495}
   - component: {fileID: 1367765376}
+  - component: {fileID: 916688775}
   m_Layer: 0
   m_Name: TurretShape_0223
   m_TagString: Untagged
@@ -53381,6 +53472,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 9219197541499216402}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 418072751}
   - {fileID: 918679032}
@@ -53394,6 +53486,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &916688775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313257677523157736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 2750407947628389798}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &4322601907271056835
 GameObject:
   m_ObjectHideFlags: 0
@@ -54616,6 +54724,7 @@ GameObject:
   - component: {fileID: 8920511151713141147}
   - component: {fileID: 750680009285250179}
   - component: {fileID: 1446905732}
+  - component: {fileID: 512199438}
   m_Layer: 0
   m_Name: TurretShape_0229
   m_TagString: Untagged
@@ -54704,6 +54813,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 6363205657270143223}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 7708518667149101552}
   - {fileID: 6397866325797512998}
@@ -54717,6 +54827,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &512199438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605087266726629675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 6363205657270143223}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &4614780330318650351
 GameObject:
   m_ObjectHideFlags: 0
@@ -54844,6 +54970,7 @@ GameObject:
   - component: {fileID: 5942031407247280335}
   - component: {fileID: 3506088035339031781}
   - component: {fileID: 340094329}
+  - component: {fileID: 1332164695}
   m_Layer: 0
   m_Name: TurretShape_0147
   m_TagString: Untagged
@@ -54932,6 +55059,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 2249103712017218328}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 252015449}
   - {fileID: 1691009062}
@@ -54945,6 +55073,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &1332164695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4659856642200600502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 2249103712017218328}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &4666055694245007528
 GameObject:
   m_ObjectHideFlags: 0
@@ -54957,6 +55101,7 @@ GameObject:
   - component: {fileID: 5288167422570147347}
   - component: {fileID: 326732579166171840}
   - component: {fileID: 1844562613}
+  - component: {fileID: 2132192299}
   m_Layer: 0
   m_Name: TurretShape_0225
   m_TagString: Untagged
@@ -55045,6 +55190,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 2837045347213957487}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 1722855355}
   - {fileID: 612415800}
@@ -55058,6 +55204,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &2132192299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4666055694245007528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 2837045347213957487}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &4667569068306931663
 GameObject:
   m_ObjectHideFlags: 0
@@ -61215,6 +61377,7 @@ GameObject:
   - component: {fileID: 6185327363736380781}
   - component: {fileID: 6374217869838723950}
   - component: {fileID: 2123439405}
+  - component: {fileID: 1298656609}
   m_Layer: 0
   m_Name: Type96Shape_0027
   m_TagString: Untagged
@@ -61303,6 +61466,7 @@ MonoBehaviour:
   cooldownTime: 5
   rootPosition: {fileID: 6928953226866455948}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 4388082665233577715}
   - {fileID: 1489550641294635618}
@@ -61317,6 +61481,22 @@ MonoBehaviour:
   minX: 0
   maxX: 10
   minY: -0.6
+--- !u!114 &1298656609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5104492671048161246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 6928953226866455948}
+  radius: 30
+  influenceScore: 30
+  dot: 0
 --- !u!1 &5107954079778840628
 GameObject:
   m_ObjectHideFlags: 0
@@ -61721,11 +61901,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3678a8187efdfa42876bf4e82f1130f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camp: 1
+  camp: 0
   shipType: 0
   propeller: {fileID: 6217400184718412518}
-  maxSpeed: 0.7
-  movePower: 1.2
+  maxSpeed: 1
+  movePower: 2
   maxSteer: 0.1
   steerPower: 0.5
   steerAccel: 0.15
@@ -67086,6 +67266,7 @@ GameObject:
   - component: {fileID: 8336286513767674277}
   - component: {fileID: 2493314484406700290}
   - component: {fileID: 415413962}
+  - component: {fileID: 26533293}
   m_Layer: 0
   m_Name: TurretShape_0221
   m_TagString: Untagged
@@ -67174,6 +67355,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 2085125740085057538}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 1520845683}
   - {fileID: 426220734}
@@ -67187,6 +67369,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &26533293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5357232070847803229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 2085125740085057538}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &5388260572048118789
 GameObject:
   m_ObjectHideFlags: 0
@@ -90952,6 +91150,7 @@ GameObject:
   - component: {fileID: 3696348277489619308}
   - component: {fileID: 117374105674618379}
   - component: {fileID: 6578971689954807175}
+  - component: {fileID: 1228476083}
   m_Layer: 0
   m_Name: Type96Shape_0367
   m_TagString: Untagged
@@ -91040,6 +91239,7 @@ MonoBehaviour:
   cooldownTime: 5
   rootPosition: {fileID: 1521217982193251104}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 7951684130553355135}
   - {fileID: 7175728720504522222}
@@ -91054,6 +91254,22 @@ MonoBehaviour:
   minX: 0
   maxX: 10
   minY: -0.6
+--- !u!114 &1228476083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6664685636420891145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 6254277941375740070}
+  radius: 30
+  influenceScore: 30
+  dot: 0
 --- !u!1 &6682797715989860438
 GameObject:
   m_ObjectHideFlags: 0
@@ -108842,6 +109058,7 @@ GameObject:
   - component: {fileID: 3466794440894176481}
   - component: {fileID: 969227438578829042}
   - component: {fileID: 268764392}
+  - component: {fileID: 1003448887}
   m_Layer: 0
   m_Name: TurretShape_0145
   m_TagString: Untagged
@@ -108930,6 +109147,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 1814444743722180211}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 1580642906}
   - {fileID: 970568445}
@@ -108943,6 +109161,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &1003448887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7613571652162528603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 1902820261248107300}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &7616132404383535075
 GameObject:
   m_ObjectHideFlags: 0
@@ -109692,6 +109926,7 @@ GameObject:
   - component: {fileID: 217644212916034708}
   - component: {fileID: 6756528871960722392}
   - component: {fileID: 1982424022}
+  - component: {fileID: 1102732946}
   m_Layer: 0
   m_Name: TurretShape_0227
   m_TagString: Untagged
@@ -109780,6 +110015,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 1594460840919875055}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 6426534302218790533}
   - {fileID: 3361962671718315362}
@@ -109793,6 +110029,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &1102732946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915440508337146549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 1594460840919875055}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &7951684130553355135
 GameObject:
   m_ObjectHideFlags: 0
@@ -115385,6 +115637,7 @@ GameObject:
   - component: {fileID: 6774050183736017851}
   - component: {fileID: 670667903759253918}
   - component: {fileID: 1922047861}
+  - component: {fileID: 552854670}
   m_Layer: 0
   m_Name: TurretShape_0151
   m_TagString: Untagged
@@ -115473,6 +115726,7 @@ MonoBehaviour:
   cooldownTime: 3.3
   rootPosition: {fileID: 4104408584629525012}
   target: {x: 0, y: 0, z: 0}
+  controller: {fileID: 0}
   firePoint:
   - {fileID: 7533052378397881467}
   - {fileID: 5004528980594273966}
@@ -115486,6 +115740,22 @@ MonoBehaviour:
   maxX: 30
   minY: 0.3
   attckRange: 100
+--- !u!114 &552854670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8156076611593768286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8202d2b912f3e034d9e8bddb69d4295e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootPosition: {fileID: 4104408584629525012}
+  radius: 15
+  influenceScore: 15
+  dot: 0
 --- !u!1 &8164230570498722340
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using WOW.DamageSystem;
 using WOW.UI;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using WOW.Manager;
 
 namespace WOW.Controller
 {
@@ -37,7 +38,7 @@ namespace WOW.Controller
                 DeadUI.SetActive(true);
             });
 
-
+            //ChangeModel(GameManager.Instance.currentModel);
         }
 
         void Update()
@@ -118,6 +119,30 @@ namespace WOW.Controller
             }
             
             
+        }
+
+        public void ChangeModel(int index)
+        {
+            print("ChangeModel : " + index);
+            if (index == 5)
+                index = 0;
+            if (index == 6)
+                index = 1;
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+            if (index == 0 || index == 1)
+            {
+                transform.GetChild(index).gameObject.SetActive(true);
+
+                ship = GetComponentInChildren<BattleShipBase>();
+                Armament.ArmamentBase[] armaments = GetComponentsInChildren<Armament.ArmamentBase>();
+                foreach (Armament.ArmamentBase armament in armaments)
+                {
+                    armament.controller = this;
+                }
+            }
         }
 
         void StartAutoPilot()
