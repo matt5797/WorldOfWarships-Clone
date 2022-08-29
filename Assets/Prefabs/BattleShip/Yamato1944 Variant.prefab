@@ -2893,7 +2893,6 @@ GameObject:
   - component: {fileID: 3179599515501744563}
   - component: {fileID: 1635051518334543212}
   - component: {fileID: 5071567203811451702}
-  - component: {fileID: 8495755267587463154}
   m_Layer: 9
   m_Name: Quad
   m_TagString: Untagged
@@ -2966,20 +2965,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8495755267587463154
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556762044116586340}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &570470994812563234
 GameObject:
   m_ObjectHideFlags: 0
@@ -21686,7 +21671,6 @@ GameObject:
   - component: {fileID: 2127005997084197529}
   - component: {fileID: 8539994234354588765}
   - component: {fileID: 6525625133761461310}
-  - component: {fileID: 8384004779159431439}
   m_Layer: 9
   m_Name: Marker
   m_TagString: Untagged
@@ -21760,20 +21744,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8384004779159431439
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118384396256740204}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2127403125930577026
 GameObject:
   m_ObjectHideFlags: 0
@@ -33862,7 +33832,7 @@ MonoBehaviour:
   AP: {fileID: -8613858061719748838, guid: 0249f2a457de2c9468de108587e39220, type: 3}
   rotSpeed: 1
   minX: 0
-  maxX: 30
+  maxX: 10
   minY: -0.6
 --- !u!1 &2711199921611253537
 GameObject:
@@ -61345,7 +61315,7 @@ MonoBehaviour:
   AP: {fileID: -8613858061719748838, guid: 0249f2a457de2c9468de108587e39220, type: 3}
   rotSpeed: 1
   minX: 0
-  maxX: 30
+  maxX: 10
   minY: -0.6
 --- !u!1 &5107954079778840628
 GameObject:
@@ -61754,11 +61724,11 @@ MonoBehaviour:
   camp: 1
   shipType: 0
   propeller: {fileID: 6217400184718412518}
-  maxSpeed: 1
-  movePower: 2
+  maxSpeed: 0.7
+  movePower: 1.2
   maxSteer: 0.1
-  steerPower: 1
-  steerAccel: 0.3
+  steerPower: 0.5
+  steerAccel: 0.15
   steerResetSpeed: 0.1
   _gear: 0
   _steer: 0
@@ -61775,6 +61745,10 @@ MonoBehaviour:
   attackRange: 50
   deadEffects: []
   marker: {fileID: 2118384396256740204}
+  mainBatteries:
+  - {fileID: 2123439405}
+  - {fileID: 1724341456984781923}
+  - {fileID: 6578971689954807175}
 --- !u!114 &8859854670942031403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91078,7 +91052,7 @@ MonoBehaviour:
   AP: {fileID: -8613858061719748838, guid: 0249f2a457de2c9468de108587e39220, type: 3}
   rotSpeed: 1
   minX: 0
-  maxX: 30
+  maxX: 10
   minY: -0.6
 --- !u!1 &6682797715989860438
 GameObject:

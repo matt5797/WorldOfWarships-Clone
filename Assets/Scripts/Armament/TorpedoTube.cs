@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WOW.Projectile;
 
 namespace WOW.Armament
 {
     public class TorpedoTube : ArmamentBase
     {
-        public GameObject bulletFactory;
+        public Torpedo bulletFactory;
         public int bulletCount = 4;
         public float fireAngle = 15;
         
@@ -77,7 +78,8 @@ namespace WOW.Armament
             for (int i = 0; i < bulletCount; i++)
             {
                 // ÃÑ±¸ ¾Õ¿¡ ÅºÈ¯ »ý¼º
-                GameObject bullet = Instantiate(bulletFactory, firePoint[0].transform.position, firePoint[0].transform.rotation);
+                Torpedo bullet = Instantiate<Torpedo>(bulletFactory, firePoint[0].transform.position, firePoint[0].transform.rotation);
+                bullet.camp = controller.ship.camp;
                 theta = (i * fireAngle / (bulletCount - 1)) - (fireAngle / 2);
                 bullet.transform.Rotate(0, theta, 0);
             }

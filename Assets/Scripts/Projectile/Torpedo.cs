@@ -16,6 +16,9 @@ namespace WOW.Projectile
 
         Vector3 startPosition;
 
+        public int damage;
+        public GameObject[] explosionParticles; // 폭발시 플레이할 파티클들
+
         private void Start()
         {
             startPosition = transform.position;
@@ -45,7 +48,28 @@ namespace WOW.Projectile
 
         protected override void OnImpact(Damageable damageable)
         {
-            throw new NotImplementedException();
+            print("Torpedo Impact");
+            damageable.CheckDamage(damage, GetInstanceID());
+            OnExplosion();
+        }
+
+        /// <summary>
+        /// 탄환 폭발 시 호출되는 함수
+        /// </summary>
+        void OnExplosion()
+        {
+
+            // 추후 확산 판정 삽입?
+            //print("OnExplosion");
+            foreach (GameObject particleFactory in explosionParticles)
+            {
+                GameObject particle = Instantiate(particleFactory);
+                particle.transform.position = transform.position;
+                //particle.Play();
+            }
+            //Managers.Sound.Play("Bomb", Define.Sound.Effect);
+            OnApplyDamage();
+            Destroy(gameObject);
         }
     }
 }

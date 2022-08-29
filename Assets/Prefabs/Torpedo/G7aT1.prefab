@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3001122804791199783}
   - component: {fileID: -712075865417240703}
   - component: {fileID: 3734010541833396793}
+  - component: {fileID: 5604954276817938741}
   m_Layer: 0
   m_Name: G7aT1
   m_TagString: Untagged
@@ -99,8 +100,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camp: 0
-  speed: 5
+  speed: 2
   range: 60
+  damage: 13700
+  explosionParticles:
+  - {fileID: 1757496804849208167, guid: 36073d3f6259cf64699145af4d1c0120, type: 3}
 --- !u!54 &-712075865417240703
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -216,3 +220,16 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!65 &5604954276817938741
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115507205964319755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013452698, y: 0.013539333, z: 0.17841023}
+  m_Center: {x: 0.02812961, y: 0.022537293, z: 0.0052314587}

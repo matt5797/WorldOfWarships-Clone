@@ -205,7 +205,7 @@ namespace WOW.Projectile
                 // 관통 확인
                 if (!damageable.CheckPenetrate(ref penetration))
                 {
-                    print("관통 실패: " + penetration);
+                    //print("관통 실패: " + penetration);
                     DamageTextManager.Instance.CreateDamageText(transform, "관통 실패", 20);
                     OnExplosion();
                     return;

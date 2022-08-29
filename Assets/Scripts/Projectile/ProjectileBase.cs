@@ -76,7 +76,8 @@ namespace WOW.Projectile
         protected void OnApplyDamage()
         {
             //print("데미지 정산");
-            targetDamageableManager.ApplyDamage(GetInstanceID());
+            if (targetDamageableManager!=null)
+                targetDamageableManager.ApplyDamage(GetInstanceID());
         }
 
         //protected abstract void OnShoot();

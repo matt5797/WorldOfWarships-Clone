@@ -435,7 +435,6 @@ GameObject:
   - component: {fileID: 1516801574}
   - component: {fileID: 1516801577}
   - component: {fileID: 1516801576}
-  - component: {fileID: 1516801575}
   m_Layer: 9
   m_Name: Marker
   m_TagString: Untagged
@@ -509,20 +508,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1516801575
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516801573}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2015990085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,6 +1535,7 @@ MonoBehaviour:
   - {fileID: 8538929179962000050}
   - {fileID: 8538929181465800083}
   - {fileID: 8538929179951042787}
+  muzzleFlashs: []
   HE: {fileID: -8613858061719748838, guid: eeb2a908b8a4b3d4d922952356bb4083, type: 3}
   AP: {fileID: -8613858061719748838, guid: ac74b1d644ae47147b765171bd713328, type: 3}
   rotSpeed: 0.5
@@ -7039,6 +7025,7 @@ MonoBehaviour:
   firePoint:
   - {fileID: 8538929180581271782}
   - {fileID: 8538929180777875189}
+  muzzleFlashs: []
   bulletFactory: {fileID: -8613858061719748838, guid: 051ba5b4e1b277e4ab7c566924521678,
     type: 3}
   rotSpeed: 1
@@ -7497,6 +7484,7 @@ MonoBehaviour:
   - {fileID: 8538929180805998921}
   - {fileID: 8538929180754838581}
   - {fileID: 8538929181363452749}
+  muzzleFlashs: []
   HE: {fileID: -8613858061719748838, guid: eeb2a908b8a4b3d4d922952356bb4083, type: 3}
   AP: {fileID: -8613858061719748838, guid: ac74b1d644ae47147b765171bd713328, type: 3}
   rotSpeed: 0.5
@@ -17224,6 +17212,7 @@ MonoBehaviour:
   - {fileID: 8538929181595561720}
   - {fileID: 8538929180424841924}
   - {fileID: 8538929180097119500}
+  muzzleFlashs: []
   HE: {fileID: -8613858061719748838, guid: eeb2a908b8a4b3d4d922952356bb4083, type: 3}
   AP: {fileID: -8613858061719748838, guid: ac74b1d644ae47147b765171bd713328, type: 3}
   rotSpeed: 0.5
@@ -19642,6 +19631,7 @@ MonoBehaviour:
   firePoint:
   - {fileID: 8538929180833124359}
   - {fileID: 8538929180863984607}
+  muzzleFlashs: []
   bulletFactory: {fileID: -8613858061719748838, guid: 051ba5b4e1b277e4ab7c566924521678,
     type: 3}
   rotSpeed: 1
@@ -20276,6 +20266,7 @@ MonoBehaviour:
   firePoint:
   - {fileID: 8538929179809490512}
   - {fileID: 8538929180858966864}
+  muzzleFlashs: []
   bulletFactory: {fileID: -8613858061719748838, guid: 051ba5b4e1b277e4ab7c566924521678,
     type: 3}
   rotSpeed: 1
@@ -20501,6 +20492,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   firePoint:
   - {fileID: 8501665518073813058}
+  muzzleFlashs: []
   bulletFactory: {fileID: 1115507205964319755, guid: 1809c61359c60b342b91d747ec8eca06,
     type: 3}
   bulletCount: 4
@@ -60689,6 +60681,7 @@ MonoBehaviour:
   firePoint:
   - {fileID: 8538929180888479529}
   - {fileID: 8538929181117047564}
+  muzzleFlashs: []
   bulletFactory: {fileID: -8613858061719748838, guid: 051ba5b4e1b277e4ab7c566924521678,
     type: 3}
   rotSpeed: 1
@@ -61838,6 +61831,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   firePoint:
   - {fileID: 2528879449488104202}
+  muzzleFlashs: []
   bulletFactory: {fileID: 1115507205964319755, guid: 1809c61359c60b342b91d747ec8eca06,
     type: 3}
   bulletCount: 4
@@ -62292,6 +62286,7 @@ MonoBehaviour:
   firePoint:
   - {fileID: 8538929180604101258}
   - {fileID: 8538929180663160681}
+  muzzleFlashs: []
   bulletFactory: {fileID: -8613858061719748838, guid: 051ba5b4e1b277e4ab7c566924521678,
     type: 3}
   rotSpeed: 1
@@ -62568,6 +62563,7 @@ MonoBehaviour:
   firePoint:
   - {fileID: 8538929180276964562}
   - {fileID: 8538929180090472634}
+  muzzleFlashs: []
   bulletFactory: {fileID: -8613858061719748838, guid: 051ba5b4e1b277e4ab7c566924521678,
     type: 3}
   rotSpeed: 1
@@ -68605,6 +68601,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   firePoint:
   - {fileID: 7357775567597311248}
+  muzzleFlashs: []
   bulletFactory: {fileID: 1115507205964319755, guid: 1809c61359c60b342b91d747ec8eca06,
     type: 3}
   bulletCount: 4
@@ -69502,6 +69499,7 @@ MonoBehaviour:
   - {fileID: 8538929180942156012}
   - {fileID: 8538929181630326318}
   - {fileID: 8538929180126570522}
+  muzzleFlashs: []
   HE: {fileID: -8613858061719748838, guid: eeb2a908b8a4b3d4d922952356bb4083, type: 3}
   AP: {fileID: -8613858061719748838, guid: ac74b1d644ae47147b765171bd713328, type: 3}
   rotSpeed: 0.5
@@ -73076,6 +73074,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   firePoint:
   - {fileID: 6327683340454530100}
+  muzzleFlashs: []
   bulletFactory: {fileID: 1115507205964319755, guid: 1809c61359c60b342b91d747ec8eca06,
     type: 3}
   bulletCount: 4
@@ -80318,6 +80317,7 @@ MonoBehaviour:
   firePoint:
   - {fileID: 8538929179669539282}
   - {fileID: 8538929181417065366}
+  muzzleFlashs: []
   bulletFactory: {fileID: -8613858061719748838, guid: 051ba5b4e1b277e4ab7c566924521678,
     type: 3}
   rotSpeed: 1
@@ -117641,6 +117641,7 @@ MonoBehaviour:
   - {fileID: 7347873771503373460}
   - {fileID: 3120084768684911986}
   marker: {fileID: 1516801573}
+  mainBatteries: []
 --- !u!114 &7859683869174180794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117680,6 +117681,7 @@ MonoBehaviour:
       m_Calls: []
   calcInterval: 0.5
   hpBar: {fileID: 6587394665079900740}
+  isImmutable: 0
 --- !u!114 &7859683869174180740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126704,6 +126706,7 @@ MonoBehaviour:
   firePoint:
   - {fileID: 8538929180966911730}
   - {fileID: 8538929180665033414}
+  muzzleFlashs: []
   bulletFactory: {fileID: -8613858061719748838, guid: 051ba5b4e1b277e4ab7c566924521678,
     type: 3}
   rotSpeed: 1
@@ -130025,7 +130028,6 @@ GameObject:
   - component: {fileID: 6789889214419907381}
   - component: {fileID: 7522801495467477478}
   - component: {fileID: 5723813070688476138}
-  - component: {fileID: 4414615735104069928}
   m_Layer: 9
   m_Name: Quad
   m_TagString: Untagged
@@ -130098,20 +130100,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4414615735104069928
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9063095207702245038}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &9063317023880734827
 GameObject:
   m_ObjectHideFlags: 0
