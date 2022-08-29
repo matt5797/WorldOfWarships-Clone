@@ -24,7 +24,7 @@ namespace WOW.Armament
         
         public Transform rootPosition;
         [HideInInspector] public Vector3 target;
-        protected ShipController controller;
+        public ShipController controller;
         public GameObject[] firePoint;
         public ParticleSystem[] muzzleFlashs;
 

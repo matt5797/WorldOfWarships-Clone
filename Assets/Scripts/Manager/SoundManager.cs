@@ -80,8 +80,11 @@ public class SoundManager
             }
 
             AudioSource audioSource = _audioSources[(int)Define.Sound.Effect];
-            audioSource.pitch = pitch;
-            audioSource.PlayOneShot(audioClip);
+            if (audioSource!=null)
+            {
+                audioSource.pitch = pitch;
+                audioSource.PlayOneShot(audioClip);
+            }
         }
 
     }

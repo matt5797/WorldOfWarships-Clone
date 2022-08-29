@@ -1,6 +1,7 @@
 using UnityEngine;
 using WOW.BattleShip;
 using UnityEngine.AI;
+using WOW.Manager;
 
 namespace WOW.Controller
 {

@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using WOW.Controller;
 
 namespace WOW.Manager
 {
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance;
+        public int currentModel = 5;
 
         private void Awake()
         {
@@ -36,9 +38,12 @@ namespace WOW.Manager
 
         public void StartGame()
         {
-            //Cursor.lockState = CursorLockMode.Locked;
-            //Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             SceneManager.LoadScene(1);
+            //PlayerController pc = GameObject.Find("PlayerController").GetComponent<PlayerController>();
+            /*if (currentModel==5)
+                pc.SetModel(0);*/
         }
 
         public void EndGame()
