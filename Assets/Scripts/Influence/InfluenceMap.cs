@@ -39,13 +39,13 @@ namespace WOW.Influence
                 return;
             }
 
-            influencePoints = new InfluencePoint[625];
+            influencePoints = new InfluencePoint[62500];
             int index = 0;
-            for (int x = -12; x < 13; x++)
+            for (int x = -120; x < 130; x++)
             {
-                for (int y = -12; y < 13; y++)
+                for (int y = -120; y < 130; y++)
                 {
-                    influencePoints[index++] = new InfluencePoint(new Vector3(x*10, 0, y*10), new int[] { 0, 0 });
+                    influencePoints[index++] = new InfluencePoint(new Vector3(x, 0, y), new int[] { 0, 0 });
                 }
             }
 
@@ -66,8 +66,9 @@ namespace WOW.Influence
             FileStream fileStream
                 = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
 
-            writer = new StreamWriter(fileStream, System.Text.Encoding.Unicode);
-            
+            //writer = new StreamWriter(fileStream, System.Text.Encoding.Unicode);
+            writer = System.IO.File.CreateText(filePath);
+
             StartCoroutine(UpdateInfluence());
         }
 
@@ -94,7 +95,7 @@ namespace WOW.Influence
             int cnt = 0;
             while (true)
             {
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(10);
                 //foreach (InfluencePoint influencePoint in influencePoints)
                 for (int i = 0; i < influencePoints.Length; i++)
                 {

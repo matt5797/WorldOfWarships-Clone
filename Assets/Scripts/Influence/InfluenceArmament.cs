@@ -25,7 +25,7 @@ namespace WOW.Influence
             while (true)
             {
                 InfluenceMap.Instance.CheckInfluence(rootPosition, m_BattleShipBase.camp, GetInstanceID(), influenceScore, radius, dot);
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(5);
             }
         }
 
