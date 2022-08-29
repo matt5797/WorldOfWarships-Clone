@@ -18,7 +18,12 @@ namespace WOW.Controller
         public float pathTime = 0.5f;
         float pathCurrentTime;
 
+        private Vector3 velocity = Vector3.zero;
+        public float time = 10f;
         public GameObject DeadUI;
+        public GameObject Frame;
+        public GameObject Fullmin;
+        public GameObject Fullmax;
 
         protected override void Start()
         {
@@ -42,6 +47,7 @@ namespace WOW.Controller
 
         void Update()
         {
+      
             // Set Target from Camera Point
             cameraCenterRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             
@@ -59,23 +65,25 @@ namespace WOW.Controller
             {
                 ship.GearUp();
                 isAutoPilot = false;
+                Frame.transform.position = Vector3.Lerp(Frame.transform.position, Fullmax.transform.position, time * Time.deltaTime );
+               
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
                 ship.GearDown();
                 isAutoPilot = false;
+                Frame.transform.position = Vector3.Lerp(Frame.transform.position, Fullmin.transform.position, time * Time.deltaTime);
             }
             if (Input.GetKey(KeyCode.A))
             {
                 ship.SteerUp();
                 isAutoPilot = false;
-               
             }
             if (Input.GetKey(KeyCode.D))
             {
                 ship.SteerDown();
                 isAutoPilot = false;
-               
+
                 // Managers.Sound.Play("front", Define.Sound.Effect);
             }
 
