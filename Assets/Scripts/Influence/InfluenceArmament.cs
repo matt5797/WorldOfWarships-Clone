@@ -17,7 +17,7 @@ namespace WOW.Influence
         void Start()
         {
             m_BattleShipBase = GetComponentInParent<BattleShipBase>();
-            StartCoroutine(CheckInfluence());
+            //StartCoroutine(CheckInfluence());
         }
 
         IEnumerator CheckInfluence()

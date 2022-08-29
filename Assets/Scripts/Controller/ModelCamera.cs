@@ -3,7 +3,7 @@
 namespace WOW.Controller
 {
     [RequireComponent(typeof(Camera))]
-    public class EllipseCamera : MonoBehaviour
+    public class ModelCamera : MonoBehaviour
     {
         public Transform m_Target;
         public float m_Distance = 5.0f;
@@ -37,8 +37,21 @@ namespace WOW.Controller
 
         public Vector3 cameraOffset2;
 
+        public Vector3 originPos;
+        public Quaternion originRot;
+        
+        enum CameraState
+        {
+            Origin,
+            Model
+        }
+        CameraState state = CameraState.Origin;
+
         void Start()
         {
+            originPos = transform.position;
+            originRot = transform.rotation;
+
             Vector3 angles = transform.eulerAngles;
             m_Y = angles.x;
 
@@ -47,7 +60,17 @@ namespace WOW.Controller
 
         void LateUpdate()
         {
-            if (m_Target)
+            if (state == CameraState.Origin && Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                state = CameraState.Model;
+            }
+            if (state == CameraState.Model && Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                state = CameraState.Origin;
+                transform.position = originPos;
+                transform.rotation = originRot;
+            }
+            if (m_Target && state==CameraState.Model)
             {
                 m_Y -= Input.GetAxis("Mouse Y") * m_YSpeed * 0.02f;
 

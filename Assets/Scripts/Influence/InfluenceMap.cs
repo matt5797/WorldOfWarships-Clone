@@ -63,13 +63,12 @@ namespace WOW.Influence
         {
             string filePath = Path.Combine(Application.streamingAssetsPath, "influence.csv");
 
-            FileStream fileStream
-                = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
+            //FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
 
             //writer = new StreamWriter(fileStream, System.Text.Encoding.Unicode);
-            writer = System.IO.File.CreateText(filePath);
+            //writer = System.IO.File.CreateText(filePath);
 
-            StartCoroutine(UpdateInfluence());
+            //StartCoroutine(UpdateInfluence());
         }
 
         public void CheckInfluence(Transform from, Camp camp, int instance, int value, float range, float dot)
