@@ -32,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2468558581306446369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.227}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -112,6 +112,8 @@ MonoBehaviour:
     m_Bits: 344
   explosionParticles:
   - {fileID: 612184077102948903, guid: 059aafe0c4e36cf478fea00203c320e2, type: 3}
+  splashParticles:
+  - {fileID: 7727778948246623026, guid: 5e216fe2c50fe2441925337edb394672, type: 3}
   worldScale: 100
 --- !u!65 &2468558581306446375
 BoxCollider:

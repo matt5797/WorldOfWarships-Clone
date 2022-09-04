@@ -18,6 +18,7 @@ namespace WOW.Projectile
 
         public int damage;
         public GameObject[] explosionParticles; // 폭발시 플레이할 파티클들
+        public GameObject[] trailParticles;
 
         private void Start()
         {
@@ -33,6 +34,12 @@ namespace WOW.Projectile
                 gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
                 // 어뢰가 앞을 향해 달려 나간다
                 transform.Translate(gameObject.transform.forward * speed * Time.deltaTime, Space.World);
+
+                foreach (GameObject trail in trailParticles)
+                {
+                    trail.SetActive(true);
+                    trail.transform.position = new Vector3(transform.position.x, 0.1f, transform.position.z);
+                }
             }
 
             if ((transform.position - startPosition).magnitude > range)

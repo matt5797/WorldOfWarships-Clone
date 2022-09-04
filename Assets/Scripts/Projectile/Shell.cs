@@ -52,6 +52,7 @@ namespace WOW.Projectile
 
         //public ParticleSystem[] impactParticles;
         public ParticleSystem[] explosionParticles; // 폭발시 플레이할 파티클들
+        public ParticleSystem[] splashParticles;
 
         public float worldScale = 100;  // 1유닛이 몇 미터인지
 
@@ -99,6 +100,10 @@ namespace WOW.Projectile
                 if (transform.position.y <= DestroyY)
                 {
                     Destroy(gameObject);
+                }
+                else if (transform.position.y <= 0)
+                {
+                    OnSplash();
                 }
 
                 //Move
@@ -273,6 +278,19 @@ namespace WOW.Projectile
             }
             Managers.Sound.Play("Bomb", Define.Sound.Effect);
             OnApplyDamage();
+            Destroy(gameObject);
+        }
+
+        void OnSplash()
+        {
+            foreach (ParticleSystem splashFactory in splashParticles)
+            {
+                ParticleSystem particle = Instantiate<ParticleSystem>(splashFactory);
+                particle.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+                particle.Play();
+            }
+            //Managers.Sound.Play("Bomb", Define.Sound.Effect);
+            //OnApplyDamage();
             Destroy(gameObject);
         }
     }

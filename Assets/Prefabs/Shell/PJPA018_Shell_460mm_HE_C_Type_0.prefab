@@ -112,6 +112,8 @@ MonoBehaviour:
     m_Bits: 344
   explosionParticles:
   - {fileID: 612184077102948903, guid: ff3eca1894e56b0418a2d4941e372895, type: 3}
+  splashParticles:
+  - {fileID: 7727778948246623026, guid: 5e216fe2c50fe2441925337edb394672, type: 3}
   worldScale: 100
 --- !u!65 &2468558581306446375
 BoxCollider:

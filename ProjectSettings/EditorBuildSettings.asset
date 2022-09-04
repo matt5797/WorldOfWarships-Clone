@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BetaMainScene.unity
     guid: a3472d252eca103418d59824821ec85c
+  - enabled: 0
+    path: Assets/Scenes/BetaMainSceneNight.unity
+    guid: b3d7cd3a662e4a2409b50c9cc97c66ae
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0e49702b90f1dd24b8253d57be9cf95f,
       type: 2}

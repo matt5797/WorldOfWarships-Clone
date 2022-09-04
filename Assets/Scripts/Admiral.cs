@@ -32,6 +32,12 @@ namespace WOW
         {
             //controllers[0].AIState = new MoveState(GameObject.Find("Test Target 2").transform.position, GameObject.Find("Test Target 2 (1)").transform.position);
             //controllers[0].AIState = new MoveState(GameObject.Find("Test Target 2").transform.position);
+
+            foreach (var controller in controllers)
+            {
+                controller.ship.camp = camp;
+            }
+
             // 임시로 가장 가까운 거점을 점거
             foreach (var controller in controllers)
             {

@@ -73,6 +73,8 @@ MonoBehaviour:
     m_Bits: 344
   explosionParticles:
   - {fileID: 612184077102948903, guid: 059aafe0c4e36cf478fea00203c320e2, type: 3}
+  splashParticles:
+  - {fileID: 7727778948246623026, guid: 5e216fe2c50fe2441925337edb394672, type: 3}
   worldScale: 100
 --- !u!54 &-7567911122109988845
 Rigidbody:

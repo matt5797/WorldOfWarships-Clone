@@ -125,6 +125,8 @@ MonoBehaviour:
     m_Bits: 344
   explosionParticles:
   - {fileID: 8094912676325316929, guid: af7e83d023e0b3849ac6b87b817ea60a, type: 3}
+  splashParticles:
+  - {fileID: 7727778948246623026, guid: 5e216fe2c50fe2441925337edb394672, type: 3}
   worldScale: 100
 --- !u!96 &2468558581306446395
 TrailRenderer:
